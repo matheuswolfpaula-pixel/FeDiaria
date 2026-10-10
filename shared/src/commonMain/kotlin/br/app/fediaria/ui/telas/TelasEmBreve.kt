@@ -20,25 +20,19 @@ import br.app.fediaria.shared.resources.Res
 import br.app.fediaria.shared.resources.aba_latim
 import br.app.fediaria.shared.resources.aba_novenas
 import br.app.fediaria.shared.resources.aba_quiz
-import br.app.fediaria.shared.resources.aba_terco
 import br.app.fediaria.shared.resources.em_breve
 import br.app.fediaria.shared.resources.ic_latim
 import br.app.fediaria.shared.resources.ic_novenas
 import br.app.fediaria.shared.resources.ic_quiz
-import br.app.fediaria.shared.resources.ic_terco
 import br.app.fediaria.shared.resources.latim_descricao
 import br.app.fediaria.shared.resources.novenas_descricao
 import br.app.fediaria.shared.resources.quiz_descricao
-import br.app.fediaria.shared.resources.terco_descricao
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 
 // Telas provisórias da Fase 1: cada uma ganha conteúdo real na sua fase.
-
-@Composable
-fun TelaTerco() = TelaEmBreve("tela_terco", Res.drawable.ic_terco, Res.string.aba_terco, Res.string.terco_descricao)
 
 @Composable
 fun TelaNovenas() =

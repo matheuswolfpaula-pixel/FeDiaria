@@ -10,7 +10,10 @@ naming:
 style:
   MagicNumber:
     ignorePropertyDeclaration: true
+    ignoreEnums: true
     ignoreCompanionObjectPropertyDeclaration: true
+    # Medidas de layout (dp, alfa, ângulos) dentro de telas Compose não precisam de constantes.
+    ignoreAnnotated: ['Composable']
     excludes: ['**/test/**', '**/*Test/**', '**/androidTest/**', '**/commonTest/**', '**/theme/**']
   UnusedPrivateMember:
     ignoreAnnotated: ['Preview']
@@ -20,6 +23,8 @@ style:
 complexity:
   LongParameterList:
     ignoreDefaultParameters: true
+    # Construtores recebem dependências injetadas (Koin).
+    constructorThreshold: 8
     ignoreAnnotated: ['Composable']
   LongMethod:
     ignoreAnnotated: ['Composable']

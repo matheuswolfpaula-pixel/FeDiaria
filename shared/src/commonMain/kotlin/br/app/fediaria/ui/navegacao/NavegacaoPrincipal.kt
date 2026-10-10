@@ -21,6 +21,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
+import br.app.fediaria.plataforma.AcoesDoSistema
 import br.app.fediaria.shared.resources.Res
 import br.app.fediaria.shared.resources.acao_configuracoes
 import br.app.fediaria.shared.resources.acao_voltar
@@ -28,24 +30,36 @@ import br.app.fediaria.shared.resources.app_nome
 import br.app.fediaria.shared.resources.configuracoes_titulo
 import br.app.fediaria.shared.resources.ic_configuracoes
 import br.app.fediaria.shared.resources.ic_voltar
+import br.app.fediaria.shared.resources.titulo_ajuda_lembretes
+import br.app.fediaria.shared.resources.titulo_historico
+import br.app.fediaria.shared.resources.titulo_terco_guiado
+import br.app.fediaria.ui.telas.TelaAjudaLembretes
 import br.app.fediaria.ui.telas.TelaConfiguracoes
 import br.app.fediaria.ui.telas.TelaLatim
 import br.app.fediaria.ui.telas.TelaNovenas
 import br.app.fediaria.ui.telas.TelaQuiz
-import br.app.fediaria.ui.telas.TelaTerco
+import br.app.fediaria.ui.terco.TelaHistorico
+import br.app.fediaria.ui.terco.TelaTerco
+import br.app.fediaria.ui.terco.TelaTercoGuiado
+import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
+import org.koin.compose.koinInject
 
 @Composable
-fun NavegacaoPrincipal(navController: NavHostController = rememberNavController()) {
+fun NavegacaoPrincipal(
+    navController: NavHostController = rememberNavController(),
+    acoes: AcoesDoSistema = koinInject(),
+) {
     val entradaAtual by navController.currentBackStackEntryAsState()
     val destino = entradaAtual?.destination
-    val abaAtual = Aba.entries.firstOrNull { destino.eh(it.rota) }
+    val abaAtual = Aba.entries.firstOrNull { destino.eh(it.rota::class) }
 
     Scaffold(
         topBar = {
             BarraSuperior(
-                abaAtual = abaAtual,
+                titulo = if (abaAtual != null) Res.string.app_nome else tituloDaTela(destino),
+                ehAba = abaAtual != null,
                 aoAbrirConfiguracoes = { navController.navigate(Rota.Configuracoes) { launchSingleTop = true } },
                 aoVoltar = { navController.popBackStack() },
             )
@@ -61,29 +75,55 @@ fun NavegacaoPrincipal(navController: NavHostController = rememberNavController(
             startDestination = Rota.Terco,
             modifier = Modifier.padding(espacamento),
         ) {
-            composable<Rota.Terco> { TelaTerco() }
+            composable<Rota.Terco> {
+                TelaTerco(
+                    aoRezar = { navController.navigate(Rota.TercoGuiado(it.name)) },
+                    aoVerHistorico = { navController.navigate(Rota.Historico) },
+                    aoAjustarLembretes = { navController.navigate(Rota.Configuracoes) },
+                    aoLiberarNotificacoes = acoes::abrirConfiguracoesDeNotificacao,
+                )
+            }
             composable<Rota.Novenas> { TelaNovenas() }
             composable<Rota.Quiz> { TelaQuiz() }
             composable<Rota.Latim> { TelaLatim() }
-            composable<Rota.Configuracoes> { TelaConfiguracoes() }
+            composable<Rota.Configuracoes> {
+                TelaConfiguracoes(
+                    aoAbrirAjudaLembretes = { navController.navigate(Rota.AjudaLembretes) },
+                    aoLiberarNotificacoes = acoes::abrirConfiguracoesDeNotificacao,
+                )
+            }
+            composable<Rota.TercoGuiado> { entrada ->
+                TelaTercoGuiado(
+                    conjunto = entrada.toRoute<Rota.TercoGuiado>().conjunto,
+                    aoVoltarAoInicio = { navController.popBackStack(Rota.Terco, inclusive = false) },
+                )
+            }
+            composable<Rota.Historico> { TelaHistorico() }
+            composable<Rota.AjudaLembretes> { TelaAjudaLembretes() }
         }
     }
 }
 
+private fun tituloDaTela(destino: NavDestination?): StringResource =
+    when {
+        destino.eh(Rota.TercoGuiado::class) -> Res.string.titulo_terco_guiado
+        destino.eh(Rota.Historico::class) -> Res.string.titulo_historico
+        destino.eh(Rota.AjudaLembretes::class) -> Res.string.titulo_ajuda_lembretes
+        else -> Res.string.configuracoes_titulo
+    }
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun BarraSuperior(
-    abaAtual: Aba?,
+    titulo: StringResource,
+    ehAba: Boolean,
     aoAbrirConfiguracoes: () -> Unit,
     aoVoltar: () -> Unit,
 ) {
     TopAppBar(
-        title = {
-            val titulo = if (abaAtual != null) Res.string.app_nome else Res.string.configuracoes_titulo
-            Text(stringResource(titulo))
-        },
+        title = { Text(stringResource(titulo)) },
         navigationIcon = {
-            if (abaAtual == null) {
+            if (!ehAba) {
                 IconButton(onClick = aoVoltar) {
                     Icon(
                         painterResource(Res.drawable.ic_voltar),
@@ -93,7 +133,7 @@ private fun BarraSuperior(
             }
         },
         actions = {
-            if (abaAtual != null) {
+            if (ehAba) {
                 IconButton(onClick = aoAbrirConfiguracoes) {
                     Icon(
                         painterResource(Res.drawable.ic_configuracoes),
@@ -123,7 +163,7 @@ private fun BarraInferior(
     }
 }
 
-private fun NavDestination?.eh(rota: Rota): Boolean = this?.hasRoute(rota::class) == true
+private fun NavDestination?.eh(rota: kotlin.reflect.KClass<out Rota>): Boolean = this?.hasRoute(rota) == true
 
 /** Troca de aba preservando o estado de cada uma e sem empilhar telas repetidas. */
 private fun NavHostController.irParaAba(aba: Aba) {

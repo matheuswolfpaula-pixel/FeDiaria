@@ -31,6 +31,12 @@ interface DiaRezadoDao {
     @Query("SELECT * FROM dia_rezado ORDER BY data")
     fun observarTodos(): Flow<List<DiaRezadoEntity>>
 
+    @Query("SELECT data FROM dia_rezado")
+    suspend fun todasAsDatas(): List<LocalDate>
+
+    @Query("SELECT * FROM dia_rezado WHERE data = :data")
+    suspend fun buscar(data: LocalDate): DiaRezadoEntity?
+
     @Query("DELETE FROM dia_rezado WHERE data = :data")
     suspend fun remover(data: LocalDate)
 }

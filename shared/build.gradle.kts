@@ -59,6 +59,7 @@ kotlin {
         androidMain.dependencies {
             implementation(project.dependencies.platform(libs.koin.bom))
             implementation(libs.koin.android)
+            implementation(libs.androidx.activity.compose)
         }
         iosMain.dependencies {
             implementation(libs.sqlite.bundled)
@@ -84,4 +85,12 @@ dependencies {
     listOf("kspAndroid", "kspIosArm64", "kspIosSimulatorArm64").forEach {
         add(it, libs.room.compiler)
     }
+}
+
+// Os testes validam os JSON de conteúdo lendo o disco: declará-los como entrada evita resultado em cache desatualizado.
+tasks.withType<Test>().configureEach {
+    inputs
+        .dir("src/commonMain/composeResources/files/conteudo")
+        .withPathSensitivity(PathSensitivity.RELATIVE)
+        .withPropertyName("conteudo")
 }

@@ -3,23 +3,225 @@
 <resources>
   <string name="app_nome">FéDiária</string>
 
+  <!-- Navegação -->
   <string name="aba_terco">Terço</string>
   <string name="aba_novenas">Novenas</string>
   <string name="aba_quiz">Quiz</string>
   <string name="aba_latim">Latim</string>
-
   <string name="acao_configuracoes">Configurações</string>
   <string name="acao_voltar">Voltar</string>
+  <string name="titulo_terco_guiado">Terço</string>
+  <string name="titulo_historico">Histórico e conquistas</string>
+  <string name="titulo_ajuda_lembretes">Lembretes não chegam?</string>
 
-  <string name="terco_descricao">Reze o terço passo a passo e cuide da sua chama de oração, um dia de cada vez.</string>
+  <!-- Telas ainda em preparação -->
   <string name="novenas_descricao">Acompanhe suas novenas dia a dia, com lembretes e sem pressa.</string>
   <string name="quiz_descricao">Aprenda sobre as Escrituras, o Catecismo e a fé católica em lições curtas.</string>
   <string name="latim_descricao">Aprenda a rezar as orações tradicionais em latim.</string>
   <string name="em_breve">Em preparação</string>
 
+  <!-- Ofensiva -->
+  <plurals name="ofensiva_dias">
+    <item quantity="one">dia de ofensiva</item>
+    <item quantity="other">dias de ofensiva</item>
+  </plurals>
+  <plurals name="ofensiva_descricao_acessivel">
+    <item quantity="one">Ofensiva de %1$d dia</item>
+    <item quantity="other">Ofensiva de %1$d dias</item>
+  </plurals>
+  <string name="ofensiva_rezado_hoje">Terço de hoje rezado. Deus seja louvado!</string>
+  <string name="ofensiva_em_risco">Sua chama espera pelo terço de hoje.</string>
+  <string name="ofensiva_apagada">Reze hoje para acender sua chama.</string>
+  <string name="ofensiva_recorde">Recorde: %1$d</string>
+  <plurals name="ofensiva_gracas">
+    <item quantity="one">%1$d dia de graça guardado</item>
+    <item quantity="other">%1$d dias de graça guardados</item>
+  </plurals>
+  <plurals name="ofensiva_proxima_graca">
+    <item quantity="one">Falta %1$d dia rezado para ganhar um dia de graça</item>
+    <item quantity="other">Faltam %1$d dias rezados para ganhar um dia de graça</item>
+  </plurals>
+  <string name="ofensiva_gracas_cheias">Você já guarda o máximo de dias de graça.</string>
+  <string name="ofensiva_explicacao_graca">A cada 7 dias rezados você ganha um dia de graça (até 2). Se um dia passar sem terço, ele protege sua ofensiva automaticamente.</string>
+
+  <!-- Início do terço -->
+  <string name="hoje_misterios">%1$s · %2$s</string>
+  <string name="acao_rezar_terco">Rezar o terço guiado</string>
+  <string name="acao_continuar_terco">Continuar o terço (%1$d de %2$d)</string>
+  <string name="acao_recomecar">Recomeçar</string>
+  <string name="acao_ja_rezei">Já rezei hoje</string>
+  <string name="acao_desfazer_marcacao">Desfazer marcação de hoje</string>
+  <string name="acao_esqueci_ontem">Esqueci de marcar ontem</string>
+  <string name="outros_misterios">Rezar outros mistérios</string>
+  <string name="confirmar_ontem_titulo">Marcar ontem como rezado?</string>
+  <string name="confirmar_ontem_texto">%1$s será contado na sua ofensiva.</string>
+  <string name="acao_confirmar">Confirmar</string>
+  <string name="acao_cancelar">Cancelar</string>
+  <string name="acao_ver_historico">Ver histórico e conquistas</string>
+
+  <!-- Conjuntos de mistérios -->
+  <string name="conjunto_gozosos">Mistérios Gozosos</string>
+  <string name="conjunto_luminosos">Mistérios Luminosos</string>
+  <string name="conjunto_dolorosos">Mistérios Dolorosos</string>
+  <string name="conjunto_gloriosos">Mistérios Gloriosos</string>
+  <string name="conjunto_curto_gozosos">Gozosos</string>
+  <string name="conjunto_curto_luminosos">Luminosos</string>
+  <string name="conjunto_curto_dolorosos">Dolorosos</string>
+  <string name="conjunto_curto_gloriosos">Gloriosos</string>
+  <string name="misterio_gozoso">%1$dº Mistério Gozoso</string>
+  <string name="misterio_luminoso">%1$dº Mistério Luminoso</string>
+  <string name="misterio_doloroso">%1$dº Mistério Doloroso</string>
+  <string name="misterio_glorioso">%1$dº Mistério Glorioso</string>
+
+  <!-- Terço guiado -->
+  <string name="guiado_passo">Passo %1$d de %2$d</string>
+  <string name="guiado_contemplamos">Contemplamos</string>
+  <string name="guiado_dezena">%1$dª dezena</string>
+  <string name="guiado_ave_conta">Ave-Maria %1$d de %2$d</string>
+  <string name="guiado_intencao_fe">Pela virtude da fé</string>
+  <string name="guiado_intencao_esperanca">Pela virtude da esperança</string>
+  <string name="guiado_intencao_caridade">Pela virtude da caridade</string>
+  <string name="guiado_introducao">Introdução</string>
+  <string name="guiado_encerramento">Encerramento</string>
+  <string name="acao_proximo">Próximo</string>
+  <string name="acao_anterior">Anterior</string>
+  <string name="acao_concluir">Amém · Concluir</string>
+  <string name="guiado_contas_descricao">Conta %1$d de %2$d</string>
+  <string name="concluido_titulo">Terço concluído</string>
+  <string name="concluido_mensagem">Obrigado por este tempo de oração. Que Nossa Senhora interceda por você.</string>
+  <string name="acao_voltar_inicio">Voltar ao início</string>
+
+  <!-- Lembretes (cartão e configurações) -->
+  <string name="lembrete_titulo">Lembrete diário</string>
+  <string name="lembrete_ativo_resumo">Todos os dias às %1$s</string>
+  <string name="lembrete_inativo_resumo">Receba um lembrete gentil no horário que preferir.</string>
+  <string name="acao_ativar_lembrete">Ativar lembrete</string>
+  <string name="acao_ajustar">Ajustar</string>
+  <string name="lembrete_bloqueado">As notificações do FéDiária estão desativadas no sistema.</string>
+  <string name="acao_liberar_notificacoes">Liberar notificações</string>
+  <string name="lembrete_negado">Sem a permissão, o app não consegue lembrar você. Você pode liberá-la quando quiser.</string>
+
+  <!-- Configurações -->
   <string name="configuracoes_titulo">Configurações</string>
+  <string name="configuracoes_lembretes">Lembretes</string>
+  <string name="config_lembrete_diario">Lembrete diário do terço</string>
+  <string name="config_horario">Horário</string>
+  <string name="config_segundo_lembrete">Segundo lembrete</string>
+  <string name="config_segundo_lembrete_desc">Só se o terço ainda não tiver sido rezado</string>
+  <string name="config_horario_segundo">Horário do segundo lembrete</string>
+  <string name="config_ajuda_lembretes">Lembretes não chegam?</string>
+  <string name="configuracoes_terco">Terço</string>
+  <string name="config_esquema">Mistérios por dia da semana</string>
+  <string name="esquema_padrao">Com Luminosos (padrão desde 2002)</string>
+  <string name="esquema_padrao_desc">Seg e sáb: Gozosos · ter e sex: Dolorosos · qua e dom: Gloriosos · qui: Luminosos</string>
+  <string name="esquema_tradicional">Tradicional, sem Luminosos</string>
+  <string name="esquema_tradicional_desc">Seg e qui: Gozosos · ter e sex: Dolorosos · qua, sáb e dom: Gloriosos</string>
+  <string name="config_oferecimento">Rezar o Oferecimento no início</string>
+  <string name="config_agradecimento">Rezar o Agradecimento no final</string>
+  <string name="config_vibracao">Vibração suave a cada conta</string>
   <string name="configuracoes_tema">Aparência</string>
   <string name="tema_sistema">Seguir o sistema</string>
   <string name="tema_claro">Claro</string>
   <string name="tema_escuro">Escuro</string>
+  <string name="seletor_horario_titulo">Escolha o horário</string>
+  <string name="acao_ok">OK</string>
+
+  <!-- Ajuda: lembretes -->
+  <string name="ajuda_intro">Alguns celulares economizam bateria fechando apps em segundo plano, e isso pode atrasar ou bloquear os lembretes. Veja o que ajuda:</string>
+  <string name="ajuda_passo_notificacoes">1. Confira se as notificações do FéDiária estão ligadas.</string>
+  <string name="ajuda_passo_bateria">2. Deixe o FéDiária sem restrição de bateria (“Sem restrições” ou “Não otimizar”).</string>
+  <string name="ajuda_passo_fabricante">3. Ajustes do seu aparelho:</string>
+  <string name="ajuda_atraso">Os lembretes podem chegar alguns minutos depois do horário: o Android agrupa avisos para poupar bateria. Se o celular estiver parado e com a tela apagada há muito tempo, o aviso aparece assim que você o pegar.</string>
+  <string name="ajuda_fabricante_samsung">Samsung: Configurações › Bateria › Limites de uso em segundo plano. Tire o FéDiária de “Apps em suspensão” e “Apps em suspensão profunda”.</string>
+  <string name="ajuda_fabricante_xiaomi">Xiaomi, Redmi e POCO: Configurações › Apps › FéDiária. Ative “Início automático” e, em “Economia de bateria”, escolha “Sem restrições”.</string>
+  <string name="ajuda_fabricante_motorola">Motorola: Configurações › Apps › FéDiária › Bateria. Escolha “Sem restrições”.</string>
+  <string name="ajuda_fabricante_outros">Outros aparelhos: procure nas configurações do app por “Bateria” e escolha a opção sem restrições. Se houver “Início automático”, ative-o.</string>
+  <string name="ajuda_mais_detalhes">O site dontkillmyapp.com reúne instruções para cada fabricante (em inglês).</string>
+  <string name="acao_abrir_notificacoes">Abrir configurações de notificação</string>
+  <string name="acao_abrir_bateria">Abrir configurações de bateria</string>
+  <string name="acao_abrir_site">Abrir dontkillmyapp.com</string>
+
+  <!-- Histórico -->
+  <string name="historico_recorde">Recorde</string>
+  <string name="historico_total">Terços rezados</string>
+  <string name="historico_atual">Ofensiva atual</string>
+  <string name="historico_mes_anterior">Mês anterior</string>
+  <string name="historico_mes_seguinte">Próximo mês</string>
+  <string name="legenda_rezado">Rezado</string>
+  <string name="legenda_graca">Dia de graça</string>
+  <string name="legenda_hoje">Hoje</string>
+  <string name="dia_rezado_desc">%1$d: rezado</string>
+  <string name="dia_graca_desc">%1$d: dia de graça</string>
+  <string name="dia_vazio_desc">%1$d</string>
+  <string name="conquistas_titulo">Conquistas</string>
+  <string name="conquista_bloqueada">Ainda não alcançada</string>
+  <string name="conquista_primeiro_terco">Primeiro terço</string>
+  <string name="conquista_primeiro_terco_desc">Rezou o primeiro terço com o FéDiária.</string>
+  <string name="conquista_uma_semana">Uma semana</string>
+  <string name="conquista_uma_semana_desc">7 dias seguidos de terço.</string>
+  <string name="conquista_trinta_tercos">Trinta terços</string>
+  <string name="conquista_trinta_tercos_desc">30 dias com terço rezado.</string>
+  <string name="conquista_um_mes">Um mês de fidelidade</string>
+  <string name="conquista_um_mes_desc">30 dias seguidos de terço.</string>
+  <string name="conquista_cem_dias">Cem dias</string>
+  <string name="conquista_cem_dias_desc">100 dias seguidos de terço.</string>
+  <string name="conquista_um_ano">Um ano com Maria</string>
+  <string name="conquista_um_ano_desc">365 dias seguidos de terço.</string>
+
+  <!-- Datas -->
+  <string-array name="meses">
+    <item>janeiro</item>
+    <item>fevereiro</item>
+    <item>março</item>
+    <item>abril</item>
+    <item>maio</item>
+    <item>junho</item>
+    <item>julho</item>
+    <item>agosto</item>
+    <item>setembro</item>
+    <item>outubro</item>
+    <item>novembro</item>
+    <item>dezembro</item>
+  </string-array>
+  <!-- Segunda a domingo (ISO). -->
+  <string-array name="dias_semana">
+    <item>segunda-feira</item>
+    <item>terça-feira</item>
+    <item>quarta-feira</item>
+    <item>quinta-feira</item>
+    <item>sexta-feira</item>
+    <item>sábado</item>
+    <item>domingo</item>
+  </string-array>
+  <!-- Cabeçalho do calendário, começando no domingo. -->
+  <string-array name="iniciais_semana">
+    <item>D</item>
+    <item>S</item>
+    <item>T</item>
+    <item>Q</item>
+    <item>Q</item>
+    <item>S</item>
+    <item>S</item>
+  </string-array>
+  <string name="data_extenso">%1$s, %2$d de %3$s</string>
+  <string name="mes_ano">%1$s de %2$d</string>
+
+  <!-- Notificações -->
+  <string name="canal_lembretes_nome">Lembretes do terço</string>
+  <string name="canal_lembretes_desc">Lembrete diário no horário que você escolheu.</string>
+  <string name="notif_principal_titulo_1">Hora do terço</string>
+  <string name="notif_principal_texto_1">Que tal reservar alguns minutos para rezar com Maria hoje?</string>
+  <string name="notif_principal_titulo_2">Um momento com Nossa Senhora</string>
+  <string name="notif_principal_texto_2">Seu terço de hoje espera por você, sem pressa.</string>
+  <string name="notif_principal_titulo_3">Pausa para a oração</string>
+  <string name="notif_principal_texto_3">Alguns minutos de terço podem trazer paz ao seu dia.</string>
+  <plurals name="notif_chama_titulo">
+    <item quantity="one">Sua chama: %1$d dia</item>
+    <item quantity="other">Sua chama: %1$d dias</item>
+  </plurals>
+  <string name="notif_chama_texto">Que tal rezar o terço de hoje e mantê-la acesa?</string>
+  <string name="notif_risco_titulo">Sua chama está pedindo cuidado</string>
+  <string name="notif_risco_texto">Ainda dá tempo de rezar o terço hoje. Se não for possível, tudo bem: amanhã é um novo dia.</string>
+  <string name="notif_segundo_titulo">Ainda dá tempo</string>
+  <string name="notif_segundo_texto">Se puder, reserve alguns minutos para o terço antes de dormir.</string>
 </resources>

@@ -5,6 +5,9 @@ import androidx.sqlite.driver.bundled.BundledSQLiteDriver
 import br.app.fediaria.data.config.ARQUIVO_PREFERENCIAS
 import br.app.fediaria.data.config.criarDataStore
 import br.app.fediaria.data.db.FeDiariaDatabase
+import br.app.fediaria.plataforma.AcoesDoSistema
+import br.app.fediaria.plataforma.Lembretes
+import br.app.fediaria.plataforma.LembretesInativos
 import kotlinx.cinterop.ExperimentalForeignApi
 import org.koin.core.module.Module
 import org.koin.dsl.module
@@ -21,6 +24,8 @@ actual val modulosDaPlataforma: Module =
                 .setDriver(BundledSQLiteDriver())
         }
         single { criarDataStore { "${diretorioDocumentos()}/$ARQUIVO_PREFERENCIAS" } }
+        single<Lembretes> { LembretesInativos }
+        single<AcoesDoSistema> { AcoesDoSistemaIos }
     }
 
 @OptIn(ExperimentalForeignApi::class)
@@ -34,4 +39,14 @@ private fun diretorioDocumentos(): String {
             error = null,
         )
     return requireNotNull(url?.path)
+}
+
+private object AcoesDoSistemaIos : AcoesDoSistema {
+    override val fabricante: String = "apple"
+
+    override fun abrirConfiguracoesDeNotificacao() = Unit
+
+    override fun abrirConfiguracoesDeBateria() = Unit
+
+    override fun abrirNoNavegador(url: String) = Unit
 }

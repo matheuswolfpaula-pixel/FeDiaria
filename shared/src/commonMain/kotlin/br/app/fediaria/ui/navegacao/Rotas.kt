@@ -24,6 +24,15 @@ sealed interface Rota {
     @Serializable data object Latim : Rota
 
     @Serializable data object Configuracoes : Rota
+
+    /** [conjunto] = nome de [br.app.fediaria.core.terco.ConjuntoMisterios]. */
+    @Serializable data class TercoGuiado(
+        val conjunto: String,
+    ) : Rota
+
+    @Serializable data object Historico : Rota
+
+    @Serializable data object AjudaLembretes : Rota
 }
 
 /** Abas da barra inferior, na ordem em que aparecem. */

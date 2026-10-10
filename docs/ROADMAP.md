@@ -9,7 +9,7 @@ Legenda: 👤 = depende de ação sua.
 ## Fase 0 — Planejamento ✅
 Briefing, decisões, arquitetura (`docs/ARQUITETURA.md`), este roadmap, `CLAUDE.md`.
 
-## Fase 1 — Esqueleto ✅ (aguardando ok)
+## Fase 1 — Esqueleto ✅
 - 👤 Instalar o JDK 21 (`sudo apt install openjdk-21-jdk`) e configurar a identidade do git.
 - Android SDK + cmdline-tools + emulador em `~/Android/Sdk` (eu faço, sem sudo) e AVD Pixel com Android 15/16.
 - Projeto KMP (`core`, `shared`, `androidApp`), Gradle wrapper, catálogo de versões, Koin, Room KMP (banco vazio + migrações), DataStore, tema azul mariano/dourado (claro/escuro), navegação com as 4 abas e telas placeholder, `strings.xml` pt-BR.
@@ -18,7 +18,7 @@ Briefing, decisões, arquitetura (`docs/ARQUITETURA.md`), este roadmap, `CLAUDE.
 
 **Aceite:** `./gradlew check` verde localmente e no CI · o app abre no emulador · as 4 abas navegam · o tema escuro segue o sistema · nenhuma permissão além do previsto no manifesto final.
 
-## Fase 2 — Terço + ofensiva + lembretes
+## Fase 2 — Terço + ofensiva + lembretes ✅ (aguardando ok)
 - Terço guiado completo (contas, contador, mistérios do dia, retomar, vibração opcional) e marcação manual (hoje/ontem).
 - Ofensiva com chama animada, dia de graça, recorde, calendário/histórico, conquistas simples.
 - Lembrete diário + 2º lembrete condicional, reagendamento (boot/fuso/hora/atualização), WorkManager vigia, pedido de notificação no Android 13+, tela "Lembretes não chegam?".

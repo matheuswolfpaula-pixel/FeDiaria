@@ -56,11 +56,15 @@ android {
 dependencies {
     implementation(projects.shared)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.core)
+    implementation(libs.androidx.work.runtime)
+    implementation(libs.compose.resources)
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)
 
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.test.ext.junit)
+    androidTestImplementation(libs.androidx.test.rules)
     androidTestImplementation(libs.compose.ui.test.junit4)
     androidTestImplementation(libs.room.runtime)
     androidTestImplementation(libs.kotlinx.coroutines.test)

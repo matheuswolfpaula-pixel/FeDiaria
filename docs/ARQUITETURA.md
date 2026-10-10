@@ -72,11 +72,12 @@ Referência do Catecismo: `{ "tipo": "cic", "paragrafo": 1213 }`. Do Catecismo d
 - A oração **não vale XP**. A ofensiva é a única métrica do terço. XP existe só no quiz e no latim.
 
 ### Terço guiado
-Sequência: Sinal da Cruz → (Oferecimento, opcional) → Credo → Pai-Nosso → 3 Ave-Marias → Glória → 5 × [anúncio do mistério → Pai-Nosso → 10 Ave-Marias → Glória → Ó meu Jesus] → Salve-Rainha → (Agradecimento, opcional) → Sinal da Cruz.
+Sequência: Sinal da Cruz → (Oferecimento, opcional) → Credo → Pai-Nosso → 3 Ave-Marias → Glória → 5 × [anúncio do mistério → Pai-Nosso → 10 Ave-Marias → Glória → Ó meu Jesus] → (Agradecimento, opcional) → Salve-Rainha → Sinal da Cruz. (O Agradecimento termina com "vos saudamos com uma Salve-Rainha", por isso vem antes dela.)
 Observação: o briefing não citava as 3 Ave-Marias iniciais. Incluí porque são tradicionais. A UI mostra um contador de contas, avança com toque grande ou deslize, permite voltar, retoma de onde parou e tem **vibração suave opcional**, sem sons. Mistérios por dia da semana: padrão de *Rosarium Virginis Mariae* (Gozosos seg/sáb, Dolorosos ter/sex, Gloriosos qua/dom, Luminosos qui), editável. Também há o atalho "esquema tradicional sem Luminosos".
 
 ### Lembretes (Android)
-- **Sem `SCHEDULE_EXACT_ALARM`.** Usamos `AlarmManager.setAndAllowWhileIdle` (inexato: pode chegar alguns minutos depois, o que é aceitável para um lembrete de oração). `USE_EXACT_ALARM` é restrito pela Play a apps de despertador/agenda, então não serve para nós.
+- **Sem `SCHEDULE_EXACT_ALARM`.** Usamos `AlarmManager.setWindow` com janela de 10 min (o mínimo do Android 12+): o aviso chega entre o horário e 10 min depois. Escolhido em vez de `setAndAllowWhileIdle` porque este último é "inexato" com atraso proporcional à antecedência (um alarme agendado 20h antes poderia atrasar horas). Com o aparelho em repouso profundo (Doze), o aviso sai quando o aparelho desperta, por exemplo ao ser pego, o que é aceitável para um lembrete de oração. `USE_EXACT_ALARM` é restrito pela Play a apps de despertador/agenda.
+- O disparo carrega a **data-alvo**: se chegar atrasado depois da meia-noite, é descartado.
 - Quando o alarme dispara, o app **consulta o banco**: só notifica se o terço de hoje ainda não foi rezado. O 2º lembrete ("sua chama está pedindo cuidado") usa a mesma checagem, num horário configurável (padrão: 21h).
 - Reagendamento em: `BOOT_COMPLETED`, `TIME_SET`, `TIMEZONE_CHANGED`, `MY_PACKAGE_REPLACED`, ao abrir o app e a cada ~12h por um **WorkManager vigia** (cinto e suspensório contra fabricantes agressivos).
 - Android 13+: pedimos `POST_NOTIFICATIONS` **no contexto certo** (quando a pessoa escolhe o horário), nunca na primeira tela.
