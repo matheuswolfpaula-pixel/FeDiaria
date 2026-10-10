@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Backup do Android (até Android 11). Mesmo conteúdo de data_extraction_rules.xml. -->
+<full-backup-content>
+    <include domain="database" path="." />
+    <include domain="file" path="fediaria.preferences_pb" />
+</full-backup-content>

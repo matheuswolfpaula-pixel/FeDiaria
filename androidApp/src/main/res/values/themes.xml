@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Só a janela; o visual do app é feito em Compose. Splash dedicada na Fase 6. -->
+    <style name="Theme.FeDiaria" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/creme</item>
+    </style>
+</resources>

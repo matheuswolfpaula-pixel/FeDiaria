@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Backup do Android (Android 12+): progresso (banco) e preferências, para quem troca de celular. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="." />
+        <include domain="file" path="fediaria.preferences_pb" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="." />
+        <include domain="file" path="fediaria.preferences_pb" />
+    </device-transfer>
+</data-extraction-rules>

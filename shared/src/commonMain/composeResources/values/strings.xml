@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Idioma padrão do app: português do Brasil. Traduções futuras em values-<idioma>/. -->
+<resources>
+  <string name="app_nome">FéDiária</string>
+
+  <string name="aba_terco">Terço</string>
+  <string name="aba_novenas">Novenas</string>
+  <string name="aba_quiz">Quiz</string>
+  <string name="aba_latim">Latim</string>
+
+  <string name="acao_configuracoes">Configurações</string>
+  <string name="acao_voltar">Voltar</string>
+
+  <string name="terco_descricao">Reze o terço passo a passo e cuide da sua chama de oração, um dia de cada vez.</string>
+  <string name="novenas_descricao">Acompanhe suas novenas dia a dia, com lembretes e sem pressa.</string>
+  <string name="quiz_descricao">Aprenda sobre as Escrituras, o Catecismo e a fé católica em lições curtas.</string>
+  <string name="latim_descricao">Aprenda a rezar as orações tradicionais em latim.</string>
+  <string name="em_breve">Em preparação</string>
+
+  <string name="configuracoes_titulo">Configurações</string>
+  <string name="configuracoes_tema">Aparência</string>
+  <string name="tema_sistema">Seguir o sistema</string>
+  <string name="tema_claro">Claro</string>
+  <string name="tema_escuro">Escuro</string>
+</resources>

@@ -1,0 +1,21 @@
+# Gradle / build
+.gradle/
+build/
+.kotlin/
+local.properties
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Android
+*.apk
+*.aab
+captures/
+
+# Assinatura: NUNCA versionar
+*.jks
+*.keystore
+keystore.properties
