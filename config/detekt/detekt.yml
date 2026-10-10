@@ -30,3 +30,6 @@ complexity:
     ignoreAnnotated: ['Composable']
   TooManyFunctions:
     ignoreAnnotatedFunctions: ['Composable']
+    # Interfaces @Dao do Room reúnem muitas consultas; métodos privados não contam.
+    ignoreAnnotated: ['Dao']
+    ignorePrivate: true

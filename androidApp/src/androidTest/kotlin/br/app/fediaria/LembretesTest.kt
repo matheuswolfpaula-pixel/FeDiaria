@@ -9,10 +9,14 @@ import br.app.fediaria.core.lembretes.TipoLembrete
 import br.app.fediaria.core.tempo.Relogio
 import br.app.fediaria.data.config.ConfigLembretes
 import br.app.fediaria.data.config.ConfiguracoesRepository
+import br.app.fediaria.data.db.NovenaDao
+import br.app.fediaria.data.db.NovenaDiaEntity
+import br.app.fediaria.data.novena.NovenasRepository
 import br.app.fediaria.data.oracao.DiasRezadosRepository
 import br.app.fediaria.lembretes.AgendadorDeLembretes
 import kotlinx.coroutines.runBlocking
 import kotlinx.datetime.DateTimeUnit
+import kotlinx.datetime.LocalTime
 import kotlinx.datetime.minus
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -34,6 +38,7 @@ class LembretesTest {
     private val configuracoes = koin.get<ConfiguracoesRepository>()
     private val dias = koin.get<DiasRezadosRepository>()
     private val relogio = koin.get<Relogio>()
+    private val novenas = koin.get<NovenasRepository>()
     private val notificacoes =
         InstrumentationRegistry.getInstrumentation().targetContext.getSystemService(NotificationManager::class.java)
 
@@ -105,6 +110,48 @@ class LembretesTest {
             assertNotificacoes(0)
             // E o próximo disparo continua agendado.
             assertTrue(agendador.agendado(TipoLembrete.PRINCIPAL))
+        }
+
+    @Test
+    fun novenaComLembreteEhAgendadaEParaAoConcluir() =
+        runBlocking {
+            val hoje = relogio.hoje()
+            val id =
+                novenas.iniciar(
+                    "sao_jose",
+                    hoje.minus(9, DateTimeUnit.DAY),
+                    lembreteAtivo = true,
+                    LocalTime(20, 0),
+                )
+            agendador.reagendar()
+            assertTrue(agendador.novenaAgendada(id))
+
+            // Notifica enquanto o dia de hoje está pendente.
+            agendador.aoDispararNovena(id, hoje)
+            assertNotificacoes(1)
+
+            // Conclui os 9 dias (um por data) e reagenda: alarme cancelado.
+            val dao = koin.get<NovenaDao>()
+            (1..9).forEach { dia -> dao.marcarDia(NovenaDiaEntity(id, dia, hoje.minus(9 - dia, DateTimeUnit.DAY))) }
+            agendador.aoRezarNovena(id)
+            agendador.reagendar()
+            assertFalse(agendador.novenaAgendada(id))
+            assertNotificacoes(0)
+        }
+
+    @Test
+    fun novenaSemLembreteOuRemovidaNaoTemAlarme() =
+        runBlocking {
+            val semLembrete = novenas.iniciar("natal", relogio.hoje(), lembreteAtivo = false, LocalTime(20, 0))
+            val comLembrete = novenas.iniciar("aparecida", relogio.hoje(), lembreteAtivo = true, LocalTime(20, 0))
+            agendador.reagendar()
+            assertFalse(agendador.novenaAgendada(semLembrete))
+            assertTrue(agendador.novenaAgendada(comLembrete))
+
+            agendador.cancelarNovena(comLembrete)
+            novenas.remover(comLembrete)
+            agendador.reagendar()
+            assertFalse(agendador.novenaAgendada(comLembrete))
         }
 
     @Test

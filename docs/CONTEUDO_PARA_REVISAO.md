@@ -60,7 +60,153 @@ Arquivo-fonte: `shared/src/commonMain/composeResources/files/conteudo/`.
 
 ---
 
-## 2. Textos da interface com conteúdo religioso
+## 2. Novenas (`novenas.json`): Fase 3
+
+Seis novenas, 9 dias cada (54 meditações + 18 orações). **Meditações, orações iniciais/finais marcadas como "Texto original" foram escritas para o app**; precisam de leitura doutrinal. As referências bíblicas são só citações (sem transcrição de tradução). Frases curtas entre aspas nas meditações são **paráfrases** dos versículos, não transcrições de uma tradução: conferir o sentido.
+
+**Ponto geral de atenção:** a numeração bíblica segue as Bíblias católicas atuais (ex.: Is 9,1; Mq 5,1); os Salmos aparecem como `Sl 19(18)` (hebraica/grega-Vulgata).
+
+### Novena ao Espírito Santo (`espirito_santo`)
+
+Janela: sexta após a Ascensão (Páscoa + 40) até a véspera de Pentecostes. Conferir a lista dos 7 dons e a redação do "Vinde, Espírito Santo".
+
+| Item | Fonte declarada |
+|---|---|
+| Oração inicial: Vinde, Espírito Santo | Oração tradicional da Igreja (domínio público); redação usual em português a conferir |
+| Oração final: Oração final | Texto original do FéDiária |
+| Jaculatória: Jaculatória | Invocação tradicional (domínio público) |
+
+| id | Tema | Referência |
+|---|---|---|
+| `espirito_santo.1` | A promessa do Consolador | Jo 14,16-17 |
+| `espirito_santo.2` | O dom da sabedoria | Tg 1,5 |
+| `espirito_santo.3` | O dom do entendimento | Lc 24,45 |
+| `espirito_santo.4` | O dom do conselho | Jo 14,26 |
+| `espirito_santo.5` | O dom da fortaleza | At 1,8 |
+| `espirito_santo.6` | O dom da ciência | Sl 19(18),2 |
+| `espirito_santo.7` | O dom da piedade | Rm 8,14-16 |
+| `espirito_santo.8` | O dom do temor de Deus | Pr 9,10 |
+| `espirito_santo.9` | Os frutos do Espírito | Gl 5,22-23 |
+
+### Novena à Imaculada Conceição (`imaculada_conceicao`)
+
+Conferir a tradução do "Lembrai-vos" (Memorare) e a menção ao dogma de 1854 (Pio IX).
+
+| Item | Fonte declarada |
+|---|---|
+| Oração inicial: Lembrai-vos | Memorare, oração tradicional atribuída a São Bernardo (domínio público); tradução usual a conferir |
+| Oração final: Oração final | Texto original do FéDiária |
+| Jaculatória: Jaculatória | Jaculatória da Medalha Milagrosa (1830), domínio público |
+
+| id | Tema | Referência |
+|---|---|---|
+| `imaculada_conceicao.1` | Escolhidos antes da criação | Ef 1,3-4 |
+| `imaculada_conceicao.2` | A primeira promessa | Gn 3,15 |
+| `imaculada_conceicao.3` | Cheia de graça | Lc 1,28 |
+| `imaculada_conceicao.4` | Faça-se em mim | Lc 1,38 |
+| `imaculada_conceicao.5` | Bendita entre as mulheres | Lc 1,42 |
+| `imaculada_conceicao.6` | A alma que engrandece o Senhor | Lc 1,46-49 |
+| `imaculada_conceicao.7` | Guardava tudo no coração | Lc 2,19 |
+| `imaculada_conceicao.8` | Mãe ao pé da cruz | Jo 19,25-27 |
+| `imaculada_conceicao.9` | A mulher vestida de sol | Ap 12,1 |
+
+### Novena de Natal (`natal`)
+
+Conferir numeração de Is 9,1 e Mq 5,1 (algumas Bíblias usam 9,2 e 5,2).
+
+| Item | Fonte declarada |
+|---|---|
+| Oração inicial: Oração inicial | Texto original do FéDiária |
+| Oração final: Oração final | Texto original do FéDiária |
+| Jaculatória: Jaculatória | Ap 22,20 (invocação "Maranatha") |
+
+| id | Tema | Referência |
+|---|---|---|
+| `natal.1` | O povo que andava nas trevas | Is 9,1 |
+| `natal.2` | Deus conosco | Is 7,14 |
+| `natal.3` | Preparai o caminho do Senhor | Is 40,3 |
+| `natal.4` | O anúncio a José | Mt 1,20-21 |
+| `natal.5` | Belém, a pequena | Mq 5,1 |
+| `natal.6` | A viagem a Belém | Lc 2,1-5 |
+| `natal.7` | Não havia lugar para eles | Lc 2,6-7 |
+| `natal.8` | O Verbo se fez carne | Jo 1,14 |
+| `natal.9` | Glória a Deus nas alturas | Lc 2,13-14 |
+
+### Novena a Nossa Senhora Aparecida (`aparecida`)
+
+**Fatos históricos a conferir:** imagem encontrada em 1717 por três pescadores no rio Paraíba do Sul; proclamada Padroeira do Brasil em 1930. Oração inicial e final são originais (a tradicional "Consagração" não foi usada por dúvida de autoria).
+
+| Item | Fonte declarada |
+|---|---|
+| Oração inicial: Oração inicial | Texto original do FéDiária |
+| Oração final: Oração final | Texto original do FéDiária |
+| Jaculatória: Jaculatória | Invocação tradicional (domínio público) |
+
+| id | Tema | Referência |
+|---|---|---|
+| `aparecida.1` | A rede vazia | Lc 5,4-6 |
+| `aparecida.2` | Fazei tudo o que Ele vos disser | Jo 2,1-5 |
+| `aparecida.3` | Mãe dos humildes | Lc 1,52-53 |
+| `aparecida.4` | Em oração com a Igreja | At 1,14 |
+| `aparecida.5` | Eis a tua mãe | Jo 19,26-27 |
+| `aparecida.6` | Mãe peregrina | Lc 1,39-40 |
+| `aparecida.7` | Feliz aquela que acreditou | Lc 1,45 |
+| `aparecida.8` | Gratidão pelos benefícios | Sl 103(102),2 |
+| `aparecida.9` | Ouvir e guardar a Palavra | Lc 11,27-28 |
+
+### Novena a São José (`sao_jose`)
+
+Conferir a tradução da oração "A vós, São José" (Leão XIII, 1889) e a menção a Pio IX (Padroeiro da Igreja Universal, 1870). Dia 8 cita a tradição da "boa morte" (não é relato bíblico).
+
+| Item | Fonte declarada |
+|---|---|
+| Oração inicial: A vós, São José | Oração do Papa Leão XIII (encíclica Quamquam pluries, 1889), domínio público; tradução usual em português a conferir |
+| Oração final: Oração final | Texto original do FéDiária |
+| Jaculatória: Jaculatória | Invocação tradicional (domínio público) |
+
+| id | Tema | Referência |
+|---|---|---|
+| `sao_jose.1` | O homem justo | Mt 1,19 |
+| `sao_jose.2` | Obediente à voz de Deus | Mt 1,24 |
+| `sao_jose.3` | Guardião em Belém | Lc 2,4-7 |
+| `sao_jose.4` | A fuga para o Egito | Mt 2,13-15 |
+| `sao_jose.5` | O carpinteiro de Nazaré | Mt 13,55 |
+| `sao_jose.6` | Pai que procura | Lc 2,48 |
+| `sao_jose.7` | A vida escondida em Nazaré | Lc 2,51-52 |
+| `sao_jose.8` | Padroeiro da boa morte | Sl 116(115),15 |
+| `sao_jose.9` | Ide a José | Gn 41,55 |
+
+### Novena ao Sagrado Coração de Jesus (`sagrado_coracao`)
+
+Janela: Páscoa + 59 (termina na véspera da solenidade, Páscoa + 68). Conferir menção a Santa Margarida Maria Alacoque.
+
+| Item | Fonte declarada |
+|---|---|
+| Oração inicial: Oração inicial | Texto original do FéDiária |
+| Oração final: Oração final | Texto original do FéDiária |
+| Jaculatória: Jaculatória | Jaculatória tradicional (domínio público) |
+
+| id | Tema | Referência |
+|---|---|---|
+| `sagrado_coracao.1` | Vinde a mim | Mt 11,28-30 |
+| `sagrado_coracao.2` | Amou-os até o fim | Jo 13,1 |
+| `sagrado_coracao.3` | O Bom Pastor | Jo 10,11 |
+| `sagrado_coracao.4` | A ovelha perdida | Lc 15,4-7 |
+| `sagrado_coracao.5` | Compaixão pelas multidões | Mt 9,36 |
+| `sagrado_coracao.6` | O coração traspassado | Jo 19,33-34 |
+| `sagrado_coracao.7` | Rios de água viva | Jo 7,37-38 |
+| `sagrado_coracao.8` | Permanecei no meu amor | Jo 15,9 |
+| `sagrado_coracao.9` | Deus é amor | 1Jo 4,16 |
+
+**Fora do catálogo:** Novena da Divina Misericórdia: os textos de Santa Faustina têm direitos autorais; só entraria com texto próprio, após decisão.
+
+### Regras usadas no código (não estão no JSON)
+
+- Progresso por dia rezado (não por calendário); no máximo um dia da novena por data; dias perdidos só adiam o término.
+- Datas móveis calculadas a partir da Páscoa (algoritmo de Meeus, conferido contra o de Oudin de 1583 a 4099).
+---
+
+## 3. Textos da interface com conteúdo religioso
 
 Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm campo `revisado`, mas pedem leitura):
 
@@ -68,6 +214,7 @@ Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm
 - Status: *"Terço de hoje rezado. Deus seja louvado!"*
 - Notificações (tom acolhedor, sem culpa): "Hora do terço", "Um momento com Nossa Senhora", "Pausa para a oração", "Sua chama está pedindo cuidado", "Ainda dá tempo".
 - Conquista *"Um ano com Maria"*.
+- Novenas: *"Novena concluída. Deus seja louvado!"*, *"Você continua de onde parou. Sem pressa: o importante é rezar com o coração."*
 
 ---
 
@@ -76,3 +223,4 @@ Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm
 | Arquivo | Itens | Revisados |
 |---|---|---|
 | `terco.json` | 30 | 0 |
+| `novenas.json` | 78 (6 novenas × [1 + 3 orações + 9 dias]) | 0 |

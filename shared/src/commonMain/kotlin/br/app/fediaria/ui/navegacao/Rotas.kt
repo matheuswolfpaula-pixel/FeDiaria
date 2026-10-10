@@ -33,6 +33,16 @@ sealed interface Rota {
     @Serializable data object Historico : Rota
 
     @Serializable data object AjudaLembretes : Rota
+
+    /** Catálogo: apresentação de uma novena antes de começar ([novenaId] do conteúdo). */
+    @Serializable data class DetalheNovena(
+        val novenaId: String,
+    ) : Rota
+
+    /** Uma novena do usuário (id no banco). */
+    @Serializable data class NovenaAtiva(
+        val id: Long,
+    ) : Rota
 }
 
 /** Abas da barra inferior, na ordem em que aparecem. */

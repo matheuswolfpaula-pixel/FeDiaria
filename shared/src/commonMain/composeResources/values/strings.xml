@@ -15,7 +15,6 @@
   <string name="titulo_ajuda_lembretes">Lembretes não chegam?</string>
 
   <!-- Telas ainda em preparação -->
-  <string name="novenas_descricao">Acompanhe suas novenas dia a dia, com lembretes e sem pressa.</string>
   <string name="quiz_descricao">Aprenda sobre as Escrituras, o Catecismo e a fé católica em lições curtas.</string>
   <string name="latim_descricao">Aprenda a rezar as orações tradicionais em latim.</string>
   <string name="em_breve">Em preparação</string>
@@ -168,6 +167,45 @@
   <string name="conquista_um_ano">Um ano com Maria</string>
   <string name="conquista_um_ano_desc">365 dias seguidos de terço.</string>
 
+  <!-- Novenas -->
+  <string name="titulo_novena">Novena</string>
+  <string name="novenas_em_andamento">Suas novenas</string>
+  <string name="novenas_vazio">Escolha uma novena para começar. Você pode rezar várias ao mesmo tempo, e se perder um dia, é só continuar de onde parou.</string>
+  <string name="novenas_catalogo">Escolha uma novena</string>
+  <string name="novenas_concluidas">Concluídas</string>
+  <string name="novena_proxima_janela">Tradicionalmente: %1$s</string>
+  <string name="novena_em_andamento">Em andamento</string>
+  <string name="novena_dia_de">Dia %1$d de %2$d</string>
+  <string name="novena_rezar_hoje">Dia %1$d · reze hoje</string>
+  <string name="novena_rezado_hoje_curto">Dia %1$d rezado hoje</string>
+  <string name="novena_comeca_em">Começa em %1$s</string>
+  <string name="novena_concluida_em">Concluída em %1$s</string>
+  <string name="novena_progresso_desc">%1$d de 9 dias rezados</string>
+  <string name="novena_comecar_hoje">Começar hoje</string>
+  <string name="novena_comecar_em">Começar em %1$s</string>
+  <string name="novena_ja_em_andamento">Você já está rezando esta novena.</string>
+  <string name="novena_continuar">Continuar a novena</string>
+  <string name="novena_janela_em_curso">A novena tradicional começou em %1$s. Você pode começar hoje mesmo: o importante é rezar com o coração.</string>
+  <string name="novena_janela_explicacao">Para terminar na véspera da festa, comece em %1$s. Mas você pode começar quando quiser.</string>
+  <string name="novena_lembrete">Lembrete diário desta novena</string>
+  <string name="novena_lembrete_desc">Só nos dias em que ainda não tiver rezado</string>
+  <string name="novena_oracao_do_dia">%1$dº dia · %2$s</string>
+  <string name="novena_oracoes_diarias">Rezemos</string>
+  <string name="novena_marcar_dia">Marcar o %1$dº dia como rezado</string>
+  <string name="novena_status_pendente">Hoje é o %1$dº dia da sua novena.</string>
+  <string name="novena_status_rezado">%1$dº dia rezado hoje. O próximo fica para amanhã.</string>
+  <string name="novena_status_agendada">Sua novena começa em %1$s. Você já pode ler o primeiro dia.</string>
+  <string name="novena_status_concluida">Novena concluída. Deus seja louvado!</string>
+  <string name="novena_previsao">Previsão de término: %1$s</string>
+  <string name="novena_retomada">Você continua de onde parou. Sem pressa: o importante é rezar com o coração.</string>
+  <string name="novena_desfazer">Desfazer</string>
+  <string name="novena_encerrar">Encerrar esta novena</string>
+  <string name="novena_remover">Remover da lista</string>
+  <string name="novena_encerrar_titulo">Encerrar a novena?</string>
+  <string name="novena_encerrar_texto">O progresso desta novena será apagado. Você pode começá-la de novo quando quiser.</string>
+  <string name="novena_jaculatoria">Jaculatória</string>
+  <string name="novena_festa">%1$s</string>
+
   <!-- Datas -->
   <string-array name="meses">
     <item>janeiro</item>
@@ -204,6 +242,9 @@
     <item>S</item>
   </string-array>
   <string name="data_extenso">%1$s, %2$d de %3$s</string>
+  <string name="data_dia_mes">%1$d de %2$s</string>
+  <string name="periodo_mesmo_mes">%1$d a %2$d de %3$s</string>
+  <string name="periodo_meses">%1$s a %2$s</string>
   <string name="mes_ano">%1$s de %2$d</string>
 
   <!-- Notificações -->
@@ -223,5 +264,8 @@
   <string name="notif_risco_titulo">Sua chama está pedindo cuidado</string>
   <string name="notif_risco_texto">Ainda dá tempo de rezar o terço hoje. Se não for possível, tudo bem: amanhã é um novo dia.</string>
   <string name="notif_segundo_titulo">Ainda dá tempo</string>
+  <string name="canal_novenas_nome">Lembretes das novenas</string>
+  <string name="canal_novenas_desc">Um lembrete por dia enquanto a novena estiver em andamento.</string>
+  <string name="notif_novena_texto">Hoje é o %1$dº dia. Que tal reservar alguns minutos para rezar?</string>
   <string name="notif_segundo_texto">Se puder, reserve alguns minutos para o terço antes de dormir.</string>
 </resources>

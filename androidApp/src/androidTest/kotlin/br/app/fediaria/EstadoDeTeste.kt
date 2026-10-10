@@ -5,6 +5,7 @@ import br.app.fediaria.data.config.ConfigTerco
 import br.app.fediaria.data.config.ConfiguracoesRepository
 import br.app.fediaria.data.config.ProgressoTercoRepository
 import br.app.fediaria.data.db.DiaRezadoDao
+import br.app.fediaria.data.db.NovenaDao
 import kotlinx.coroutines.runBlocking
 import org.koin.core.context.GlobalContext
 
@@ -14,6 +15,7 @@ fun limparEstadoDoApp() =
         val koin = GlobalContext.get()
         val dao = koin.get<DiaRezadoDao>()
         dao.todasAsDatas().forEach { dao.remover(it) }
+        koin.get<NovenaDao>().apply { todasAsNovenas().forEach { remover(it.id) } }
         koin.get<ProgressoTercoRepository>().limpar()
         koin.get<ConfiguracoesRepository>().apply {
             definirTerco(ConfigTerco())

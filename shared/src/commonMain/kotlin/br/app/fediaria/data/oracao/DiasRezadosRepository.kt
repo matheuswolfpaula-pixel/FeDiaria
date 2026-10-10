@@ -6,14 +6,11 @@ import br.app.fediaria.core.tempo.Relogio
 import br.app.fediaria.data.db.DiaRezadoDao
 import br.app.fediaria.data.db.DiaRezadoEntity
 import br.app.fediaria.data.db.OrigemRegistro
-import kotlinx.coroutines.delay
+import br.app.fediaria.data.tempo.fluxoDoDia
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.distinctUntilChanged
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.datetime.LocalDate
-import kotlin.time.Duration.Companion.seconds
 
 data class HistoricoOracao(
     val hoje: LocalDate,
@@ -25,14 +22,7 @@ class DiasRezadosRepository(
     private val dao: DiaRezadoDao,
     private val relogio: Relogio,
 ) {
-    /** "Hoje" que muda sozinho na virada do dia (e após troca de fuso), enquanto alguém observa. */
-    val hoje: Flow<LocalDate> =
-        flow {
-            while (true) {
-                emit(relogio.hoje())
-                delay(30.seconds)
-            }
-        }.distinctUntilChanged()
+    val hoje: Flow<LocalDate> = relogio.fluxoDoDia()
 
     val historico: Flow<HistoricoOracao> =
         combine(dao.observarTodos().map { lista -> lista.associate { it.data to it.origem } }, hoje) { dias, hoje ->

@@ -10,6 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
@@ -32,11 +33,14 @@ import br.app.fediaria.shared.resources.ic_configuracoes
 import br.app.fediaria.shared.resources.ic_voltar
 import br.app.fediaria.shared.resources.titulo_ajuda_lembretes
 import br.app.fediaria.shared.resources.titulo_historico
+import br.app.fediaria.shared.resources.titulo_novena
 import br.app.fediaria.shared.resources.titulo_terco_guiado
+import br.app.fediaria.ui.novena.TelaDetalheNovena
+import br.app.fediaria.ui.novena.TelaNovenaAtiva
+import br.app.fediaria.ui.novena.TelaNovenas
 import br.app.fediaria.ui.telas.TelaAjudaLembretes
 import br.app.fediaria.ui.telas.TelaConfiguracoes
 import br.app.fediaria.ui.telas.TelaLatim
-import br.app.fediaria.ui.telas.TelaNovenas
 import br.app.fediaria.ui.telas.TelaQuiz
 import br.app.fediaria.ui.terco.TelaHistorico
 import br.app.fediaria.ui.terco.TelaTerco
@@ -48,9 +52,17 @@ import org.koin.compose.koinInject
 
 @Composable
 fun NavegacaoPrincipal(
+    novenaAAbrir: Long? = null,
+    aoAbrirNovena: () -> Unit = {},
     navController: NavHostController = rememberNavController(),
     acoes: AcoesDoSistema = koinInject(),
 ) {
+    LaunchedEffect(novenaAAbrir) {
+        if (novenaAAbrir != null) {
+            navController.navigate(Rota.NovenaAtiva(novenaAAbrir)) { launchSingleTop = true }
+            aoAbrirNovena()
+        }
+    }
     val entradaAtual by navController.currentBackStackEntryAsState()
     val destino = entradaAtual?.destination
     val abaAtual = Aba.entries.firstOrNull { destino.eh(it.rota::class) }
@@ -83,7 +95,12 @@ fun NavegacaoPrincipal(
                     aoLiberarNotificacoes = acoes::abrirConfiguracoesDeNotificacao,
                 )
             }
-            composable<Rota.Novenas> { TelaNovenas() }
+            composable<Rota.Novenas> {
+                TelaNovenas(
+                    aoAbrirNovenaAtiva = { navController.navigate(Rota.NovenaAtiva(it)) },
+                    aoAbrirDetalhe = { navController.navigate(Rota.DetalheNovena(it)) },
+                )
+            }
             composable<Rota.Quiz> { TelaQuiz() }
             composable<Rota.Latim> { TelaLatim() }
             composable<Rota.Configuracoes> {
@@ -100,6 +117,22 @@ fun NavegacaoPrincipal(
             }
             composable<Rota.Historico> { TelaHistorico() }
             composable<Rota.AjudaLembretes> { TelaAjudaLembretes() }
+            composable<Rota.DetalheNovena> { entrada ->
+                TelaDetalheNovena(
+                    novenaId = entrada.toRoute<Rota.DetalheNovena>().novenaId,
+                    aoAbrirNovenaAtiva = { id ->
+                        navController.navigate(Rota.NovenaAtiva(id)) {
+                            popUpTo<Rota.DetalheNovena> { inclusive = true }
+                        }
+                    },
+                )
+            }
+            composable<Rota.NovenaAtiva> { entrada ->
+                TelaNovenaAtiva(
+                    id = entrada.toRoute<Rota.NovenaAtiva>().id,
+                    aoSair = { navController.popBackStack() },
+                )
+            }
         }
     }
 }
@@ -109,6 +142,7 @@ private fun tituloDaTela(destino: NavDestination?): StringResource =
         destino.eh(Rota.TercoGuiado::class) -> Res.string.titulo_terco_guiado
         destino.eh(Rota.Historico::class) -> Res.string.titulo_historico
         destino.eh(Rota.AjudaLembretes::class) -> Res.string.titulo_ajuda_lembretes
+        destino.eh(Rota.DetalheNovena::class) || destino.eh(Rota.NovenaAtiva::class) -> Res.string.titulo_novena
         else -> Res.string.configuracoes_titulo
     }
 

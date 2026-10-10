@@ -9,9 +9,15 @@ import br.app.fediaria.ui.navegacao.NavegacaoPrincipal
 import br.app.fediaria.ui.tema.FeDiariaTema
 import org.koin.compose.viewmodel.koinViewModel
 
-/** Ponto de entrada da UI, compartilhado entre plataformas. */
+/**
+ * Ponto de entrada da UI, compartilhado entre plataformas.
+ * [novenaAAbrir]: id de novena vindo de uma notificação; [aoAbrirNovena] avisa que já foi aberta.
+ */
 @Composable
-fun App() {
+fun App(
+    novenaAAbrir: Long? = null,
+    aoAbrirNovena: () -> Unit = {},
+) {
     val viewModel = koinViewModel<AppViewModel>()
     val tema by viewModel.tema.collectAsStateWithLifecycle()
     val escuro =
@@ -21,6 +27,6 @@ fun App() {
             TemaPreferido.ESCURO -> true
         }
     FeDiariaTema(escuro = escuro) {
-        NavegacaoPrincipal()
+        NavegacaoPrincipal(novenaAAbrir = novenaAAbrir, aoAbrirNovena = aoAbrirNovena)
     }
 }

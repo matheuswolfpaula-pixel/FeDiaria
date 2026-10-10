@@ -11,6 +11,12 @@ interface Lembretes {
     /** Chamado quando o terço de hoje foi registrado: recolhe notificações já exibidas. */
     fun aoRegistrarOracao()
 
+    /** Chamado quando o dia de hoje da novena [id] foi rezado: recolhe a notificação dela. */
+    fun aoRezarNovena(id: Long)
+
+    /** Cancela o alarme da novena [id] (antes de removê-la). */
+    fun cancelarNovena(id: Long)
+
     /** As notificações estão liberadas pelo sistema (permissão e canal)? */
     fun notificacoesPermitidas(): Boolean
 }
@@ -32,6 +38,10 @@ object LembretesInativos : Lembretes {
     override suspend fun reagendar() = Unit
 
     override fun aoRegistrarOracao() = Unit
+
+    override fun aoRezarNovena(id: Long) = Unit
+
+    override fun cancelarNovena(id: Long) = Unit
 
     override fun notificacoesPermitidas(): Boolean = false
 }

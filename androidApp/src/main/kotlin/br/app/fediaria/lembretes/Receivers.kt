@@ -42,13 +42,20 @@ class LembreteReceiver :
             }
         val dataAlvo = intent.getStringExtra(EXTRA_DATA_ALVO)?.let { runCatching { LocalDate.parse(it) }.getOrNull() }
         if (tipo == null || dataAlvo == null) return
-        emSegundoPlano { agendador.aoDisparar(tipo, dataAlvo) }
+        if (tipo == TipoLembrete.NOVENA) {
+            val id = intent.getLongExtra(EXTRA_NOVENA_ID, -1)
+            if (id >= 0) emSegundoPlano { agendador.aoDispararNovena(id, dataAlvo) }
+        } else {
+            emSegundoPlano { agendador.aoDisparar(tipo, dataAlvo) }
+        }
     }
 
     companion object {
         const val ACAO = "br.app.fediaria.LEMBRETE"
+        const val ACAO_NOVENA = "br.app.fediaria.LEMBRETE_NOVENA"
         const val EXTRA_TIPO = "tipo"
         const val EXTRA_DATA_ALVO = "data_alvo"
+        const val EXTRA_NOVENA_ID = "novena_id"
     }
 }
 

@@ -89,6 +89,9 @@ Observação: o briefing não citava as 3 Ave-Marias iniciais. Incluí porque s�
 - O progresso é **por dia rezado, não por calendário**: o "dia atual" é o próximo dia ainda não rezado. Se a pessoa perdeu dias, retoma de onde parou, sem punição e sem mensagem de culpa. A tela mostra uma previsão de término.
 - O app sugere a data de início das novenas com data fixa (Natal: 16/12; Imaculada: 29/11; Aparecida: 03/10; Espírito Santo: sexta após a Ascensão, calculada a partir da Páscoa por algoritmo testado).
 - Várias novenas ao mesmo tempo são permitidas.
+- No máximo **um dia da novena por data** (como manda a tradição). Toque por engano pode ser desfeito no mesmo dia.
+- Lembrete próprio por novena (canal de notificação separado), que para sozinho ao concluir; tocar na notificação abre a novena.
+- Banco v2: tabelas `novena_ativa` e `novena_dia` (migração automática 1→2, coberta por teste instrumentado).
 
 ### Quiz e Latim: repetição espaçada
 Sistema de **Leitner** com caixas de intervalos 1, 3, 7, 14 e 30 dias. Errou, a pergunta volta para a caixa 1. Acertou, sobe uma caixa. Uma lição de "Revisão" aparece quando há itens vencidos. Sem vidas e sem punição: um erro mostra a explicação e a referência com calma.

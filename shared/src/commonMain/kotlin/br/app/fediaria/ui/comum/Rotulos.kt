@@ -11,6 +11,7 @@ import br.app.fediaria.shared.resources.conjunto_dolorosos
 import br.app.fediaria.shared.resources.conjunto_gloriosos
 import br.app.fediaria.shared.resources.conjunto_gozosos
 import br.app.fediaria.shared.resources.conjunto_luminosos
+import br.app.fediaria.shared.resources.data_dia_mes
 import br.app.fediaria.shared.resources.data_extenso
 import br.app.fediaria.shared.resources.dias_semana
 import br.app.fediaria.shared.resources.meses
@@ -18,6 +19,8 @@ import br.app.fediaria.shared.resources.misterio_doloroso
 import br.app.fediaria.shared.resources.misterio_glorioso
 import br.app.fediaria.shared.resources.misterio_gozoso
 import br.app.fediaria.shared.resources.misterio_luminoso
+import br.app.fediaria.shared.resources.periodo_meses
+import br.app.fediaria.shared.resources.periodo_mesmo_mes
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalTime
 import kotlinx.datetime.isoDayNumber
@@ -68,6 +71,22 @@ fun nomeDoMes(data: LocalDate): String = stringArrayResource(Res.array.meses)[da
 @Composable
 fun dataPorExtenso(data: LocalDate): String =
     stringResource(Res.string.data_extenso, nomeDoDiaDaSemana(data), data.day, nomeDoMes(data))
+
+/** "3 de outubro". */
+@Composable
+fun dataCurta(data: LocalDate): String = stringResource(Res.string.data_dia_mes, data.day, nomeDoMes(data))
+
+/** "3 a 11 de outubro" ou "29 de novembro a 7 de dezembro". */
+@Composable
+fun periodo(
+    inicio: LocalDate,
+    fim: LocalDate,
+): String =
+    if (inicio.month == fim.month) {
+        stringResource(Res.string.periodo_mesmo_mes, inicio.day, fim.day, nomeDoMes(fim))
+    } else {
+        stringResource(Res.string.periodo_meses, dataCurta(inicio), dataCurta(fim))
+    }
 
 /** "07:05". */
 fun LocalTime.formatado(): String = "${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}"

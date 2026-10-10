@@ -78,4 +78,29 @@ class CalculadoraLembretesTest {
         assertTrue(a in 0..2 && b in 0..2 && a != b)
         assertEquals(0, CalculadoraLembretes.indiceDeVariacao(LocalDate(1960, 1, 1), 1))
     }
+
+    @Test
+    fun novenaAgendadaSoDisparaAPartirDoInicio() {
+        val disparo =
+            CalculadoraLembretes.proximoDisparo(
+                TipoLembrete.NOVENA,
+                Instant.parse("2026-09-30T15:00:00Z"),
+                vinteHoras,
+                saoPaulo,
+                aPartirDe = LocalDate(2026, 10, 3),
+            )
+        assertEquals(LocalDate(2026, 10, 3), disparo.dataAlvo)
+        assertEquals(Instant.parse("2026-10-03T23:00:00Z"), disparo.instante)
+
+        // Início já passou: comporta-se como um lembrete diário comum.
+        val diario =
+            CalculadoraLembretes.proximoDisparo(
+                TipoLembrete.NOVENA,
+                Instant.parse("2026-10-05T15:00:00Z"),
+                vinteHoras,
+                saoPaulo,
+                aPartirDe = LocalDate(2026, 10, 3),
+            )
+        assertEquals(LocalDate(2026, 10, 5), diario.dataAlvo)
+    }
 }

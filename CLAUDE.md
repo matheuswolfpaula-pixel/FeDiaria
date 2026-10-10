@@ -29,6 +29,7 @@ detekt 1.23.x roda isolado com Kotlin 2.0.21 (ver `build.gradle.kts` raiz); ao m
 - Identificadores em português sem acento (`Terco`, `diaRezado`); sufixos técnicos do framework ficam em inglês (`ViewModel`, `Dao`, `Repository`). **Texto visível ao usuário em pt-BR, sempre em recursos** (nunca string literal na UI).
 - Datas: `LocalDate` local do aparelho para dias rezados; nunca `System.currentTimeMillis()` direto, sempre injete um `Clock` + `TimeZone` (testabilidade).
 - A ofensiva é **derivada** do histórico de dias, nunca um contador salvo.
+- Mudou o schema do Room? Suba a versão, declare a migração e acrescente um caso em `MigracoesTest`.
 - Lógica nova vai para `core` com teste. ViewModels expõem `StateFlow<UiState>`.
 - Permissões permitidas: `POST_NOTIFICATIONS`, `RECEIVE_BOOT_COMPLETED` (+ as do WorkManager). **Nunca** `INTERNET`, `SCHEDULE_EXACT_ALARM`, `USE_EXACT_ALARM`, `REQUEST_IGNORE_BATTERY_OPTIMIZATIONS` sem decisão explícita do dono.
 - Commits: mensagem em pt-BR, imperativo, uma fase/assunto por commit. Nunca commitar keystore, `keystore.properties` ou senhas.

@@ -3,6 +3,7 @@ package br.app.fediaria
 import android.app.Application
 import br.app.fediaria.di.modulosFeDiaria
 import br.app.fediaria.lembretes.AgendadorDeLembretes
+import br.app.fediaria.lembretes.Alarmes
 import br.app.fediaria.lembretes.Notificacoes
 import br.app.fediaria.lembretes.VigiaDeLembretesWorker
 import br.app.fediaria.plataforma.AcoesDoSistema
@@ -27,7 +28,7 @@ class FeDiariaApplication : Application() {
             modules(modulosFeDiaria() + moduloAndroid)
         }
         escopo.launch {
-            get<Notificacoes>().criarCanal()
+            get<Notificacoes>().criarCanais()
             get<AgendadorDeLembretes>().reagendar()
         }
         VigiaDeLembretesWorker.programar(this)
@@ -37,6 +38,7 @@ class FeDiariaApplication : Application() {
 private val moduloAndroid =
     module {
         single { Notificacoes(androidContext()) }
-        single { AgendadorDeLembretes(androidContext(), get(), get(), get(), get()) } bind Lembretes::class
+        single { Alarmes(androidContext()) }
+        single { AgendadorDeLembretes(get(), get(), get(), get(), get(), get(), get()) } bind Lembretes::class
         single<AcoesDoSistema> { AcoesDoSistemaAndroid(androidContext()) }
     }

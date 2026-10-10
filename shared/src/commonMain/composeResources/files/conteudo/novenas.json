@@ -1,0 +1,717 @@
+{
+  "versao": 1,
+  "novenas": [
+    {
+      "id": "espirito_santo",
+      "nome": "Novena ao Espírito Santo",
+      "festa": "Prepara a Solenidade de Pentecostes",
+      "descricao": "A novena mais antiga da Igreja: como os Apóstolos reunidos com Maria no Cenáculo, pedimos a vinda do Espírito Santo e seus dons.",
+      "janela": {
+        "tipo": "PASCOA",
+        "diasAposPascoa": 40
+      },
+      "oracaoInicial": {
+        "titulo": "Vinde, Espírito Santo",
+        "texto": "Vinde, Espírito Santo, enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor.\nEnviai o vosso Espírito e tudo será criado,\ne renovareis a face da terra.\nOremos: Ó Deus, que instruístes os corações dos vossos fiéis com a luz do Espírito Santo, concedei-nos que, no mesmo Espírito, saibamos o que é reto e gozemos sempre da sua consolação. Por Cristo, Senhor nosso. Amém.",
+        "fonte": "Oração tradicional da Igreja (domínio público); redação usual em português a conferir",
+        "revisado": false
+      },
+      "oracoesDiarias": [
+        "pai_nosso",
+        "ave_maria",
+        "gloria"
+      ],
+      "oracaoFinal": {
+        "titulo": "Oração final",
+        "texto": "Espírito Santo, doce hóspede da alma, fazei de mim morada vossa. Dai-me docilidade para ouvir a vossa voz e coragem para seguir o caminho de Jesus. Que os vossos dons frutifiquem em minha vida, para a glória do Pai. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "jaculatoria": {
+        "titulo": "Jaculatória",
+        "texto": "Vinde, Espírito Santo!",
+        "fonte": "Invocação tradicional (domínio público)",
+        "revisado": false
+      },
+      "dias": [
+        {
+          "id": "espirito_santo.1",
+          "dia": 1,
+          "tema": "A promessa do Consolador",
+          "referencia": "Jo 14,16-17",
+          "meditacao": "Antes de voltar ao Pai, Jesus prometeu não nos deixar sozinhos: enviaria outro Consolador, que permaneceria conosco para sempre. Hoje começamos esta novena unidos aos Apóstolos e a Maria, que esperaram em oração. Peça ao Senhor um coração aberto para acolher o Espírito.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "espirito_santo.2",
+          "dia": 2,
+          "tema": "O dom da sabedoria",
+          "referencia": "Tg 1,5",
+          "meditacao": "A sabedoria nos faz saborear as coisas de Deus e ver a vida com os olhos d'Ele. São Tiago nos lembra que quem precisa de sabedoria deve pedi-la a Deus, que dá a todos com generosidade. Peça hoje esse dom para as escolhas do seu dia a dia.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "espirito_santo.3",
+          "dia": 3,
+          "tema": "O dom do entendimento",
+          "referencia": "Lc 24,45",
+          "meditacao": "No caminho de Emaús e no Cenáculo, Jesus abriu a mente dos discípulos para compreenderem as Escrituras. O dom do entendimento nos ajuda a penetrar as verdades da fé. Peça a graça de ler a Palavra de Deus com o coração desperto.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "espirito_santo.4",
+          "dia": 4,
+          "tema": "O dom do conselho",
+          "referencia": "Jo 14,26",
+          "meditacao": "Jesus prometeu que o Espírito Santo nos ensinaria todas as coisas e nos recordaria tudo o que Ele disse. O dom do conselho ilumina as decisões, grandes e pequenas. Apresente ao Senhor uma escolha que você precisa fazer.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "espirito_santo.5",
+          "dia": 5,
+          "tema": "O dom da fortaleza",
+          "referencia": "At 1,8",
+          "meditacao": "\"Recebereis a força do Espírito Santo\", disse Jesus antes da Ascensão. A fortaleza sustenta a fidelidade nas dificuldades e nos dá coragem para testemunhar a fé. Entregue ao Senhor aquilo que hoje pesa sobre você.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "espirito_santo.6",
+          "dia": 6,
+          "tema": "O dom da ciência",
+          "referencia": "Sl 19(18),2",
+          "meditacao": "\"Os céus narram a glória de Deus.\" O dom da ciência nos ensina a reconhecer o Criador em todas as coisas e a usar bem os bens deste mundo. Olhe hoje para a criação com gratidão.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "espirito_santo.7",
+          "dia": 7,
+          "tema": "O dom da piedade",
+          "referencia": "Rm 8,14-16",
+          "meditacao": "O Espírito nos faz filhos e nos ensina a chamar Deus de \"Abbá, Pai\". O dom da piedade aquece a nossa oração e nos faz tratar os outros como irmãos. Reze hoje com a confiança de um filho.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "espirito_santo.8",
+          "dia": 8,
+          "tema": "O dom do temor de Deus",
+          "referencia": "Pr 9,10",
+          "meditacao": "O temor de Deus não é medo, mas o respeito amoroso de quem não quer se afastar de quem ama. É o princípio da sabedoria. Peça a graça de nunca se acostumar com o pecado e de confiar sempre na misericórdia.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "espirito_santo.9",
+          "dia": 9,
+          "tema": "Os frutos do Espírito",
+          "referencia": "Gl 5,22-23",
+          "meditacao": "Amor, alegria, paz, paciência, bondade, fidelidade, mansidão: são os frutos que o Espírito produz em quem o acolhe. No último dia da novena, como Maria e os Apóstolos no Cenáculo, peça um novo Pentecostes na sua vida e na Igreja.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        }
+      ],
+      "fonte": "Texto original do FéDiária",
+      "revisado": false
+    },
+    {
+      "id": "imaculada_conceicao",
+      "nome": "Novena à Imaculada Conceição",
+      "festa": "Prepara a Solenidade da Imaculada Conceição (8 de dezembro)",
+      "descricao": "Contemplamos Maria, preservada de todo pecado desde a sua concepção, para ser a Mãe do Salvador.",
+      "janela": {
+        "tipo": "FIXA",
+        "mes": 11,
+        "dia": 29
+      },
+      "oracaoInicial": {
+        "titulo": "Lembrai-vos",
+        "texto": "Lembrai-vos, ó piíssima Virgem Maria, que nunca se ouviu dizer que algum daqueles que têm recorrido à vossa proteção, implorado a vossa assistência e reclamado o vosso socorro, fosse por vós desamparado. Animado eu, pois, com igual confiança, a vós, ó Virgem entre todas singular, como a Mãe recorro, de vós me valho e, gemendo sob o peso dos meus pecados, me prostro a vossos pés. Não desprezeis as minhas súplicas, ó Mãe do Verbo de Deus humanado, mas dignai-vos de as ouvir propícia e de me alcançar o que vos rogo. Amém.",
+        "fonte": "Memorare, oração tradicional atribuída a São Bernardo (domínio público); tradução usual a conferir",
+        "revisado": false
+      },
+      "oracoesDiarias": [
+        "pai_nosso",
+        "ave_maria",
+        "gloria"
+      ],
+      "oracaoFinal": {
+        "titulo": "Oração final",
+        "texto": "Virgem Imaculada, toda bela e toda de Deus, ensinai-me a dizer \"sim\" como vós. Guardai o meu coração puro, sustentai-me nas tentações e conduzi-me sempre a Jesus, vosso Filho. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "jaculatoria": {
+        "titulo": "Jaculatória",
+        "texto": "Ó Maria concebida sem pecado, rogai por nós que recorremos a vós.",
+        "fonte": "Jaculatória da Medalha Milagrosa (1830), domínio público",
+        "revisado": false
+      },
+      "dias": [
+        {
+          "id": "imaculada_conceicao.1",
+          "dia": 1,
+          "tema": "Escolhidos antes da criação",
+          "referencia": "Ef 1,3-4",
+          "meditacao": "Deus nos escolheu em Cristo, antes da criação do mundo, para sermos santos diante d'Ele no amor. Em Maria, essa escolha brilha de modo único: desde o primeiro instante da sua existência, ela foi toda de Deus. Agradeça hoje pelo amor que pensou em você desde sempre.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "imaculada_conceicao.2",
+          "dia": 2,
+          "tema": "A primeira promessa",
+          "referencia": "Gn 3,15",
+          "meditacao": "Logo depois da queda, Deus anunciou que a descendência da mulher venceria o mal. A Igreja reconhece nessa promessa um primeiro anúncio do Redentor e de sua Mãe. Mesmo nas quedas, Deus nunca desiste de nós.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "imaculada_conceicao.3",
+          "dia": 3,
+          "tema": "Cheia de graça",
+          "referencia": "Lc 1,28",
+          "meditacao": "O anjo saúda Maria chamando-a \"cheia de graça\". Nela não havia espaço vazio para o pecado: tudo era acolhida ao amor de Deus. Peça que a graça ocupe cada vez mais lugar na sua vida.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "imaculada_conceicao.4",
+          "dia": 4,
+          "tema": "Faça-se em mim",
+          "referencia": "Lc 1,38",
+          "meditacao": "\"Eis a serva do Senhor; faça-se em mim segundo a tua palavra.\" O \"sim\" de Maria abriu as portas para a salvação. Pense em que ponto da sua vida Deus está pedindo o seu \"sim\" hoje.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "imaculada_conceicao.5",
+          "dia": 5,
+          "tema": "Bendita entre as mulheres",
+          "referencia": "Lc 1,42",
+          "meditacao": "Isabel, cheia do Espírito Santo, proclama Maria bendita entre as mulheres. Cada Ave-Maria que rezamos repete essa bênção. Reze hoje com especial atenção a dezena da Ave-Maria.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "imaculada_conceicao.6",
+          "dia": 6,
+          "tema": "A alma que engrandece o Senhor",
+          "referencia": "Lc 1,46-49",
+          "meditacao": "No Magnificat, Maria não se exalta: engrandece o Senhor, que olhou para a sua humildade. A pureza de Maria é inseparável da sua humildade. Peça a graça de reconhecer, com alegria, tudo o que Deus fez em você.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "imaculada_conceicao.7",
+          "dia": 7,
+          "tema": "Guardava tudo no coração",
+          "referencia": "Lc 2,19",
+          "meditacao": "Diante dos acontecimentos que não compreendia por inteiro, Maria guardava e meditava tudo em seu coração. Ela nos ensina a rezar a vida. Leve ao coração de Maria algo que você ainda não entende.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "imaculada_conceicao.8",
+          "dia": 8,
+          "tema": "Mãe ao pé da cruz",
+          "referencia": "Jo 19,25-27",
+          "meditacao": "Junto à cruz, Jesus entrega Maria ao discípulo amado, e nele a cada um de nós. A Imaculada é também a Mãe que sofre com os filhos. Confie a ela as dores da sua família.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "imaculada_conceicao.9",
+          "dia": 9,
+          "tema": "A mulher vestida de sol",
+          "referencia": "Ap 12,1",
+          "meditacao": "A Igreja vê em Maria a mulher vestida de sol, sinal da vitória de Deus. Em 1854, o Papa Pio IX proclamou o dogma da Imaculada Conceição. No último dia da novena, consagre-se à Imaculada e peça a graça da pureza de coração.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        }
+      ],
+      "fonte": "Texto original do FéDiária",
+      "revisado": false
+    },
+    {
+      "id": "natal",
+      "nome": "Novena de Natal",
+      "festa": "Prepara o Natal do Senhor (25 de dezembro)",
+      "descricao": "Nove dias para preparar o coração para o nascimento de Jesus, acompanhando as profecias e o caminho de Maria e José até Belém.",
+      "janela": {
+        "tipo": "FIXA",
+        "mes": 12,
+        "dia": 16
+      },
+      "oracaoInicial": {
+        "titulo": "Oração inicial",
+        "texto": "Senhor Jesus, que vos fizestes pequeno para estar perto de nós, preparai o meu coração para vos acolher neste Natal. Como Maria e José, quero esperar-vos com fé, simplicidade e alegria. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "oracoesDiarias": [
+        "pai_nosso",
+        "ave_maria",
+        "gloria"
+      ],
+      "oracaoFinal": {
+        "titulo": "Oração final",
+        "texto": "Menino Jesus, Príncipe da Paz, vinde nascer na minha casa e no meu coração. Abençoai a minha família e todos os que não terão um Natal feliz. Que a vossa luz chegue a todos. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "jaculatoria": {
+        "titulo": "Jaculatória",
+        "texto": "Vinde, Senhor Jesus!",
+        "fonte": "Ap 22,20 (invocação \"Maranatha\")",
+        "revisado": false
+      },
+      "dias": [
+        {
+          "id": "natal.1",
+          "dia": 1,
+          "tema": "O povo que andava nas trevas",
+          "referencia": "Is 9,1",
+          "meditacao": "O profeta anuncia que o povo que caminhava nas trevas viu uma grande luz. O Natal é essa luz que entra na noite do mundo. Apresente ao Senhor alguma escuridão da sua vida que precisa da luz d'Ele.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "natal.2",
+          "dia": 2,
+          "tema": "Deus conosco",
+          "referencia": "Is 7,14",
+          "meditacao": "\"A virgem conceberá e dará à luz um filho, e o chamará Emanuel\", Deus conosco. Deus não nos salva de longe: vem morar no meio de nós. Reconheça hoje um sinal da presença de Deus no seu dia.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "natal.3",
+          "dia": 3,
+          "tema": "Preparai o caminho do Senhor",
+          "referencia": "Is 40,3",
+          "meditacao": "\"Preparai no deserto o caminho do Senhor.\" Preparar o Natal é endireitar os caminhos do coração. Pense em uma atitude concreta, como perdoar, reconciliar-se ou confessar-se, para preparar a chegada de Jesus.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "natal.4",
+          "dia": 4,
+          "tema": "O anúncio a José",
+          "referencia": "Mt 1,20-21",
+          "meditacao": "Em sonho, o anjo diz a José que não tema receber Maria, pois o filho que ela espera vem do Espírito Santo e se chamará Jesus. José confia e obedece em silêncio. Peça a confiança de José diante do que você não entende.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "natal.5",
+          "dia": 5,
+          "tema": "Belém, a pequena",
+          "referencia": "Mq 5,1",
+          "meditacao": "O profeta Miqueias anuncia que da pequena Belém sairia aquele que haveria de governar o povo. Deus gosta de agir pelo que é pequeno. Valorize hoje um gesto simples de amor.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "natal.6",
+          "dia": 6,
+          "tema": "A viagem a Belém",
+          "referencia": "Lc 2,1-5",
+          "meditacao": "Por causa do recenseamento, José sobe com Maria, já grávida, de Nazaré a Belém. É um caminho de cansaço, mas também de esperança. Ofereça hoje os seus cansaços pelos que estão longe de casa.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "natal.7",
+          "dia": 7,
+          "tema": "Não havia lugar para eles",
+          "referencia": "Lc 2,6-7",
+          "meditacao": "Maria dá à luz o seu filho e o deita numa manjedoura, porque não havia lugar para eles na hospedaria. Que haja lugar para Jesus em você e para Ele nos pobres. Pense em alguém a quem você pode dar lugar neste Natal.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "natal.8",
+          "dia": 8,
+          "tema": "O Verbo se fez carne",
+          "referencia": "Jo 1,14",
+          "meditacao": "\"E o Verbo se fez carne e habitou entre nós.\" O Filho eterno de Deus assume a nossa humanidade inteira. Agradeça a Deus por ter se aproximado tanto de nós.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "natal.9",
+          "dia": 9,
+          "tema": "Glória a Deus nas alturas",
+          "referencia": "Lc 2,13-14",
+          "meditacao": "Os anjos cantam: \"Glória a Deus no mais alto dos céus, e paz na terra aos homens que Ele ama.\" Na véspera do Natal, una a sua voz a esse canto e peça a paz para o mundo e para a sua família.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        }
+      ],
+      "fonte": "Texto original do FéDiária",
+      "revisado": false
+    },
+    {
+      "id": "aparecida",
+      "nome": "Novena a Nossa Senhora Aparecida",
+      "festa": "Prepara a Solenidade de Nossa Senhora Aparecida, Padroeira do Brasil (12 de outubro)",
+      "descricao": "Com a Mãe Aparecida, encontrada nas águas do rio Paraíba do Sul por pescadores em 1717, rezamos pelo Brasil e pelas nossas famílias.",
+      "janela": {
+        "tipo": "FIXA",
+        "mes": 10,
+        "dia": 3
+      },
+      "oracaoInicial": {
+        "titulo": "Oração inicial",
+        "texto": "Nossa Senhora da Conceição Aparecida, Mãe e Padroeira do Brasil, acolhei-me sob o vosso manto. Assim como fostes encontrada pelas mãos simples dos pescadores, deixai-vos encontrar também por mim nesta novena. Levai-me a Jesus, vosso Filho. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "oracoesDiarias": [
+        "pai_nosso",
+        "ave_maria",
+        "gloria"
+      ],
+      "oracaoFinal": {
+        "titulo": "Oração final",
+        "texto": "Senhora Aparecida, olhai pelo nosso povo: pelos doentes, pelos desempregados, pelas famílias e pelos que perderam a esperança. Intercedei por nós junto de Jesus e ensinai-nos a fazer tudo o que Ele nos disser. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "jaculatoria": {
+        "titulo": "Jaculatória",
+        "texto": "Nossa Senhora Aparecida, rogai por nós.",
+        "fonte": "Invocação tradicional (domínio público)",
+        "revisado": false
+      },
+      "dias": [
+        {
+          "id": "aparecida.1",
+          "dia": 1,
+          "tema": "A rede vazia",
+          "referencia": "Lc 5,4-6",
+          "meditacao": "Em 1717, três pescadores lançavam as redes no rio Paraíba do Sul sem nada apanhar, até que encontraram a imagem de Nossa Senhora e, em seguida, uma pesca abundante. Como Pedro, que lançou as redes confiando na palavra de Jesus, entregue hoje a Deus aquilo que parece vazio em sua vida.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "aparecida.2",
+          "dia": 2,
+          "tema": "Fazei tudo o que Ele vos disser",
+          "referencia": "Jo 2,1-5",
+          "meditacao": "Em Caná, Maria percebe a falta de vinho e leva a necessidade a Jesus. Depois, diz aos serventes: \"Fazei tudo o que Ele vos disser.\" Toda devoção a Maria nos conduz a Jesus. Apresente a ela uma necessidade da sua família.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "aparecida.3",
+          "dia": 3,
+          "tema": "Mãe dos humildes",
+          "referencia": "Lc 1,52-53",
+          "meditacao": "No Magnificat, Maria canta o Deus que eleva os humildes e enche de bens os famintos. A imagem pequena e escurecida pelas águas tornou-se sinal de que Deus olha para os pequenos. Reze hoje pelos mais pobres do nosso país.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "aparecida.4",
+          "dia": 4,
+          "tema": "Em oração com a Igreja",
+          "referencia": "At 1,14",
+          "meditacao": "Depois da Ascensão, os Apóstolos perseveravam em oração com Maria, a Mãe de Jesus. Maria reza conosco e por nós. Una-se hoje à oração de toda a Igreja no Brasil.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "aparecida.5",
+          "dia": 5,
+          "tema": "Eis a tua mãe",
+          "referencia": "Jo 19,26-27",
+          "meditacao": "Do alto da cruz, Jesus nos deu Maria como Mãe. O povo brasileiro acolheu essa Mãe com o nome de Aparecida. Confie a ela as pessoas que você ama.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "aparecida.6",
+          "dia": 6,
+          "tema": "Mãe peregrina",
+          "referencia": "Lc 1,39-40",
+          "meditacao": "Maria partiu apressadamente para servir a sua prima Isabel. Milhões de peregrinos vão a Aparecida todos os anos, mas é ela quem primeiro vem ao nosso encontro. Pense em alguém que você pode visitar ou ajudar.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "aparecida.7",
+          "dia": 7,
+          "tema": "Feliz aquela que acreditou",
+          "referencia": "Lc 1,45",
+          "meditacao": "Isabel chama Maria de feliz porque acreditou no que o Senhor lhe disse. A fé simples do povo, que reza o terço e acende uma vela, também agrada a Deus. Peça a graça de uma fé firme e confiante.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "aparecida.8",
+          "dia": 8,
+          "tema": "Gratidão pelos benefícios",
+          "referencia": "Sl 103(102),2",
+          "meditacao": "\"Bendize, ó minha alma, o Senhor, e não esqueças nenhum de seus benefícios.\" A sala dos milagres de Aparecida é um grande hino de gratidão. Lembre hoje três graças que você recebeu e agradeça.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "aparecida.9",
+          "dia": 9,
+          "tema": "Ouvir e guardar a Palavra",
+          "referencia": "Lc 11,27-28",
+          "meditacao": "Quando uma mulher louvou a mãe de Jesus, Ele respondeu: \"Felizes, antes, os que ouvem a palavra de Deus e a observam.\" Maria é feliz sobretudo por ter acolhido a Palavra. Em 1930, foi proclamada Padroeira do Brasil. Na véspera da sua festa, consagre a ela a sua vida e o nosso país.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        }
+      ],
+      "fonte": "Texto original do FéDiária",
+      "revisado": false
+    },
+    {
+      "id": "sao_jose",
+      "nome": "Novena a São José",
+      "festa": "Prepara a Solenidade de São José (19 de março)",
+      "descricao": "Com São José, homem justo, esposo de Maria e guardião de Jesus, aprendemos a fé silenciosa, o trabalho e o cuidado da família.",
+      "janela": {
+        "tipo": "FIXA",
+        "mes": 3,
+        "dia": 10
+      },
+      "oracaoInicial": {
+        "titulo": "A vós, São José",
+        "texto": "A vós, São José, recorremos em nossa tribulação e, depois de ter implorado o auxílio de vossa santíssima Esposa, cheios de confiança solicitamos também o vosso patrocínio. Por esse laço sagrado de caridade que vos uniu à Virgem Imaculada, Mãe de Deus, e pelo amor paternal que tivestes ao Menino Jesus, ardentemente suplicamos que lanceis um olhar benigno para a herança que Jesus Cristo conquistou com o seu sangue, e nos socorrais em nossas necessidades com o vosso auxílio e poder.\nProtegei, ó guarda providente da divina Família, o povo eleito de Jesus Cristo. Afastai para longe de nós, ó pai amantíssimo, a peste do erro e do vício. Assisti-nos do alto do céu, ó nosso fortíssimo sustentáculo, na luta contra o poder das trevas; e, assim como outrora salvastes da morte a vida ameaçada do Menino Jesus, assim também defendei agora a santa Igreja de Deus contra as ciladas de seus inimigos e contra toda adversidade.\nAmparai a cada um de nós com o vosso constante patrocínio, a fim de que, a vosso exemplo e sustentados com o vosso auxílio, possamos viver virtuosamente, piedosamente morrer e obter no céu a eterna bem-aventurança. Amém.",
+        "fonte": "Oração do Papa Leão XIII (encíclica Quamquam pluries, 1889), domínio público; tradução usual em português a conferir",
+        "revisado": false
+      },
+      "oracoesDiarias": [
+        "pai_nosso",
+        "ave_maria",
+        "gloria"
+      ],
+      "oracaoFinal": {
+        "titulo": "Oração final",
+        "texto": "São José, pai cuidadoso, protegei a minha família como protegestes Jesus e Maria. Abençoai o meu trabalho, ensinai-me a confiar em Deus quando não entendo os seus caminhos e acompanhai-me na hora da minha morte. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "jaculatoria": {
+        "titulo": "Jaculatória",
+        "texto": "São José, rogai por nós.",
+        "fonte": "Invocação tradicional (domínio público)",
+        "revisado": false
+      },
+      "dias": [
+        {
+          "id": "sao_jose.1",
+          "dia": 1,
+          "tema": "O homem justo",
+          "referencia": "Mt 1,19",
+          "meditacao": "O Evangelho chama José de \"homem justo\". Sua justiça não é dureza, mas fidelidade a Deus unida à misericórdia: ele não quis expor Maria. Peça a graça de ser justo e, ao mesmo tempo, misericordioso.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sao_jose.2",
+          "dia": 2,
+          "tema": "Obediente à voz de Deus",
+          "referencia": "Mt 1,24",
+          "meditacao": "Ao despertar do sono, José fez como o anjo do Senhor lhe havia ordenado. Ele obedece sem discursos, com prontidão. Pergunte-se o que Deus está pedindo de você e peça a coragem de José.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sao_jose.3",
+          "dia": 3,
+          "tema": "Guardião em Belém",
+          "referencia": "Lc 2,4-7",
+          "meditacao": "José sobe a Belém com Maria e cuida dela no nascimento de Jesus, mesmo sem lugar na hospedaria. Ele protege o mistério com a sua presença. Reze pelos pais e mães que cuidam dos filhos em meio às dificuldades.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sao_jose.4",
+          "dia": 4,
+          "tema": "A fuga para o Egito",
+          "referencia": "Mt 2,13-15",
+          "meditacao": "Avisado em sonho, José levanta-se de noite e foge com o Menino e sua Mãe para o Egito. É padroeiro de quem precisa deixar a sua terra. Reze hoje pelos migrantes e refugiados.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sao_jose.5",
+          "dia": 5,
+          "tema": "O carpinteiro de Nazaré",
+          "referencia": "Mt 13,55",
+          "meditacao": "Jesus era conhecido como \"o filho do carpinteiro\". José santificou o trabalho de cada dia, simples e honesto. Ofereça a Deus o seu trabalho de hoje e reze por quem está sem emprego.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sao_jose.6",
+          "dia": 6,
+          "tema": "Pai que procura",
+          "referencia": "Lc 2,48",
+          "meditacao": "Quando Jesus ficou no Templo, Maria disse: \"Teu pai e eu, aflitos, te procurávamos.\" José conheceu a angústia dos pais. Confie a São José os filhos e jovens que estão longe de Deus.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sao_jose.7",
+          "dia": 7,
+          "tema": "A vida escondida em Nazaré",
+          "referencia": "Lc 2,51-52",
+          "meditacao": "Em Nazaré, Jesus crescia em sabedoria, estatura e graça, submisso a Maria e José. Foram anos ocultos, de rotina e oração em família. Valorize hoje a santidade do cotidiano.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sao_jose.8",
+          "dia": 8,
+          "tema": "Padroeiro da boa morte",
+          "referencia": "Sl 116(115),15",
+          "meditacao": "A tradição contempla José morrendo assistido por Jesus e Maria, por isso o invoca como padroeiro da boa morte. \"É preciosa aos olhos do Senhor a morte de seus fiéis.\" Reze pelos agonizantes e peça a graça de estar preparado.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sao_jose.9",
+          "dia": 9,
+          "tema": "Ide a José",
+          "referencia": "Gn 41,55",
+          "meditacao": "No Egito, o faraó dizia ao povo faminto: \"Ide a José.\" A Igreja aplica essas palavras ao esposo de Maria, proclamado Padroeiro da Igreja Universal pelo Papa Pio IX em 1870. Na véspera da sua festa, confie a ele a Igreja, o Papa e a sua família.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        }
+      ],
+      "fonte": "Texto original do FéDiária",
+      "revisado": false
+    },
+    {
+      "id": "sagrado_coracao",
+      "nome": "Novena ao Sagrado Coração de Jesus",
+      "festa": "Prepara a Solenidade do Sagrado Coração de Jesus (sexta-feira após a oitava de Corpus Christi)",
+      "descricao": "Contemplamos o amor de Jesus por nós, simbolizado em seu Coração, manso e humilde, aberto na cruz.",
+      "janela": {
+        "tipo": "PASCOA",
+        "diasAposPascoa": 59
+      },
+      "oracaoInicial": {
+        "titulo": "Oração inicial",
+        "texto": "Sagrado Coração de Jesus, fonte de todo amor, aqui estou diante de vós. Quero conhecer-vos melhor, amar-vos mais e consolar-vos pelas vezes em que o vosso amor não é correspondido. Fazei o meu coração semelhante ao vosso. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "oracoesDiarias": [
+        "pai_nosso",
+        "ave_maria",
+        "gloria"
+      ],
+      "oracaoFinal": {
+        "titulo": "Oração final",
+        "texto": "Coração de Jesus, eu me entrego a vós com tudo o que sou e tenho. Guardai a minha família no vosso amor, curai as nossas feridas e tornai-nos instrumentos da vossa misericórdia para todos. Amém.",
+        "fonte": "Texto original do FéDiária",
+        "revisado": false
+      },
+      "jaculatoria": {
+        "titulo": "Jaculatória",
+        "texto": "Doce Coração de Jesus, sede o meu amor.",
+        "fonte": "Jaculatória tradicional (domínio público)",
+        "revisado": false
+      },
+      "dias": [
+        {
+          "id": "sagrado_coracao.1",
+          "dia": 1,
+          "tema": "Vinde a mim",
+          "referencia": "Mt 11,28-30",
+          "meditacao": "\"Vinde a mim, todos vós que estais cansados e sobrecarregados, e eu vos darei descanso.\" Jesus se apresenta manso e humilde de coração. Leve até Ele hoje o seu cansaço.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sagrado_coracao.2",
+          "dia": 2,
+          "tema": "Amou-os até o fim",
+          "referencia": "Jo 13,1",
+          "meditacao": "Antes da Páscoa, Jesus, tendo amado os seus, amou-os até o fim. O seu Coração não ama pela metade. Agradeça por esse amor que não desiste de você.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sagrado_coracao.3",
+          "dia": 3,
+          "tema": "O Bom Pastor",
+          "referencia": "Jo 10,11",
+          "meditacao": "\"Eu sou o bom pastor. O bom pastor dá a vida por suas ovelhas.\" O Coração de Jesus conhece cada um pelo nome. Confie a Ele alguém que você ama e que anda afastado.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sagrado_coracao.4",
+          "dia": 4,
+          "tema": "A ovelha perdida",
+          "referencia": "Lc 15,4-7",
+          "meditacao": "O pastor deixa as noventa e nove e vai atrás da ovelha perdida até encontrá-la, e há alegria no céu por um pecador que se converte. Se você se sente longe, saiba que é procurado. Considere buscar o sacramento da Confissão.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sagrado_coracao.5",
+          "dia": 5,
+          "tema": "Compaixão pelas multidões",
+          "referencia": "Mt 9,36",
+          "meditacao": "Vendo as multidões cansadas e abatidas, como ovelhas sem pastor, Jesus encheu-se de compaixão. O seu Coração se comove com o sofrimento humano. Reze hoje pelos que sofrem sem consolo.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sagrado_coracao.6",
+          "dia": 6,
+          "tema": "O coração traspassado",
+          "referencia": "Jo 19,33-34",
+          "meditacao": "Na cruz, um soldado abriu com a lança o lado de Jesus, e logo saiu sangue e água. A tradição da Igreja vê aí o nascimento dos sacramentos. Contemple esse amor que se deu por inteiro.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sagrado_coracao.7",
+          "dia": 7,
+          "tema": "Rios de água viva",
+          "referencia": "Jo 7,37-38",
+          "meditacao": "\"Se alguém tem sede, venha a mim e beba.\" Do Coração de Cristo brotam rios de água viva. Peça ao Senhor que mate a sua sede mais profunda.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sagrado_coracao.8",
+          "dia": 8,
+          "tema": "Permanecei no meu amor",
+          "referencia": "Jo 15,9",
+          "meditacao": "\"Como o Pai me amou, assim também eu vos amei. Permanecei no meu amor.\" Permanecer é voltar sempre, na oração e nos sacramentos. Escolha um momento fixo de oração para os próximos dias.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        },
+        {
+          "id": "sagrado_coracao.9",
+          "dia": 9,
+          "tema": "Deus é amor",
+          "referencia": "1Jo 4,16",
+          "meditacao": "\"Deus é amor: quem permanece no amor permanece em Deus, e Deus permanece nele.\" A devoção ao Sagrado Coração, difundida a partir das revelações a Santa Margarida Maria Alacoque, resume o Evangelho. Na véspera da solenidade, consagre a sua família ao Coração de Jesus.",
+          "fonte": "Texto original do FéDiária; passagem bíblica apenas citada (sem transcrição)",
+          "revisado": false
+        }
+      ],
+      "fonte": "Texto original do FéDiária",
+      "revisado": false
+    }
+  ]
+}

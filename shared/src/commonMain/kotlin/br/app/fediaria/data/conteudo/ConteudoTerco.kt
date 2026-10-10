@@ -1,9 +1,6 @@
 package br.app.fediaria.data.conteudo
 
 import br.app.fediaria.core.terco.ConjuntoMisterios
-import br.app.fediaria.shared.resources.Res
-import kotlinx.coroutines.sync.Mutex
-import kotlinx.coroutines.sync.withLock
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -55,16 +52,4 @@ data class ConteudoTerco(
 
         fun deJson(texto: String): ConteudoTerco = json.decodeFromString(serializer(), texto)
     }
-}
-
-/** Lê o conteúdo empacotado no app (somente leitura) e guarda em memória. */
-class ConteudoRepository {
-    private val mutex = Mutex()
-    private var terco: ConteudoTerco? = null
-
-    suspend fun terco(): ConteudoTerco =
-        mutex.withLock {
-            terco
-                ?: ConteudoTerco.deJson(Res.readBytes("files/conteudo/terco.json").decodeToString()).also { terco = it }
-        }
 }

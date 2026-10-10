@@ -46,6 +46,11 @@ android {
         compose = true
     }
 
+    sourceSets {
+        // Schemas exportados pelo Room, usados no teste de migrações.
+        getByName("androidTest").assets.directories.add(project(":shared").file("schemas").path)
+    }
+
     lint {
         checkDependencies = true
         abortOnError = true
@@ -67,6 +72,7 @@ dependencies {
     androidTestImplementation(libs.androidx.test.rules)
     androidTestImplementation(libs.compose.ui.test.junit4)
     androidTestImplementation(libs.room.runtime)
+    androidTestImplementation(libs.room.testing)
     androidTestImplementation(libs.kotlinx.coroutines.test)
     debugImplementation(libs.compose.ui.test.manifest)
 }

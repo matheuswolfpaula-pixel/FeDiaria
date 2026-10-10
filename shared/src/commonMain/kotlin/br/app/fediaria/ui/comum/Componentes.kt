@@ -20,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import br.app.fediaria.shared.resources.Res
 import br.app.fediaria.shared.resources.acao_cancelar
@@ -32,12 +33,13 @@ import org.jetbrains.compose.resources.stringResource
 fun TituloDeSecao(
     texto: String,
     modifier: Modifier = Modifier,
+    recuo: Dp = 16.dp,
 ) {
     Text(
         texto,
         style = MaterialTheme.typography.titleMedium,
         color = MaterialTheme.colorScheme.primary,
-        modifier = modifier.padding(horizontal = 16.dp, vertical = 12.dp).semantics { heading() },
+        modifier = modifier.padding(horizontal = recuo, vertical = 12.dp).semantics { heading() },
     )
 }
 
@@ -50,6 +52,7 @@ fun LinhaComInterruptor(
     modifier: Modifier = Modifier,
     descricao: String? = null,
     habilitado: Boolean = true,
+    recuo: Dp = 16.dp,
 ) {
     Row(
         modifier =
@@ -57,7 +60,7 @@ fun LinhaComInterruptor(
                 .fillMaxWidth()
                 .heightIn(min = 56.dp)
                 .toggleable(value = marcado, enabled = habilitado, role = Role.Switch, onValueChange = aoMudar)
-                .padding(horizontal = 16.dp, vertical = 8.dp),
+                .padding(horizontal = recuo, vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Column(Modifier.weight(1f)) {

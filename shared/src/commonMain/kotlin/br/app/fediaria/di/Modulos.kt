@@ -6,8 +6,12 @@ import br.app.fediaria.data.config.ProgressoTercoRepository
 import br.app.fediaria.data.conteudo.ConteudoRepository
 import br.app.fediaria.data.db.FeDiariaDatabase
 import br.app.fediaria.data.db.construirBanco
+import br.app.fediaria.data.novena.NovenasRepository
 import br.app.fediaria.data.oracao.DiasRezadosRepository
 import br.app.fediaria.ui.AppViewModel
+import br.app.fediaria.ui.novena.DetalheNovenaViewModel
+import br.app.fediaria.ui.novena.NovenaAtivaViewModel
+import br.app.fediaria.ui.novena.NovenasViewModel
 import br.app.fediaria.ui.telas.ConfiguracoesViewModel
 import br.app.fediaria.ui.terco.HistoricoViewModel
 import br.app.fediaria.ui.terco.TercoGuiadoViewModel
@@ -32,6 +36,8 @@ private val modulosDeDados =
         single { ProgressoTercoRepository(get()) }
         single { ConteudoRepository() }
         single { DiasRezadosRepository(get(), get()) }
+        single { get<FeDiariaDatabase>().novenaDao() }
+        single { NovenasRepository(get(), get()) }
     }
 
 private val modulosDeTelas =
@@ -41,6 +47,9 @@ private val modulosDeTelas =
         viewModelOf(::TercoViewModel)
         viewModelOf(::HistoricoViewModel)
         viewModel { parametros -> TercoGuiadoViewModel(parametros.get(), get(), get(), get(), get(), get(), get()) }
+        viewModelOf(::NovenasViewModel)
+        viewModel { parametros -> DetalheNovenaViewModel(parametros.get(), get(), get(), get(), get(), get()) }
+        viewModel { parametros -> NovenaAtivaViewModel(parametros.get(), get(), get(), get()) }
     }
 
 fun modulosFeDiaria(): List<Module> = listOf(modulosDaPlataforma, modulosDeDados, modulosDeTelas)

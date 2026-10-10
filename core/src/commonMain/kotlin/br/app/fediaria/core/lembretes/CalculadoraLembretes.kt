@@ -11,11 +11,19 @@ import kotlinx.datetime.toLocalDateTime
 import kotlin.time.Instant
 
 enum class TipoLembrete {
-    /** Lembrete no horário escolhido. */
+    /** Lembrete do terço no horário escolhido. */
     PRINCIPAL,
 
-    /** Segundo aviso, mais tarde, só se o terço ainda não foi rezado. */
+    /** Segundo aviso do terço, mais tarde, só se ainda não foi rezado. */
     SEGUNDO,
+
+    /** Lembrete diário de uma novena em andamento. */
+    NOVENA,
+    ;
+
+    companion object {
+        val DO_TERCO = listOf(PRINCIPAL, SEGUNDO)
+    }
 }
 
 /** Um disparo agendado: quando tocar e a qual data local ele se refere. */
@@ -29,14 +37,20 @@ object CalculadoraLembretes {
     /**
      * Próxima ocorrência de [horario] (hora local em [fuso]) estritamente depois de [agora].
      * Num horário que "não existe" por causa do horário de verão, o disparo vai para logo depois do salto.
+     * Com [aPartirDe] (ex.: novena agendada), nenhum disparo cai antes dessa data.
      */
     fun proximoDisparo(
         tipo: TipoLembrete,
         agora: Instant,
         horario: LocalTime,
         fuso: TimeZone,
+        aPartirDe: LocalDate? = null,
     ): Disparo {
-        val hoje = agora.toLocalDateTime(fuso).date
+        val hojeReal = agora.toLocalDateTime(fuso).date
+        if (aPartirDe != null && aPartirDe > hojeReal) {
+            return Disparo(tipo, LocalDateTime(aPartirDe, horario).toInstant(fuso), aPartirDe)
+        }
+        val hoje = hojeReal
         val candidatoHoje = LocalDateTime(hoje, horario).toInstant(fuso)
         if (candidatoHoje > agora) return Disparo(tipo, candidatoHoje, hoje)
         val amanha = hoje.plus(1, DateTimeUnit.DAY)
