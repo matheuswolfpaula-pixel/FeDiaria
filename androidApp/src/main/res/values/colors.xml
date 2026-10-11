@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="azul_mariano">#FF1F3F7A</color>
-    <color name="dourado">#FFE9C349</color>
     <color name="creme">#FFFBF8F1</color>
     <color name="noite">#FF121318</color>
 </resources>
