@@ -18,21 +18,15 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import br.app.fediaria.shared.resources.Res
 import br.app.fediaria.shared.resources.aba_latim
-import br.app.fediaria.shared.resources.aba_quiz
 import br.app.fediaria.shared.resources.em_breve
 import br.app.fediaria.shared.resources.ic_latim
-import br.app.fediaria.shared.resources.ic_quiz
 import br.app.fediaria.shared.resources.latim_descricao
-import br.app.fediaria.shared.resources.quiz_descricao
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 
-// Telas provisórias da Fase 1: cada uma ganha conteúdo real na sua fase.
-
-@Composable
-fun TelaQuiz() = TelaEmBreve("tela_quiz", Res.drawable.ic_quiz, Res.string.aba_quiz, Res.string.quiz_descricao)
+// Tela provisória: o Latim ganha conteúdo real na Fase 5.
 
 @Composable
 fun TelaLatim() = TelaEmBreve("tela_latim", Res.drawable.ic_latim, Res.string.aba_latim, Res.string.latim_descricao)

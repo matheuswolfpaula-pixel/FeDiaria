@@ -15,7 +15,6 @@
   <string name="titulo_ajuda_lembretes">Lembretes não chegam?</string>
 
   <!-- Telas ainda em preparação -->
-  <string name="quiz_descricao">Aprenda sobre as Escrituras, o Catecismo e a fé católica em lições curtas.</string>
   <string name="latim_descricao">Aprenda a rezar as orações tradicionais em latim.</string>
   <string name="em_breve">Em preparação</string>
 
@@ -205,6 +204,51 @@
   <string name="novena_encerrar_texto">O progresso desta novena será apagado. Você pode começá-la de novo quando quiser.</string>
   <string name="novena_jaculatoria">Jaculatória</string>
   <string name="novena_festa">%1$s</string>
+
+  <!-- Quiz -->
+  <string name="titulo_licao">Lição</string>
+  <string name="titulo_revisao">Revisão</string>
+  <string name="quiz_xp_total">%1$d XP</string>
+  <string name="quiz_xp_desc">Pontos ganhos nas lições. A oração não vale pontos: é encontro, não competição.</string>
+  <plurals name="quiz_licoes_feitas">
+    <item quantity="one">%1$d lição feita</item>
+    <item quantity="other">%1$d lições feitas</item>
+  </plurals>
+  <string name="quiz_revisao_titulo">Revisão de hoje</string>
+  <plurals name="quiz_revisao_desc">
+    <item quantity="one">%1$d pergunta voltou para você relembrar.</item>
+    <item quantity="other">%1$d perguntas voltaram para você relembrar.</item>
+  </plurals>
+  <string name="quiz_nivel_1">Nível 1 · Primeiros passos</string>
+  <string name="quiz_nivel_2">Nível 2 · Aprofundando</string>
+  <string name="quiz_nivel_3">Nível 3 · Para ir além</string>
+  <string name="quiz_nivel_fechado">Conclua as lições do nível anterior para abrir.</string>
+  <string name="quiz_licao_n">Lição %1$d</string>
+  <plurals name="quiz_licao_perguntas">
+    <item quantity="one">%1$d pergunta</item>
+    <item quantity="other">%1$d perguntas</item>
+  </plurals>
+  <string name="quiz_licao_feita">Feita</string>
+  <string name="quiz_licao_fechada">Fechada</string>
+  <string name="quiz_pergunta_de">Pergunta %1$d de %2$d</string>
+  <string name="quiz_certo">Isso mesmo!</string>
+  <string name="quiz_errado">Quase! A resposta é: %1$s</string>
+  <string name="quiz_alternativa_certa">resposta certa</string>
+  <string name="quiz_alternativa_escolhida">sua escolha</string>
+  <string name="quiz_continuar">Continuar</string>
+  <string name="quiz_ver_resultado">Ver resultado</string>
+  <string name="quiz_fim_titulo">Lição concluída</string>
+  <string name="quiz_fim_acertos">Você acertou %1$d de %2$d.</string>
+  <string name="quiz_fim_xp">+%1$d XP</string>
+  <string name="quiz_fim_incentivo">As perguntas que você errou voltam numa revisão, com calma. Errar também é aprender.</string>
+  <string name="quiz_fim_voltar">Voltar ao quiz</string>
+  <string name="quiz_revisao_vazia">Nada para revisar hoje. As perguntas voltam aqui nos dias certos para você relembrar.</string>
+  <string name="ref_biblia">%1$s %2$d,%3$s</string>
+  <string name="ref_biblia_capitulo">%1$s %2$d</string>
+  <string name="ref_cic">Catecismo da Igreja Católica, § %1$d</string>
+  <string name="ref_cdc">Código de Direito Canônico, cân. %1$d</string>
+  <string name="ref_documento">%1$s, n. %2$d</string>
+  <string name="ref_rotulo">Para conferir: %1$s</string>
 
   <!-- Datas -->
   <string-array name="meses">

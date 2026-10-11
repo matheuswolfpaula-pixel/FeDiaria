@@ -217,7 +217,218 @@ Janela: Páscoa + 59 (termina na véspera da solenidade, Páscoa + 68). Conferir
 - Datas móveis calculadas a partir da Páscoa (algoritmo de Meeus, conferido contra o de Oudin de 1583 a 4099).
 ---
 
-## 3. Textos da interface com conteúdo religioso
+## 3. Quiz (`quiz.json`): Fase 4
+
+153 perguntas **originais** do FéDiária, em 3 trilhas × 3 níveis. Cada uma tem explicação e referência. Escritura só parafraseada; Catecismo citado só pelo número do parágrafo, nunca pelo texto.
+
+Pontos para o revisor:
+- **Conferir cada número de parágrafo e de cânon.** Usei só números que conheço com segurança, mas este é o ponto mais sensível do quiz.
+- **CIC** = Catecismo da Igreja Católica (edição típica de 1997). **CDC** = Código de Direito Canônico (1983). A Instrução Geral do Missal Romano segue a numeração da 3ª edição típica (2002).
+- **Regras que variam por país:** jejum e abstinência e festas de preceito podem ser adaptados pela CNBB. As explicações avisam isso, mas vale confirmar se o texto está adequado ao Brasil.
+- **Alternativas:** a ordem é embaralhada a cada dia no app; a coluna "Resposta" mostra só a certa.
+- **Tom:** quem erra vê "Quase! A resposta é: …", com a explicação e a referência. Sem vidas e sem punição.
+
+### Escrituras · nível 1
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.escrituras.n1.001` | Quantos livros tem a Bíblia católica? | 73 | CIC § 120 |
+| `quiz.escrituras.n1.002` | Qual é o primeiro livro da Bíblia? | Gênesis | Gn 1,1 |
+| `quiz.escrituras.n1.003` | Quem construiu a arca por ordem de Deus, antes do dilúvio? | Noé | Gn 6,13-14 |
+| `quiz.escrituras.n1.004` | Em que cidade Jesus nasceu? | Belém | Lc 2,4-7 |
+| `quiz.escrituras.n1.005` | Quantos apóstolos Jesus escolheu? | 12 | Mc 3,13-19 |
+| `quiz.escrituras.n1.006` | Quem foi lançado na cova dos leões e saiu ileso? | Daniel | Dn 6 |
+| `quiz.escrituras.n1.007` | Quem venceu o gigante Golias? | Davi | 1Sm 17 |
+| `quiz.escrituras.n1.008` | Qual era o ofício de São José, segundo o Evangelho? | Carpinteiro | Mt 13,55 |
+| `quiz.escrituras.n1.009` | Qual foi o primeiro sinal (milagre) de Jesus narrado no Evangelho de João? | A transformação da água em vinho em Caná | Jo 2,1-11 |
+| `quiz.escrituras.n1.010` | Qual apóstolo negou conhecer Jesus três vezes? | Pedro | Mt 26,69-75 |
+| `quiz.escrituras.n1.011` | Em que rio Jesus foi batizado por João Batista? | Jordão | Mc 1,9 |
+| `quiz.escrituras.n1.012` | Quem recebeu de Deus as tábuas da Lei no monte Sinai? | Moisés | Ex 31,18 |
+| `quiz.escrituras.n1.013` | O Novo Testamento começa com os quatro Evangelhos. | Verdadeiro | CIC § 125 |
+| `quiz.escrituras.n1.014` | Qual apóstolo traiu Jesus? | Judas Iscariotes | Mt 26,14-16 |
+| `quiz.escrituras.n1.015` | Qual anjo anunciou a Maria que ela seria a mãe do Salvador? | Gabriel | Lc 1,26-27 |
+| `quiz.escrituras.n1.016` | Quantos dias Jesus jejuou no deserto? | 40 | Mt 4,1-2 |
+| `quiz.escrituras.n1.017` | Qual oração Jesus ensinou aos discípulos? | Pai-Nosso | Mt 6,9-13 |
+
+### Escrituras · nível 2
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.escrituras.n2.001` | Quantos livros tem o Antigo Testamento na Bíblia católica? | 46 | CIC § 120 |
+| `quiz.escrituras.n2.002` | Qual destes livros está na Bíblia católica, mas não na maioria das Bíblias protestantes? | Tobias | CIC § 120 |
+| `quiz.escrituras.n2.003` | A quem são atribuídas as cartas aos Romanos, aos Coríntios e aos Gálatas? | São Paulo | Rm 1,1 |
+| `quiz.escrituras.n2.004` | Qual Evangelho começa dizendo que "no princípio era o Verbo"? | João | Jo 1,1 |
+| `quiz.escrituras.n2.005` | Em que festa o Espírito Santo desceu sobre os apóstolos reunidos? | Pentecostes | At 2,1-4 |
+| `quiz.escrituras.n2.006` | Quem subiu numa árvore para conseguir ver Jesus passar? | Zaqueu | Lc 19,1-10 |
+| `quiz.escrituras.n2.007` | Como é conhecida a parábola do filho que gasta a herança e volta para casa do pai? | Filho pródigo | Lc 15,11-32 |
+| `quiz.escrituras.n2.008` | Quem foi vendido pelos irmãos e depois se tornou governador no Egito? | José | Gn 37,28 |
+| `quiz.escrituras.n2.009` | Qual profeta passou três dias no ventre de um grande peixe? | Jonas | Jn 2 |
+| `quiz.escrituras.n2.010` | Qual destes livros NÃO faz parte do Pentateuco (os cinco primeiros livros)? | Josué | Js 1,1-2 |
+| `quiz.escrituras.n2.011` | A quem Jesus disse: "tu és Pedro, e sobre esta pedra edificarei a minha Igreja"? | Simão | Mt 16,16-18 |
+| `quiz.escrituras.n2.012` | Quem é o primeiro mártir cristão narrado nos Atos dos Apóstolos? | Estêvão | At 7,54-60 |
+| `quiz.escrituras.n2.013` | A caminho de qual cidade Saulo se converteu ao encontrar Jesus ressuscitado? | Damasco | At 9,1-9 |
+| `quiz.escrituras.n2.014` | Qual rei construiu o primeiro Templo de Jerusalém? | Salomão | 1Rs 6 |
+| `quiz.escrituras.n2.015` | Que mulher moabita disse à sogra: "o teu povo será o meu povo, e o teu Deus será o meu Deus"? | Rute | Rt 1,16 |
+| `quiz.escrituras.n2.016` | Quais são os dois maiores mandamentos, segundo Jesus? | Amar a Deus de todo o coração e amar o próximo como a si mesmo | Mt 22,36-40 |
+| `quiz.escrituras.n2.017` | Qual destes NÃO é um dos quatro evangelistas? | Paulo | CIC § 120 |
+
+### Escrituras · nível 3
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.escrituras.n3.001` | Qual sumo sacerdote interrogou Jesus, pedindo que dissesse se era o Cristo? | Caifás | Mt 26,57-63 |
+| `quiz.escrituras.n3.002` | Qual livro narra a resistência de Matatias e seus filhos contra a imposição de cultos pagãos? | 1 Macabeus | 1Mc 2 |
+| `quiz.escrituras.n3.003` | Qual profeta anunciou que a virgem conceberia e daria à luz um filho chamado Emanuel? | Isaías | Is 7,14 |
+| `quiz.escrituras.n3.004` | Segundo a tradição, quem escreveu os Atos dos Apóstolos? | Lucas | At 1,1 |
+| `quiz.escrituras.n3.005` | Em qual Evangelho está o cântico de Maria conhecido como Magnificat? | Lucas | Lc 1,46-55 |
+| `quiz.escrituras.n3.006` | Qual patriarca foi chamado por Deus a deixar sua terra e recebeu a promessa de uma grande descendência? | Abraão | Gn 12,1-3 |
+| `quiz.escrituras.n3.007` | Quem eram os pais de João Batista? | Zacarias e Isabel | Lc 1,5-13 |
+| `quiz.escrituras.n3.008` | Quais apóstolos testemunharam a Transfiguração de Jesus? | Pedro, Tiago e João | Mt 17,1-2 |
+| `quiz.escrituras.n3.009` | Qual livro do Antigo Testamento é uma coleção de orações cantadas, muito usada na liturgia? | Salmos | CIC § 2585 |
+| `quiz.escrituras.n3.010` | Qual profetisa idosa louvou a Deus e falou do Menino Jesus no Templo? | Ana | Lc 2,36-38 |
+| `quiz.escrituras.n3.011` | A Carta aos Hebreus apresenta Jesus sobretudo como: | Sumo sacerdote | Hb 4,14 |
+| `quiz.escrituras.n3.012` | Quem foi escolhido para ocupar o lugar de Judas entre os Doze? | Matias | At 1,21-26 |
+| `quiz.escrituras.n3.013` | Segundo o próprio livro, onde estava o João que recebeu as visões do Apocalipse? | Na ilha de Patmos | Ap 1,9 |
+| `quiz.escrituras.n3.014` | Qual rei da Pérsia permitiu que os judeus voltassem do exílio para reconstruir o Templo? | Ciro | Esd 1,1-3 |
+| `quiz.escrituras.n3.015` | Que personagem do Antigo Testamento, sacerdote do Deus Altíssimo, ofereceu pão e vinho a Abraão? | Melquisedec | Gn 14,18-20 |
+| `quiz.escrituras.n3.016` | Em Emaús, como os discípulos reconheceram Jesus ressuscitado? | Ao partir o pão | Lc 24,30-31 |
+| `quiz.escrituras.n3.017` | Qual evangelista narra a visita dos Magos ao Menino Jesus? | Mateus | Mt 2,1-12 |
+
+### Catecismo · nível 1
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.catecismo.n1.001` | Em quantas partes está dividido o Catecismo da Igreja Católica? | 4 | CIC § 13 |
+| `quiz.catecismo.n1.002` | Quantos são os sacramentos? | 7 | CIC § 1113 |
+| `quiz.catecismo.n1.003` | Qual sacramento é a porta de entrada para a vida cristã e para os outros sacramentos? | Batismo | CIC § 1213 |
+| `quiz.catecismo.n1.004` | Qual é o mistério central da fé e da vida cristã? | A Santíssima Trindade | CIC § 234 |
+| `quiz.catecismo.n1.005` | A Santíssima Trindade é: | Um só Deus em três Pessoas | CIC § 253 |
+| `quiz.catecismo.n1.006` | Como o Concílio Vaticano II, citado no Catecismo, chama a Eucaristia? | Fonte e ápice da vida cristã | CIC § 1324 |
+| `quiz.catecismo.n1.007` | Segundo a definição clássica citada pelo Catecismo, o que é a oração? | A elevação da alma a Deus | CIC § 2559 |
+| `quiz.catecismo.n1.008` | Quantos são os mandamentos da Lei de Deus? | 10 | CIC § 2056 |
+| `quiz.catecismo.n1.009` | O que pede o primeiro mandamento? | Amar a Deus sobre todas as coisas | CIC § 2083 |
+| `quiz.catecismo.n1.010` | Por que a Igreja chama Maria de "Mãe de Deus"? | Porque o Filho que ela concebeu é verdadeiramente Deus | CIC § 495 |
+| `quiz.catecismo.n1.011` | O Credo também é chamado de: | Símbolo da fé | CIC § 187 |
+| `quiz.catecismo.n1.012` | Quem é Jesus Cristo, segundo a fé católica? | Verdadeiro Deus e verdadeiro homem | CIC § 464 |
+| `quiz.catecismo.n1.013` | Quais são as virtudes teologais? | Fé, esperança e caridade | CIC § 1813 |
+| `quiz.catecismo.n1.014` | Qual sacramento perdoa os pecados cometidos depois do Batismo? | Penitência (Confissão) | CIC § 1422 |
+| `quiz.catecismo.n1.015` | Quais são as quatro notas (características) da Igreja que professamos no Credo? | Una, santa, católica e apostólica | CIC § 811 |
+| `quiz.catecismo.n1.016` | O domingo é o dia principal para celebrar a Eucaristia por ser o dia da Ressurreição do Senhor. | Verdadeiro | CIC § 2177 |
+| `quiz.catecismo.n1.017` | Quais são os sacramentos da iniciação cristã? | Batismo, Confirmação e Eucaristia | CIC § 1212 |
+
+### Catecismo · nível 2
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.catecismo.n2.001` | Quais são as virtudes cardeais? | Prudência, justiça, fortaleza e temperança | CIC § 1805 |
+| `quiz.catecismo.n2.002` | Quantos são os dons do Espírito Santo? | 7 | CIC § 1831 |
+| `quiz.catecismo.n2.003` | Para que um pecado seja mortal, além de matéria grave e pleno conhecimento, é preciso: | Deliberado consentimento | CIC § 1857 |
+| `quiz.catecismo.n2.004` | Qual destes NÃO está entre os pecados capitais? | Medo | CIC § 1866 |
+| `quiz.catecismo.n2.005` | Quais sacramentos imprimem caráter e por isso não se repetem? | Batismo, Confirmação e Ordem | CIC § 1121 |
+| `quiz.catecismo.n2.006` | Como se chama a conversão de toda a substância do pão e do vinho no Corpo e no Sangue de Cristo? | Transubstanciação | CIC § 1376 |
+| `quiz.catecismo.n2.007` | Quem tem consciência de pecado grave deve, antes de comungar: | Receber o sacramento da Reconciliação | CIC § 1385 |
+| `quiz.catecismo.n2.008` | Quais são os sacramentos de cura? | Penitência e Unção dos Enfermos | CIC § 1421 |
+| `quiz.catecismo.n2.009` | Quais são os sacramentos "a serviço da comunhão"? | Ordem e Matrimônio | CIC § 1534 |
+| `quiz.catecismo.n2.010` | Por quais dois meios a Revelação divina é transmitida? | Pela Sagrada Escritura e pela Sagrada Tradição | CIC § 80 |
+| `quiz.catecismo.n2.011` | A quem foi confiada a interpretação autêntica da Palavra de Deus? | Ao Magistério da Igreja: o Papa e os bispos em comunhão com ele | CIC § 85 |
+| `quiz.catecismo.n2.012` | Segundo a Tradição da Igreja, quantos são os frutos do Espírito Santo? | 12 | CIC § 1832 |
+| `quiz.catecismo.n2.013` | O que significa o dogma da Imaculada Conceição? | Que Maria foi preservada do pecado original desde a sua concepção | CIC § 491 |
+| `quiz.catecismo.n2.014` | O que significa o dogma da Assunção de Maria? | Que Maria foi elevada em corpo e alma à glória do céu | CIC § 966 |
+| `quiz.catecismo.n2.015` | O que é o purgatório, segundo o Catecismo? | A purificação dos que morrem na graça de Deus, mas ainda não plenamente purificados | CIC § 1030 |
+| `quiz.catecismo.n2.016` | Como o Catecismo, citando Tertuliano, chama o Pai-Nosso? | Resumo de todo o Evangelho | CIC § 2761 |
+| `quiz.catecismo.n2.017` | Em caso de necessidade, qualquer pessoa, mesmo não batizada, pode batizar validamente, se tiver a intenção de fazer o que a Igreja faz. | Verdadeiro | CIC § 1256 |
+
+### Catecismo · nível 3
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.catecismo.n3.001` | O Credo rezado na Missa aos domingos (Niceno-Constantinopolitano) vem de quais concílios? | Niceia e Constantinopla | CIC § 195 |
+| `quiz.catecismo.n3.002` | Como o Catecismo explica, de modo positivo, a frase "fora da Igreja não há salvação"? | Que toda salvação vem de Cristo-Cabeça por meio da Igreja, seu Corpo | CIC § 846 |
+| `quiz.catecismo.n3.003` | Qual é o sinal sensível usado no sacramento da Unção dos Enfermos? | Óleo | CIC § 1513 |
+| `quiz.catecismo.n3.004` | No rito latino, quem é o ministro originário da Confirmação? | O bispo | CIC § 1312 |
+| `quiz.catecismo.n3.005` | Quais são os três graus do sacramento da Ordem? | Episcopado, presbiterado e diaconado | CIC § 1554 |
+| `quiz.catecismo.n3.006` | Na Igreja latina, quem são os ministros do sacramento do Matrimônio? | Os próprios noivos | CIC § 1623 |
+| `quiz.catecismo.n3.007` | Quando o Papa goza da infalibilidade? | Quando proclama por ato definitivo uma doutrina de fé ou de moral, como pastor supremo | CIC § 891 |
+| `quiz.catecismo.n3.008` | A superstição e a idolatria são pecados contra qual mandamento? | Primeiro | CIC § 2110 |
+| `quiz.catecismo.n3.009` | O quarto mandamento pede: | Honrar pai e mãe | CIC § 2197 |
+| `quiz.catecismo.n3.010` | O que é a lei moral natural? | A lei inscrita pelo Criador no coração humano, conhecida pela razão | CIC § 1954 |
+| `quiz.catecismo.n3.011` | Quais são as finalidades do matrimônio? | O bem dos cônjuges e a geração e educação dos filhos | CIC § 1601 |
+| `quiz.catecismo.n3.012` | O que é uma indulgência? | A remissão, diante de Deus, da pena temporal dos pecados já perdoados quanto à culpa | CIC § 1471 |
+| `quiz.catecismo.n3.013` | Quais são os três estados da Igreja, segundo a comunhão dos santos? | Peregrinos na terra, os que se purificam e os que estão na glória | CIC § 954 |
+| `quiz.catecismo.n3.014` | Qual a diferença entre o culto a Deus e o culto a Maria e aos santos? | Só Deus é adorado; Maria e os santos são venerados | CIC § 971 |
+| `quiz.catecismo.n3.015` | Quando acontece o juízo particular? | Logo após a morte de cada pessoa | CIC § 1022 |
+| `quiz.catecismo.n3.016` | Qual destas é uma obra de misericórdia espiritual? | Ensinar os ignorantes | CIC § 2447 |
+| `quiz.catecismo.n3.017` | Segundo o Catecismo, a fé e a razão podem estar em verdadeiro conflito. | Falso | CIC § 159 |
+
+### Fé Católica · nível 1
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.fe_catolica.n1.001` | Qual é a cor litúrgica do Advento e da Quaresma? | Roxo | Instrução Geral do Missal Romano, n. 346 |
+| `quiz.fe_catolica.n1.002` | Quanto tempo de jejum eucarístico se pede antes de comungar? | 1 hora | CDC cân. 919 |
+| `quiz.fe_catolica.n1.003` | Qual tempo litúrgico prepara a Páscoa, durante quarenta dias? | Quaresma | CIC § 540 |
+| `quiz.fe_catolica.n1.004` | Em que dia da semana Jesus ressuscitou, e por isso os cristãos se reúnem para a Missa? | Domingo | CIC § 2174 |
+| `quiz.fe_catolica.n1.005` | Qual celebração abre a Quaresma, com jejum e abstinência? | Quarta-feira de Cinzas | CDC cân. 1251 |
+| `quiz.fe_catolica.n1.006` | Como se chama a oração que recorda o anúncio do anjo a Maria e a Encarnação, tradicionalmente rezada ao meio-dia? | Ângelus | Lc 1,26-38 |
+| `quiz.fe_catolica.n1.007` | A fórmula "em nome do Pai, e do Filho e do Espírito Santo" vem de qual ordem de Jesus? | Do envio dos discípulos para batizar todos os povos | Mt 28,19 |
+| `quiz.fe_catolica.n1.008` | O que a Igreja celebra no Natal? | O nascimento de Jesus | Lc 2,1-14 |
+| `quiz.fe_catolica.n1.009` | Contando o domingo da Páscoa, em que dia do Tempo Pascal se celebra Pentecostes? | 50º dia | CIC § 731 |
+| `quiz.fe_catolica.n1.010` | Quem é o Papa? | O bispo de Roma, sucessor de Pedro | CIC § 882 |
+| `quiz.fe_catolica.n1.011` | Como se chamam sinais sagrados como a água benta, as bênçãos e o terço? | Sacramentais | CIC § 1667 |
+| `quiz.fe_catolica.n1.012` | Qual oração começa com "Creio em Deus Pai todo-poderoso, criador do céu e da terra"? | Símbolo dos Apóstolos (Credo) | CIC § 194 |
+| `quiz.fe_catolica.n1.013` | Qual é o primeiro mandamento da Igreja? | Participar da Missa aos domingos e festas de guarda | CIC § 2042 |
+| `quiz.fe_catolica.n1.014` | Segundo os mandamentos da Igreja, com que frequência mínima o fiel deve se confessar? | Ao menos uma vez por ano | CIC § 2042 |
+| `quiz.fe_catolica.n1.015` | Em que época o fiel deve comungar, ao menos uma vez por ano? | Na Páscoa | CIC § 2042 |
+| `quiz.fe_catolica.n1.016` | Quais são as duas grandes partes da Missa? | Liturgia da Palavra e Liturgia Eucarística | CIC § 1346 |
+| `quiz.fe_catolica.n1.017` | O Advento é o tempo em que a Igreja se prepara para o Natal, revivendo a espera do Messias. | Verdadeiro | CIC § 524 |
+
+### Fé Católica · nível 2
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.fe_catolica.n2.001` | Em que dia da semana a Igreja pede uma penitência especial, como a abstinência de carne? | Sexta | CDC cân. 1251 |
+| `quiz.fe_catolica.n2.002` | Pelo Código de Direito Canônico, em que idade a lei do jejum obriga? | Dos 18 anos até o início dos 60 | CDC cân. 1252 |
+| `quiz.fe_catolica.n2.003` | Qual é a cor litúrgica do Tempo Comum? | Verde | Instrução Geral do Missal Romano, n. 346 |
+| `quiz.fe_catolica.n2.004` | Qual cor se usa nas festas dos mártires? | Vermelho | Instrução Geral do Missal Romano, n. 346 |
+| `quiz.fe_catolica.n2.005` | Quem é o ministro ordinário da Sagrada Comunhão? | O bispo, o presbítero e o diácono | CDC cân. 910 |
+| `quiz.fe_catolica.n2.006` | Quantas vezes no mesmo dia é possível comungar? | Até duas, desde que a segunda seja participando da Missa | CDC cân. 917 |
+| `quiz.fe_catolica.n2.007` | Quem é o ministro ordinário do Batismo? | O bispo, o presbítero e o diácono | CDC cân. 861 |
+| `quiz.fe_catolica.n2.008` | Pelo Código de Direito Canônico, qual a idade mínima para ser padrinho de Batismo? | 16 anos | CDC cân. 874 |
+| `quiz.fe_catolica.n2.009` | Quantos padrinhos o batizando pode ter? | Um padrinho, ou uma madrinha, ou um padrinho e uma madrinha | CDC cân. 873 |
+| `quiz.fe_catolica.n2.010` | O padre pode revelar o que ouviu em confissão? | Nunca: o sigilo sacramental é absoluto | CIC § 1467 |
+| `quiz.fe_catolica.n2.011` | O que é a Liturgia das Horas? | A oração pública da Igreja que santifica o dia | CIC § 1174 |
+| `quiz.fe_catolica.n2.012` | Qual Papa propôs acrescentar os Mistérios Luminosos ao terço? | João Paulo II | Carta apostólica Rosarium Virginis Mariae, n. 19 |
+| `quiz.fe_catolica.n2.013` | Em quais tempos litúrgicos não se canta o Glória na Missa de domingo? | Advento e Quaresma | Instrução Geral do Missal Romano, n. 53 |
+| `quiz.fe_catolica.n2.014` | Em qual tempo litúrgico não se canta o Aleluia? | Quaresma | Instrução Geral do Missal Romano, n. 62 |
+| `quiz.fe_catolica.n2.015` | Quem pode receber a Unção dos Enfermos? | O fiel que começa a correr perigo por doença ou velhice | CIC § 1514 |
+| `quiz.fe_catolica.n2.016` | Quem já recebeu a Unção dos Enfermos pode recebê-la de novo se, curado, voltar a adoecer gravemente. | Verdadeiro | CIC § 1515 |
+| `quiz.fe_catolica.n2.017` | O que se celebra na solenidade de Corpus Christi? | O Santíssimo Corpo e Sangue de Cristo | CDC cân. 1246 |
+
+### Fé Católica · nível 3
+
+| id | Pergunta | Resposta | Referência |
+|---|---|---|---|
+| `quiz.fe_catolica.n3.001` | Qual é a maior festa do ano litúrgico, chamada de "festa das festas"? | Páscoa | CIC § 1169 |
+| `quiz.fe_catolica.n3.002` | Segundo o critério do Concílio de Niceia, quando se celebra a Páscoa? | No domingo após a primeira lua cheia depois do equinócio de primavera (hemisfério norte) | CIC § 1170 |
+| `quiz.fe_catolica.n3.003` | Qual concílio, em 325, afirmou que o Filho é consubstancial ao Pai, contra Ário? | Niceia | CIC § 465 |
+| `quiz.fe_catolica.n3.004` | Qual concílio, em 431, proclamou Maria Mãe de Deus (Theotokos)? | Éfeso | CIC § 466 |
+| `quiz.fe_catolica.n3.005` | Qual concílio, em 451, ensinou que Cristo tem duas naturezas, divina e humana, numa só Pessoa? | Calcedônia | CIC § 467 |
+| `quiz.fe_catolica.n3.006` | Qual Papa proclamou o dogma da Imaculada Conceição, em 1854? | Pio IX | CIC § 491 |
+| `quiz.fe_catolica.n3.007` | Qual Papa proclamou o dogma da Assunção de Maria, em 1950? | Pio XII | CIC § 966 |
+| `quiz.fe_catolica.n3.008` | Qual destes concílios ensinou solenemente que os sacramentos são sete e foram instituídos por Cristo? | Trento | CIC § 1114 |
+| `quiz.fe_catolica.n3.009` | Segundo o Código de Direito Canônico, qual destas é uma festa de preceito na Igreja universal? | Imaculada Conceição | CDC cân. 1246 |
+| `quiz.fe_catolica.n3.010` | O que é o "depósito da fé"? | O patrimônio sagrado da fé, contido na Escritura e na Tradição, confiado à Igreja | CIC § 84 |
+| `quiz.fe_catolica.n3.011` | O que é o "cânon" das Escrituras? | A lista dos livros reconhecidos como inspirados | CIC § 120 |
+| `quiz.fe_catolica.n3.012` | Qual ensinamento de Jesus é conhecido como "regra de ouro"? | Tudo o que quereis que os outros vos façam, fazei-o vós a eles | Mt 7,12 |
+| `quiz.fe_catolica.n3.013` | O diaconato permanente pode ser conferido a homens casados. | Verdadeiro | CIC § 1571 |
+| `quiz.fe_catolica.n3.014` | Quem pode receber validamente a sagrada ordenação? | Somente o homem batizado | CIC § 1577 |
+| `quiz.fe_catolica.n3.015` | Na Igreja latina, os sacerdotes são normalmente escolhidos entre homens que: | Vivem o celibato pelo Reino dos Céus | CIC § 1579 |
+| `quiz.fe_catolica.n3.016` | Quantos são os mandamentos da Igreja, segundo o Catecismo? | 5 | CIC § 2041 |
+| `quiz.fe_catolica.n3.017` | A Missa torna presente o único sacrifício de Cristo na cruz; não é um novo sacrifício. | Verdadeiro | CIC § 1367 |
+
+---
+
+## 4. Textos da interface com conteúdo religioso
 
 Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm campo `revisado`, mas pedem leitura):
 
@@ -226,6 +437,7 @@ Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm
 - Notificações (tom acolhedor, sem culpa): "Hora do terço", "Um momento com Nossa Senhora", "Pausa para a oração", "Sua chama está pedindo cuidado", "Ainda dá tempo".
 - Conquista *"Um ano com Maria"*.
 - Novenas: *"Novena concluída. Deus seja louvado!"*, *"Você continua de onde parou. Sem pressa: o importante é rezar com o coração."*
+- Quiz: *"Pontos ganhos nas lições. A oração não vale pontos: é encontro, não competição."*, *"As perguntas que você errou voltam numa revisão, com calma. Errar também é aprender."*
 
 ---
 
@@ -235,3 +447,4 @@ Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm
 |---|---|---|
 | `terco.json` | 30 | 0 |
 | `novenas.json` | 78 (6 novenas × [1 + 3 orações + 9 dias]) | 0 |
+| `quiz.json` | 153 perguntas | 0 |

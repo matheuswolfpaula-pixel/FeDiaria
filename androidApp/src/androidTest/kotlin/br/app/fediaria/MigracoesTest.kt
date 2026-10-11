@@ -7,6 +7,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import br.app.fediaria.data.db.FeDiariaDatabase
 import org.junit.Assert.assertEquals
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -26,6 +27,12 @@ class MigracoesTest {
             databaseClass = FeDiariaDatabase::class,
         )
 
+    // O ajudante não apaga o arquivo entre os testes; cada um começa do zero.
+    @Before
+    fun apagarBancoAnterior() {
+        arquivo.delete()
+    }
+
     @Test
     fun migra1Para2MantendoOsDiasRezados() {
         ajudante.createDatabase(1).apply {
@@ -40,6 +47,33 @@ class MigracoesTest {
             assertEquals("GUIADO", consulta.getText(1))
         }
         conexao.prepare("SELECT COUNT(*) FROM novena_ativa").use { consulta ->
+            consulta.step()
+            assertEquals(0L, consulta.getLong(0))
+        }
+        conexao.close()
+    }
+
+    @Test
+    fun migra2Para3MantendoAsNovenas() {
+        ajudante.createDatabase(2).apply {
+            execSQL(
+                "INSERT INTO novena_ativa (id, novena_id, inicio, lembrete_ativo, lembrete_minutos, criada_em) " +
+                    "VALUES (1, 'natal', '2026-12-16', 1, 1200, 0)",
+            )
+            execSQL("INSERT INTO novena_dia (novena_ativa_id, dia, rezado_em) VALUES (1, 1, '2026-12-16')")
+            close()
+        }
+
+        val conexao = ajudante.runMigrationsAndValidate(3)
+        conexao.prepare("SELECT novena_id FROM novena_ativa").use { consulta ->
+            consulta.step()
+            assertEquals("natal", consulta.getText(0))
+        }
+        conexao.prepare("SELECT COUNT(*) FROM novena_dia").use { consulta ->
+            consulta.step()
+            assertEquals(1L, consulta.getLong(0))
+        }
+        conexao.prepare("SELECT COUNT(*) FROM srs_item").use { consulta ->
             consulta.step()
             assertEquals(0L, consulta.getLong(0))
         }

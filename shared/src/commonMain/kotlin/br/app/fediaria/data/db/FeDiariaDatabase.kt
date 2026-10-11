@@ -14,13 +14,19 @@ import kotlinx.coroutines.IO
  * Ao mudar o schema: suba `version`, gere o JSON em `shared/schemas` e declare a migração
  * (automática quando possível) com teste em `androidApp/src/androidTest/.../MigracoesTest.kt`.
  *
- * v1: dia_rezado · v2: novena_ativa, novena_dia
+ * v1: dia_rezado · v2: novena_ativa, novena_dia · v3: srs_item, licao_concluida
  */
 @Database(
-    entities = [DiaRezadoEntity::class, NovenaAtivaEntity::class, NovenaDiaEntity::class],
-    version = 2,
+    entities = [
+        DiaRezadoEntity::class,
+        NovenaAtivaEntity::class,
+        NovenaDiaEntity::class,
+        SrsItemEntity::class,
+        LicaoConcluidaEntity::class,
+    ],
+    version = 3,
     exportSchema = true,
-    autoMigrations = [AutoMigration(from = 1, to = 2)],
+    autoMigrations = [AutoMigration(from = 1, to = 2), AutoMigration(from = 2, to = 3)],
 )
 @TypeConverters(Conversores::class)
 @ConstructedBy(FeDiariaDatabaseConstructor::class)
@@ -28,6 +34,8 @@ abstract class FeDiariaDatabase : RoomDatabase() {
     abstract fun diaRezadoDao(): DiaRezadoDao
 
     abstract fun novenaDao(): NovenaDao
+
+    abstract fun quizDao(): QuizDao
 
     companion object {
         const val NOME_ARQUIVO = "fediaria.db"

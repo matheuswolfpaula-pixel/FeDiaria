@@ -1,0 +1,3318 @@
+{
+  "versao": 1,
+  "trilhas": [
+    {
+      "id": "escrituras",
+      "nome": "Escrituras",
+      "descricao": "Personagens, livros e passagens da Bíblia."
+    },
+    {
+      "id": "catecismo",
+      "nome": "Catecismo",
+      "descricao": "O que a Igreja crê, celebra, vive e reza."
+    },
+    {
+      "id": "fe_catolica",
+      "nome": "Fé Católica",
+      "descricao": "Liturgia, sacramentos, mandamentos da Igreja e história."
+    }
+  ],
+  "perguntas": [
+    {
+      "id": "quiz.escrituras.n1.001",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos livros tem a Bíblia católica?",
+      "alternativas": [
+        "66",
+        "72",
+        "73",
+        "76"
+      ],
+      "correta": 2,
+      "explicacao": "São 46 livros no Antigo Testamento e 27 no Novo, somando 73.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 120
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.002",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual é o primeiro livro da Bíblia?",
+      "alternativas": [
+        "Êxodo",
+        "Gênesis",
+        "Mateus",
+        "Salmos"
+      ],
+      "correta": 1,
+      "explicacao": "O Gênesis abre a Bíblia narrando a criação do mundo por Deus.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Gn",
+        "capitulo": 1,
+        "versiculos": "1"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.003",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem construiu a arca por ordem de Deus, antes do dilúvio?",
+      "alternativas": [
+        "Abraão",
+        "Moisés",
+        "Noé",
+        "Elias"
+      ],
+      "correta": 2,
+      "explicacao": "Deus pediu a Noé que construísse uma arca para salvar sua família e os animais.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Gn",
+        "capitulo": 6,
+        "versiculos": "13-14"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.004",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em que cidade Jesus nasceu?",
+      "alternativas": [
+        "Nazaré",
+        "Jerusalém",
+        "Belém",
+        "Cafarnaum"
+      ],
+      "correta": 2,
+      "explicacao": "José e Maria foram a Belém por causa do recenseamento, e ali Jesus nasceu.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 2,
+        "versiculos": "4-7"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.005",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos apóstolos Jesus escolheu?",
+      "alternativas": [
+        "7",
+        "10",
+        "12",
+        "70"
+      ],
+      "correta": 2,
+      "explicacao": "Jesus escolheu doze apóstolos para ficarem com ele e enviá-los a pregar.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mc",
+        "capitulo": 3,
+        "versiculos": "13-19"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.006",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem foi lançado na cova dos leões e saiu ileso?",
+      "alternativas": [
+        "Daniel",
+        "Jonas",
+        "Davi",
+        "Sansão"
+      ],
+      "correta": 0,
+      "explicacao": "Daniel continuou rezando ao seu Deus, foi lançado aos leões e Deus o protegeu.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Dn",
+        "capitulo": 6
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.007",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem venceu o gigante Golias?",
+      "alternativas": [
+        "Saul",
+        "Davi",
+        "Josué",
+        "Gedeão"
+      ],
+      "correta": 1,
+      "explicacao": "O jovem pastor Davi enfrentou Golias confiando em Deus, não nas armas.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "1Sm",
+        "capitulo": 17
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.008",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual era o ofício de São José, segundo o Evangelho?",
+      "alternativas": [
+        "Pescador",
+        "Pastor",
+        "Carpinteiro",
+        "Cobrador de impostos"
+      ],
+      "correta": 2,
+      "explicacao": "Em Nazaré, Jesus era conhecido como \"o filho do carpinteiro\".",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 13,
+        "versiculos": "55"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.009",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual foi o primeiro sinal (milagre) de Jesus narrado no Evangelho de João?",
+      "alternativas": [
+        "A multiplicação dos pães",
+        "A transformação da água em vinho em Caná",
+        "A cura de um cego",
+        "A ressurreição de Lázaro"
+      ],
+      "correta": 1,
+      "explicacao": "Nas bodas de Caná, a pedido de Maria, Jesus transformou água em vinho.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Jo",
+        "capitulo": 2,
+        "versiculos": "1-11"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.010",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual apóstolo negou conhecer Jesus três vezes?",
+      "alternativas": [
+        "João",
+        "Tomé",
+        "Pedro",
+        "André"
+      ],
+      "correta": 2,
+      "explicacao": "Pedro negou Jesus três vezes e depois chorou arrependido.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 26,
+        "versiculos": "69-75"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.011",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em que rio Jesus foi batizado por João Batista?",
+      "alternativas": [
+        "Nilo",
+        "Jordão",
+        "Eufrates",
+        "Tigre"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus veio de Nazaré e foi batizado por João no rio Jordão.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mc",
+        "capitulo": 1,
+        "versiculos": "9"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.012",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem recebeu de Deus as tábuas da Lei no monte Sinai?",
+      "alternativas": [
+        "Abraão",
+        "Moisés",
+        "Aarão",
+        "Josué"
+      ],
+      "correta": 1,
+      "explicacao": "No Sinai, Deus entregou a Moisés as tábuas com os mandamentos.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Ex",
+        "capitulo": 31,
+        "versiculos": "18"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.013",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "verdadeiro_falso",
+      "pergunta": "O Novo Testamento começa com os quatro Evangelhos.",
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "explicacao": "Mateus, Marcos, Lucas e João abrem o Novo Testamento. O Catecismo diz que os Evangelhos são o coração de todas as Escrituras.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 125
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.014",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual apóstolo traiu Jesus?",
+      "alternativas": [
+        "Judas Iscariotes",
+        "Judas Tadeu",
+        "Tomé",
+        "Filipe"
+      ],
+      "correta": 0,
+      "explicacao": "Judas Iscariotes combinou com os chefes dos sacerdotes entregar Jesus. Não confunda com São Judas Tadeu, também apóstolo.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 26,
+        "versiculos": "14-16"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.015",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual anjo anunciou a Maria que ela seria a mãe do Salvador?",
+      "alternativas": [
+        "Miguel",
+        "Rafael",
+        "Gabriel",
+        "Uriel"
+      ],
+      "correta": 2,
+      "explicacao": "O anjo Gabriel foi enviado por Deus a Nazaré, a uma virgem chamada Maria.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 1,
+        "versiculos": "26-27"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.016",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos dias Jesus jejuou no deserto?",
+      "alternativas": [
+        "7",
+        "12",
+        "40",
+        "50"
+      ],
+      "correta": 2,
+      "explicacao": "Conduzido pelo Espírito ao deserto, Jesus jejuou quarenta dias e quarenta noites.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 4,
+        "versiculos": "1-2"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n1.017",
+      "trilha": "escrituras",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual oração Jesus ensinou aos discípulos?",
+      "alternativas": [
+        "Ave-Maria",
+        "Pai-Nosso",
+        "Glória",
+        "Credo"
+      ],
+      "correta": 1,
+      "explicacao": "Quando os discípulos pediram para aprender a rezar, Jesus ensinou o Pai-Nosso.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 6,
+        "versiculos": "9-13"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.001",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos livros tem o Antigo Testamento na Bíblia católica?",
+      "alternativas": [
+        "39",
+        "46",
+        "27",
+        "50"
+      ],
+      "correta": 1,
+      "explicacao": "O cânon católico do Antigo Testamento tem 46 livros.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 120
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.002",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual destes livros está na Bíblia católica, mas não na maioria das Bíblias protestantes?",
+      "alternativas": [
+        "Rute",
+        "Tobias",
+        "Jonas",
+        "Provérbios"
+      ],
+      "correta": 1,
+      "explicacao": "Tobias, Judite, 1 e 2 Macabeus, Sabedoria, Eclesiástico e Baruc são chamados deuterocanônicos e fazem parte do cânon católico.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 120
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.003",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "A quem são atribuídas as cartas aos Romanos, aos Coríntios e aos Gálatas?",
+      "alternativas": [
+        "São Pedro",
+        "São Paulo",
+        "São Tiago",
+        "São João"
+      ],
+      "correta": 1,
+      "explicacao": "Essas cartas começam com a saudação de Paulo, apóstolo de Jesus Cristo.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Rm",
+        "capitulo": 1,
+        "versiculos": "1"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.004",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual Evangelho começa dizendo que \"no princípio era o Verbo\"?",
+      "alternativas": [
+        "Mateus",
+        "Marcos",
+        "Lucas",
+        "João"
+      ],
+      "correta": 3,
+      "explicacao": "João abre seu Evangelho contemplando o Verbo eterno, que estava junto de Deus e era Deus.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Jo",
+        "capitulo": 1,
+        "versiculos": "1"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.005",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em que festa o Espírito Santo desceu sobre os apóstolos reunidos?",
+      "alternativas": [
+        "Páscoa",
+        "Pentecostes",
+        "Tabernáculos",
+        "Purim"
+      ],
+      "correta": 1,
+      "explicacao": "No dia de Pentecostes, o Espírito Santo veio sobre eles como línguas de fogo.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "At",
+        "capitulo": 2,
+        "versiculos": "1-4"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.006",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem subiu numa árvore para conseguir ver Jesus passar?",
+      "alternativas": [
+        "Nicodemos",
+        "Zaqueu",
+        "Bartimeu",
+        "Mateus"
+      ],
+      "correta": 1,
+      "explicacao": "Zaqueu, chefe dos cobradores de impostos, era baixo e subiu num sicômoro. Jesus se hospedou em sua casa.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 19,
+        "versiculos": "1-10"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.007",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Como é conhecida a parábola do filho que gasta a herança e volta para casa do pai?",
+      "alternativas": [
+        "Filho pródigo",
+        "Bom samaritano",
+        "Semeador",
+        "Talentos"
+      ],
+      "correta": 0,
+      "explicacao": "Na parábola do filho pródigo, o pai corre ao encontro do filho arrependido: imagem da misericórdia de Deus.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 15,
+        "versiculos": "11-32"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.008",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem foi vendido pelos irmãos e depois se tornou governador no Egito?",
+      "alternativas": [
+        "José",
+        "Benjamim",
+        "Jacó",
+        "Moisés"
+      ],
+      "correta": 0,
+      "explicacao": "José, filho de Jacó, foi vendido pelos irmãos e, no Egito, chegou a governar a terra.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Gn",
+        "capitulo": 37,
+        "versiculos": "28"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.009",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual profeta passou três dias no ventre de um grande peixe?",
+      "alternativas": [
+        "Elias",
+        "Jonas",
+        "Amós",
+        "Jeremias"
+      ],
+      "correta": 1,
+      "explicacao": "Jonas fugiu da missão que Deus lhe deu, foi engolido por um grande peixe e ali rezou a Deus.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Jn",
+        "capitulo": 2
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.010",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual destes livros NÃO faz parte do Pentateuco (os cinco primeiros livros)?",
+      "alternativas": [
+        "Gênesis",
+        "Levítico",
+        "Josué",
+        "Deuteronômio"
+      ],
+      "correta": 2,
+      "explicacao": "O Pentateuco é Gênesis, Êxodo, Levítico, Números e Deuteronômio. Josué começa depois da morte de Moisés.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Js",
+        "capitulo": 1,
+        "versiculos": "1-2"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.011",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "A quem Jesus disse: \"tu és Pedro, e sobre esta pedra edificarei a minha Igreja\"?",
+      "alternativas": [
+        "André",
+        "Simão",
+        "Tiago",
+        "João"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus mudou o nome de Simão para Pedro (pedra) depois que ele professou a fé em Jesus como o Cristo.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 16,
+        "versiculos": "16-18"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.012",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem é o primeiro mártir cristão narrado nos Atos dos Apóstolos?",
+      "alternativas": [
+        "Estêvão",
+        "Tiago",
+        "Paulo",
+        "Barnabé"
+      ],
+      "correta": 0,
+      "explicacao": "Estêvão foi apedrejado e, morrendo, perdoou os que o matavam.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "At",
+        "capitulo": 7,
+        "versiculos": "54-60"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.013",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "A caminho de qual cidade Saulo se converteu ao encontrar Jesus ressuscitado?",
+      "alternativas": [
+        "Antioquia",
+        "Damasco",
+        "Roma",
+        "Corinto"
+      ],
+      "correta": 1,
+      "explicacao": "No caminho de Damasco, uma luz do céu o envolveu e ele ouviu a voz de Jesus.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "At",
+        "capitulo": 9,
+        "versiculos": "1-9"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.014",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual rei construiu o primeiro Templo de Jerusalém?",
+      "alternativas": [
+        "Davi",
+        "Saul",
+        "Salomão",
+        "Ezequias"
+      ],
+      "correta": 2,
+      "explicacao": "Salomão, filho de Davi, construiu o Templo do Senhor em Jerusalém.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "1Rs",
+        "capitulo": 6
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.015",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Que mulher moabita disse à sogra: \"o teu povo será o meu povo, e o teu Deus será o meu Deus\"?",
+      "alternativas": [
+        "Rute",
+        "Ester",
+        "Débora",
+        "Judite"
+      ],
+      "correta": 0,
+      "explicacao": "Rute permaneceu fiel a Noemi. Ela é bisavó do rei Davi.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Rt",
+        "capitulo": 1,
+        "versiculos": "16"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.016",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são os dois maiores mandamentos, segundo Jesus?",
+      "alternativas": [
+        "Não matar e não roubar",
+        "Amar a Deus de todo o coração e amar o próximo como a si mesmo",
+        "Guardar o sábado e honrar pai e mãe",
+        "Jejuar e dar esmola"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus resume toda a Lei e os Profetas no amor a Deus e no amor ao próximo.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 22,
+        "versiculos": "36-40"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n2.017",
+      "trilha": "escrituras",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual destes NÃO é um dos quatro evangelistas?",
+      "alternativas": [
+        "Marcos",
+        "Lucas",
+        "Paulo",
+        "João"
+      ],
+      "correta": 2,
+      "explicacao": "Os quatro Evangelhos são segundo Mateus, Marcos, Lucas e João. Paulo escreveu cartas.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 120
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.001",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual sumo sacerdote interrogou Jesus, pedindo que dissesse se era o Cristo?",
+      "alternativas": [
+        "Anás",
+        "Caifás",
+        "Nicodemos",
+        "Gamaliel"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus foi levado à casa de Caifás, o sumo sacerdote, onde estavam reunidos os escribas e os anciãos.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 26,
+        "versiculos": "57-63"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.002",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual livro narra a resistência de Matatias e seus filhos contra a imposição de cultos pagãos?",
+      "alternativas": [
+        "1 Macabeus",
+        "Esdras",
+        "Neemias",
+        "Judite"
+      ],
+      "correta": 0,
+      "explicacao": "O Primeiro Livro dos Macabeus conta a fidelidade de Matatias e seus filhos à Lei de Deus.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "1Mc",
+        "capitulo": 2
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.003",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual profeta anunciou que a virgem conceberia e daria à luz um filho chamado Emanuel?",
+      "alternativas": [
+        "Jeremias",
+        "Ezequiel",
+        "Isaías",
+        "Miqueias"
+      ],
+      "correta": 2,
+      "explicacao": "O sinal dado por Isaías é lido pela Igreja como anúncio do nascimento de Jesus. Emanuel quer dizer \"Deus conosco\".",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Is",
+        "capitulo": 7,
+        "versiculos": "14"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.004",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Segundo a tradição, quem escreveu os Atos dos Apóstolos?",
+      "alternativas": [
+        "Lucas",
+        "Pedro",
+        "Marcos",
+        "João"
+      ],
+      "correta": 0,
+      "explicacao": "Atos começa citando um \"primeiro livro\" dedicado a Teófilo, o Evangelho de Lucas, que também é dirigido a ele.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "At",
+        "capitulo": 1,
+        "versiculos": "1"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.005",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em qual Evangelho está o cântico de Maria conhecido como Magnificat?",
+      "alternativas": [
+        "Mateus",
+        "Marcos",
+        "Lucas",
+        "João"
+      ],
+      "correta": 2,
+      "explicacao": "Na visita a Isabel, Maria proclama a grandeza do Senhor.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 1,
+        "versiculos": "46-55"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.006",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual patriarca foi chamado por Deus a deixar sua terra e recebeu a promessa de uma grande descendência?",
+      "alternativas": [
+        "Isaac",
+        "Jacó",
+        "Abraão",
+        "Noé"
+      ],
+      "correta": 2,
+      "explicacao": "Deus chamou Abraão a partir para a terra que lhe mostraria e prometeu abençoar nele todas as famílias da terra.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Gn",
+        "capitulo": 12,
+        "versiculos": "1-3"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.007",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem eram os pais de João Batista?",
+      "alternativas": [
+        "Joaquim e Ana",
+        "Zacarias e Isabel",
+        "Elcana e Ana",
+        "José e Maria"
+      ],
+      "correta": 1,
+      "explicacao": "Zacarias, sacerdote, e Isabel, sua esposa, já idosos, receberam o anúncio do nascimento de João.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 1,
+        "versiculos": "5-13"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.008",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais apóstolos testemunharam a Transfiguração de Jesus?",
+      "alternativas": [
+        "Pedro, André e Filipe",
+        "Pedro, Tiago e João",
+        "Tiago, João e Mateus",
+        "Todos os Doze"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus levou consigo Pedro, Tiago e João a um monte alto e foi transfigurado diante deles.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 17,
+        "versiculos": "1-2"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.009",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual livro do Antigo Testamento é uma coleção de orações cantadas, muito usada na liturgia?",
+      "alternativas": [
+        "Provérbios",
+        "Salmos",
+        "Eclesiastes",
+        "Cântico dos Cânticos"
+      ],
+      "correta": 1,
+      "explicacao": "Os Salmos são a grande escola de oração do povo de Deus e da Igreja.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2585
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.010",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual profetisa idosa louvou a Deus e falou do Menino Jesus no Templo?",
+      "alternativas": [
+        "Isabel",
+        "Ana",
+        "Débora",
+        "Miriam"
+      ],
+      "correta": 1,
+      "explicacao": "Ana, filha de Fanuel, servia a Deus no Templo com jejuns e orações.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 2,
+        "versiculos": "36-38"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.011",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "A Carta aos Hebreus apresenta Jesus sobretudo como:",
+      "alternativas": [
+        "Rei de Israel",
+        "Sumo sacerdote",
+        "Profeta do deserto",
+        "Juiz do povo"
+      ],
+      "correta": 1,
+      "explicacao": "Hebreus contempla Jesus como o grande sumo sacerdote, que atravessou os céus.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Hb",
+        "capitulo": 4,
+        "versiculos": "14"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.012",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem foi escolhido para ocupar o lugar de Judas entre os Doze?",
+      "alternativas": [
+        "Matias",
+        "Barnabé",
+        "Silas",
+        "Timóteo"
+      ],
+      "correta": 0,
+      "explicacao": "Depois de rezar, os apóstolos tiraram a sorte, e ela caiu sobre Matias.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "At",
+        "capitulo": 1,
+        "versiculos": "21-26"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.013",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Segundo o próprio livro, onde estava o João que recebeu as visões do Apocalipse?",
+      "alternativas": [
+        "Em Éfeso",
+        "Na ilha de Patmos",
+        "Em Jerusalém",
+        "Em Roma"
+      ],
+      "correta": 1,
+      "explicacao": "O autor diz que estava na ilha de Patmos por causa da Palavra de Deus e do testemunho de Jesus.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Ap",
+        "capitulo": 1,
+        "versiculos": "9"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.014",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual rei da Pérsia permitiu que os judeus voltassem do exílio para reconstruir o Templo?",
+      "alternativas": [
+        "Nabucodonosor",
+        "Ciro",
+        "Dario",
+        "Xerxes"
+      ],
+      "correta": 1,
+      "explicacao": "O livro de Esdras abre com o decreto de Ciro permitindo o retorno a Jerusalém.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Esd",
+        "capitulo": 1,
+        "versiculos": "1-3"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.015",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Que personagem do Antigo Testamento, sacerdote do Deus Altíssimo, ofereceu pão e vinho a Abraão?",
+      "alternativas": [
+        "Melquisedec",
+        "Aarão",
+        "Jetro",
+        "Samuel"
+      ],
+      "correta": 0,
+      "explicacao": "Melquisedec é visto pela tradição como figura de Cristo, sacerdote eterno.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Gn",
+        "capitulo": 14,
+        "versiculos": "18-20"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.016",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em Emaús, como os discípulos reconheceram Jesus ressuscitado?",
+      "alternativas": [
+        "Pelas chagas nas mãos",
+        "Ao partir o pão",
+        "Pela voz, ao chamá-los pelo nome",
+        "Ao vê-lo caminhar sobre as águas"
+      ],
+      "correta": 1,
+      "explicacao": "À mesa, Jesus tomou o pão, abençoou, partiu e deu a eles; então seus olhos se abriram.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 24,
+        "versiculos": "30-31"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.escrituras.n3.017",
+      "trilha": "escrituras",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual evangelista narra a visita dos Magos ao Menino Jesus?",
+      "alternativas": [
+        "Mateus",
+        "Marcos",
+        "Lucas",
+        "João"
+      ],
+      "correta": 0,
+      "explicacao": "Só Mateus conta a vinda dos Magos do Oriente, guiados pela estrela.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 2,
+        "versiculos": "1-12"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.001",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em quantas partes está dividido o Catecismo da Igreja Católica?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "7"
+      ],
+      "correta": 2,
+      "explicacao": "A fé professada (Credo), a fé celebrada (sacramentos), a fé vivida (mandamentos) e a fé rezada (oração).",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 13
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.002",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos são os sacramentos?",
+      "alternativas": [
+        "3",
+        "5",
+        "7",
+        "10"
+      ],
+      "correta": 2,
+      "explicacao": "Batismo, Confirmação, Eucaristia, Penitência, Unção dos Enfermos, Ordem e Matrimônio.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1113
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.003",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual sacramento é a porta de entrada para a vida cristã e para os outros sacramentos?",
+      "alternativas": [
+        "Eucaristia",
+        "Batismo",
+        "Confirmação",
+        "Penitência"
+      ],
+      "correta": 1,
+      "explicacao": "O Batismo é o fundamento de toda a vida cristã e a porta que dá acesso aos demais sacramentos.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1213
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.004",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual é o mistério central da fé e da vida cristã?",
+      "alternativas": [
+        "A criação",
+        "A Santíssima Trindade",
+        "O juízo final",
+        "Os anjos"
+      ],
+      "correta": 1,
+      "explicacao": "O mistério da Santíssima Trindade é o mistério de Deus em si mesmo, fonte de todos os outros.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 234
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.005",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "A Santíssima Trindade é:",
+      "alternativas": [
+        "Três deuses unidos",
+        "Um só Deus em três Pessoas",
+        "Uma só Pessoa com três nomes",
+        "Deus, Maria e Jesus"
+      ],
+      "correta": 1,
+      "explicacao": "Não professamos três deuses, mas um só Deus em três Pessoas: Pai, Filho e Espírito Santo.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 253
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.006",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Como o Concílio Vaticano II, citado no Catecismo, chama a Eucaristia?",
+      "alternativas": [
+        "Fonte e ápice da vida cristã",
+        "Sacramento opcional",
+        "Simples memória",
+        "Prêmio dos perfeitos"
+      ],
+      "correta": 0,
+      "explicacao": "Na Eucaristia está todo o bem espiritual da Igreja: o próprio Cristo.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1324
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.007",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Segundo a definição clássica citada pelo Catecismo, o que é a oração?",
+      "alternativas": [
+        "Recitar fórmulas decoradas",
+        "A elevação da alma a Deus",
+        "Pedir coisas materiais",
+        "Um dever só dos padres"
+      ],
+      "correta": 1,
+      "explicacao": "O Catecismo cita São João Damasceno: rezar é elevar a alma a Deus ou pedir a Deus os bens convenientes.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2559
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.008",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos são os mandamentos da Lei de Deus?",
+      "alternativas": [
+        "5",
+        "7",
+        "10",
+        "12"
+      ],
+      "correta": 2,
+      "explicacao": "Decálogo quer dizer, literalmente, \"dez palavras\".",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2056
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.009",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que pede o primeiro mandamento?",
+      "alternativas": [
+        "Honrar pai e mãe",
+        "Amar a Deus sobre todas as coisas",
+        "Não matar",
+        "Guardar domingos e festas"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus resumiu os deveres para com Deus: amar o Senhor de todo o coração, de toda a alma e de todo o entendimento.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2083
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.010",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Por que a Igreja chama Maria de \"Mãe de Deus\"?",
+      "alternativas": [
+        "Porque ela existia antes de Deus",
+        "Porque o Filho que ela concebeu é verdadeiramente Deus",
+        "Por um título só poético",
+        "Porque ela é uma deusa"
+      ],
+      "correta": 1,
+      "explicacao": "Maria é Mãe de Jesus, que é o Filho eterno de Deus feito homem; por isso é verdadeiramente Mãe de Deus (Theotokos).",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 495
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.011",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "O Credo também é chamado de:",
+      "alternativas": [
+        "Símbolo da fé",
+        "Livro da vida",
+        "Oração do Senhor",
+        "Ato de contrição"
+      ],
+      "correta": 0,
+      "explicacao": "As sínteses da fé são chamadas \"símbolos da fé\": sinais de reconhecimento entre os que creem.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 187
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.012",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem é Jesus Cristo, segundo a fé católica?",
+      "alternativas": [
+        "Só um grande profeta",
+        "Verdadeiro Deus e verdadeiro homem",
+        "Um anjo que parecia homem",
+        "Um homem que virou Deus"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus é uma só Pessoa divina com duas naturezas: divina e humana.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 464
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.013",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são as virtudes teologais?",
+      "alternativas": [
+        "Fé, esperança e caridade",
+        "Prudência, justiça e fortaleza",
+        "Humildade, paciência e pureza",
+        "Oração, jejum e esmola"
+      ],
+      "correta": 0,
+      "explicacao": "Elas se referem diretamente a Deus e são infundidas por Ele na alma.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1813
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.014",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual sacramento perdoa os pecados cometidos depois do Batismo?",
+      "alternativas": [
+        "Confirmação",
+        "Penitência (Confissão)",
+        "Ordem",
+        "Matrimônio"
+      ],
+      "correta": 1,
+      "explicacao": "Quem se aproxima do sacramento da Penitência recebe da misericórdia de Deus o perdão e a reconciliação com a Igreja.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1422
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.015",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são as quatro notas (características) da Igreja que professamos no Credo?",
+      "alternativas": [
+        "Una, santa, católica e apostólica",
+        "Antiga, grande, rica e forte",
+        "Romana, latina, santa e sábia",
+        "Una, pobre, humilde e missionária"
+      ],
+      "correta": 0,
+      "explicacao": "São quatro características inseparáveis entre si, que indicam traços essenciais da Igreja e de sua missão.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 811
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.016",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "verdadeiro_falso",
+      "pergunta": "O domingo é o dia principal para celebrar a Eucaristia por ser o dia da Ressurreição do Senhor.",
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "explicacao": "A celebração dominical do Dia do Senhor e de sua Eucaristia está no coração da vida da Igreja.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2177
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n1.017",
+      "trilha": "catecismo",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são os sacramentos da iniciação cristã?",
+      "alternativas": [
+        "Batismo, Confirmação e Eucaristia",
+        "Batismo, Penitência e Matrimônio",
+        "Eucaristia, Ordem e Unção",
+        "Confirmação, Ordem e Matrimônio"
+      ],
+      "correta": 0,
+      "explicacao": "Pelo Batismo, pela Confirmação e pela Eucaristia, lançam-se os fundamentos de toda a vida cristã.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1212
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.001",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são as virtudes cardeais?",
+      "alternativas": [
+        "Fé, esperança, caridade e humildade",
+        "Prudência, justiça, fortaleza e temperança",
+        "Paciência, bondade, mansidão e pureza",
+        "Obediência, pobreza, castidade e oração"
+      ],
+      "correta": 1,
+      "explicacao": "São chamadas cardeais (de \"cardo\", dobradiça) porque as outras virtudes se apoiam nelas.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1805
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.002",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos são os dons do Espírito Santo?",
+      "alternativas": [
+        "3",
+        "5",
+        "7",
+        "12"
+      ],
+      "correta": 2,
+      "explicacao": "Sabedoria, entendimento, conselho, fortaleza, ciência, piedade e temor de Deus.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1831
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.003",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Para que um pecado seja mortal, além de matéria grave e pleno conhecimento, é preciso:",
+      "alternativas": [
+        "Que seja feito em público",
+        "Deliberado consentimento",
+        "Que prejudique muitas pessoas",
+        "Que seja repetido várias vezes"
+      ],
+      "correta": 1,
+      "explicacao": "As três condições precisam estar presentes juntas.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1857
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.004",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual destes NÃO está entre os pecados capitais?",
+      "alternativas": [
+        "Soberba",
+        "Avareza",
+        "Medo",
+        "Preguiça"
+      ],
+      "correta": 2,
+      "explicacao": "Os pecados capitais são soberba, avareza, inveja, ira, luxúria, gula e preguiça (acídia).",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1866
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.005",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais sacramentos imprimem caráter e por isso não se repetem?",
+      "alternativas": [
+        "Batismo, Confirmação e Ordem",
+        "Batismo, Eucaristia e Matrimônio",
+        "Confirmação, Penitência e Unção",
+        "Todos os sete"
+      ],
+      "correta": 0,
+      "explicacao": "Esses três sacramentos conferem um selo espiritual indelével.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1121
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.006",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Como se chama a conversão de toda a substância do pão e do vinho no Corpo e no Sangue de Cristo?",
+      "alternativas": [
+        "Transfiguração",
+        "Transubstanciação",
+        "Encarnação",
+        "Ressurreição"
+      ],
+      "correta": 1,
+      "explicacao": "O Concílio de Trento chamou essa mudança, de modo conveniente e próprio, de transubstanciação.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1376
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.007",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem tem consciência de pecado grave deve, antes de comungar:",
+      "alternativas": [
+        "Só rezar um Pai-Nosso",
+        "Receber o sacramento da Reconciliação",
+        "Esperar um ano",
+        "Comungar normalmente"
+      ],
+      "correta": 1,
+      "explicacao": "Para receber a Comunhão é preciso estar em estado de graça.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1385
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.008",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são os sacramentos de cura?",
+      "alternativas": [
+        "Batismo e Eucaristia",
+        "Penitência e Unção dos Enfermos",
+        "Ordem e Matrimônio",
+        "Confirmação e Eucaristia"
+      ],
+      "correta": 1,
+      "explicacao": "Cristo, médico das almas e dos corpos, quis que a Igreja continuasse sua obra de cura e salvação.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1421
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.009",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são os sacramentos \"a serviço da comunhão\"?",
+      "alternativas": [
+        "Ordem e Matrimônio",
+        "Batismo e Confirmação",
+        "Penitência e Unção",
+        "Eucaristia e Penitência"
+      ],
+      "correta": 0,
+      "explicacao": "Eles se ordenam à salvação dos outros e, por meio do serviço aos outros, contribuem para a salvação pessoal.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1534
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.010",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Por quais dois meios a Revelação divina é transmitida?",
+      "alternativas": [
+        "Pela Sagrada Escritura e pela Sagrada Tradição",
+        "Só pela Bíblia",
+        "Pelas visões particulares",
+        "Pela razão e pela ciência"
+      ],
+      "correta": 0,
+      "explicacao": "Tradição e Escritura estão intimamente unidas e brotam da mesma fonte divina.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 80
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.011",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "A quem foi confiada a interpretação autêntica da Palavra de Deus?",
+      "alternativas": [
+        "A cada fiel isoladamente",
+        "Ao Magistério da Igreja: o Papa e os bispos em comunhão com ele",
+        "Aos estudiosos de línguas antigas",
+        "Aos reis cristãos"
+      ],
+      "correta": 1,
+      "explicacao": "O Magistério não está acima da Palavra de Deus, mas a seu serviço.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 85
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.012",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Segundo a Tradição da Igreja, quantos são os frutos do Espírito Santo?",
+      "alternativas": [
+        "7",
+        "9",
+        "10",
+        "12"
+      ],
+      "correta": 3,
+      "explicacao": "Entre eles: caridade, alegria, paz, paciência, bondade e fidelidade.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1832
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.013",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que significa o dogma da Imaculada Conceição?",
+      "alternativas": [
+        "Que Jesus foi concebido sem pai humano",
+        "Que Maria foi preservada do pecado original desde a sua concepção",
+        "Que Maria nunca morreu",
+        "Que Maria foi concebida sem pais"
+      ],
+      "correta": 1,
+      "explicacao": "É comum confundir com a concepção virginal de Jesus. A Imaculada Conceição diz respeito à própria Maria.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 491
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.014",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que significa o dogma da Assunção de Maria?",
+      "alternativas": [
+        "Que Maria foi elevada em corpo e alma à glória do céu",
+        "Que Maria assumiu o governo da Igreja",
+        "Que Maria apareceu aos apóstolos",
+        "Que Maria foi batizada por Jesus"
+      ],
+      "correta": 0,
+      "explicacao": "Terminado o curso de sua vida terrena, Maria foi levada à glória celeste em corpo e alma.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 966
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.015",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que é o purgatório, segundo o Catecismo?",
+      "alternativas": [
+        "Um segundo inferno",
+        "A purificação dos que morrem na graça de Deus, mas ainda não plenamente purificados",
+        "Uma nova chance para quem rejeitou Deus",
+        "Um lugar de espera para os anjos"
+      ],
+      "correta": 1,
+      "explicacao": "Quem passa pelo purgatório já tem a salvação garantida.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1030
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.016",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Como o Catecismo, citando Tertuliano, chama o Pai-Nosso?",
+      "alternativas": [
+        "Resumo de todo o Evangelho",
+        "Oração dos pecadores",
+        "Oração só para a Missa",
+        "Oração do Antigo Testamento"
+      ],
+      "correta": 0,
+      "explicacao": "O Pai-Nosso reúne o essencial da mensagem de Jesus.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2761
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n2.017",
+      "trilha": "catecismo",
+      "nivel": 2,
+      "tipo": "verdadeiro_falso",
+      "pergunta": "Em caso de necessidade, qualquer pessoa, mesmo não batizada, pode batizar validamente, se tiver a intenção de fazer o que a Igreja faz.",
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "explicacao": "Basta usar a fórmula trinitária com água. Isso mostra o quanto Deus quer a salvação de todos.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1256
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.001",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "O Credo rezado na Missa aos domingos (Niceno-Constantinopolitano) vem de quais concílios?",
+      "alternativas": [
+        "Trento e Vaticano I",
+        "Niceia e Constantinopla",
+        "Éfeso e Calcedônia",
+        "Latrão e Lião"
+      ],
+      "correta": 1,
+      "explicacao": "Esse símbolo vem dos dois primeiros concílios ecumênicos, de 325 e 381.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 195
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.002",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Como o Catecismo explica, de modo positivo, a frase \"fora da Igreja não há salvação\"?",
+      "alternativas": [
+        "Que só se salvam os que frequentam a Missa",
+        "Que toda salvação vem de Cristo-Cabeça por meio da Igreja, seu Corpo",
+        "Que todos os não católicos estão condenados",
+        "Que a Igreja pode vender a salvação"
+      ],
+      "correta": 1,
+      "explicacao": "A frase não se dirige a quem, sem culpa, desconhece Cristo e sua Igreja.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 846
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.003",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual é o sinal sensível usado no sacramento da Unção dos Enfermos?",
+      "alternativas": [
+        "Água",
+        "Óleo",
+        "Pão",
+        "Cinzas"
+      ],
+      "correta": 1,
+      "explicacao": "O enfermo é ungido com óleo devidamente abençoado, na fronte e nas mãos.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1513
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.004",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "No rito latino, quem é o ministro originário da Confirmação?",
+      "alternativas": [
+        "O diácono",
+        "O bispo",
+        "O catequista",
+        "O padrinho"
+      ],
+      "correta": 1,
+      "explicacao": "O bispo pode, por motivos graves, conceder a faculdade a presbíteros.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1312
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.005",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são os três graus do sacramento da Ordem?",
+      "alternativas": [
+        "Episcopado, presbiterado e diaconado",
+        "Papa, cardeal e bispo",
+        "Padre, frade e monge",
+        "Leitor, acólito e catequista"
+      ],
+      "correta": 0,
+      "explicacao": "Bispos e presbíteros participam do sacerdócio de Cristo; os diáconos são ordenados para o serviço.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1554
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.006",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Na Igreja latina, quem são os ministros do sacramento do Matrimônio?",
+      "alternativas": [
+        "O padre que preside",
+        "Os próprios noivos",
+        "Os padrinhos",
+        "O bispo da diocese"
+      ],
+      "correta": 1,
+      "explicacao": "Os esposos se conferem mutuamente o sacramento, expressando o consentimento diante da Igreja.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1623
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.007",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quando o Papa goza da infalibilidade?",
+      "alternativas": [
+        "Em qualquer opinião pessoal",
+        "Quando proclama por ato definitivo uma doutrina de fé ou de moral, como pastor supremo",
+        "Em entrevistas",
+        "Quando fala de assuntos científicos"
+      ],
+      "correta": 1,
+      "explicacao": "A infalibilidade é um carisma ligado ao ensino definitivo sobre fé e moral.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 891
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.008",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "A superstição e a idolatria são pecados contra qual mandamento?",
+      "alternativas": [
+        "Primeiro",
+        "Segundo",
+        "Quinto",
+        "Oitavo"
+      ],
+      "correta": 0,
+      "explicacao": "Ambas desviam do culto devido ao único Deus verdadeiro.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2110
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.009",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "O quarto mandamento pede:",
+      "alternativas": [
+        "Não matar",
+        "Honrar pai e mãe",
+        "Não levantar falso testemunho",
+        "Santificar o domingo"
+      ],
+      "correta": 1,
+      "explicacao": "Ele se estende também aos deveres para com quem exerce autoridade legítima.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2197
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.010",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que é a lei moral natural?",
+      "alternativas": [
+        "Uma lei só para cristãos",
+        "A lei inscrita pelo Criador no coração humano, conhecida pela razão",
+        "As leis da física",
+        "Os costumes de cada época"
+      ],
+      "correta": 1,
+      "explicacao": "Ela exprime o sentido moral originário que permite discernir o bem e o mal.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1954
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.011",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são as finalidades do matrimônio?",
+      "alternativas": [
+        "Só a procriação",
+        "O bem dos cônjuges e a geração e educação dos filhos",
+        "Só a ajuda mútua",
+        "A herança dos bens"
+      ],
+      "correta": 1,
+      "explicacao": "A aliança matrimonial é ordenada a esses dois fins inseparáveis.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1601
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.012",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que é uma indulgência?",
+      "alternativas": [
+        "Permissão para pecar",
+        "A remissão, diante de Deus, da pena temporal dos pecados já perdoados quanto à culpa",
+        "O perdão de pecados ainda não confessados",
+        "Uma taxa paga à Igreja"
+      ],
+      "correta": 1,
+      "explicacao": "A indulgência não perdoa pecados: ela trata das consequências de pecados já perdoados.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1471
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.013",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são os três estados da Igreja, segundo a comunhão dos santos?",
+      "alternativas": [
+        "Clero, religiosos e leigos",
+        "Peregrinos na terra, os que se purificam e os que estão na glória",
+        "Oriente, Ocidente e missões",
+        "Paróquia, diocese e Vaticano"
+      ],
+      "correta": 1,
+      "explicacao": "Todos estão unidos na mesma caridade para com Deus e o próximo.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 954
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.014",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual a diferença entre o culto a Deus e o culto a Maria e aos santos?",
+      "alternativas": [
+        "Não há diferença",
+        "Só Deus é adorado; Maria e os santos são venerados",
+        "Maria é adorada como Deus",
+        "Os santos substituem Deus"
+      ],
+      "correta": 1,
+      "explicacao": "A devoção a Maria é singular, mas difere essencialmente do culto de adoração prestado só a Deus.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 971
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.015",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quando acontece o juízo particular?",
+      "alternativas": [
+        "No fim do mundo",
+        "Logo após a morte de cada pessoa",
+        "No Batismo",
+        "Na Confirmação"
+      ],
+      "correta": 1,
+      "explicacao": "Cada pessoa recebe na alma imortal a retribuição eterna logo após a morte. O juízo final acontece no fim dos tempos.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1022
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.016",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual destas é uma obra de misericórdia espiritual?",
+      "alternativas": [
+        "Dar de comer a quem tem fome",
+        "Visitar os enfermos",
+        "Ensinar os ignorantes",
+        "Enterrar os mortos"
+      ],
+      "correta": 2,
+      "explicacao": "As espirituais incluem instruir, aconselhar, consolar, perdoar e suportar com paciência. As outras opções são obras corporais.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2447
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.catecismo.n3.017",
+      "trilha": "catecismo",
+      "nivel": 3,
+      "tipo": "verdadeiro_falso",
+      "pergunta": "Segundo o Catecismo, a fé e a razão podem estar em verdadeiro conflito.",
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "explicacao": "O mesmo Deus que revela os mistérios deu ao ser humano a luz da razão; a verdade não pode contradizer a verdade.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 159
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.001",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual é a cor litúrgica do Advento e da Quaresma?",
+      "alternativas": [
+        "Verde",
+        "Branco",
+        "Roxo",
+        "Vermelho"
+      ],
+      "correta": 2,
+      "explicacao": "O roxo marca esses tempos de preparação e conversão. O documento citado também prevê o rosa no 3º domingo do Advento e no 4º da Quaresma.",
+      "referencia": {
+        "tipo": "documento",
+        "titulo": "Instrução Geral do Missal Romano",
+        "numero": 346
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.002",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quanto tempo de jejum eucarístico se pede antes de comungar?",
+      "alternativas": [
+        "15 minutos",
+        "1 hora",
+        "3 horas",
+        "Desde a meia-noite"
+      ],
+      "correta": 1,
+      "explicacao": "Abstém-se de comida e bebida por uma hora; água e remédios não quebram o jejum.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 919
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.003",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual tempo litúrgico prepara a Páscoa, durante quarenta dias?",
+      "alternativas": [
+        "Advento",
+        "Quaresma",
+        "Tempo Comum",
+        "Tempo Pascal"
+      ],
+      "correta": 1,
+      "explicacao": "Na Quaresma, a Igreja se une ao mistério de Jesus no deserto.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 540
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.004",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em que dia da semana Jesus ressuscitou, e por isso os cristãos se reúnem para a Missa?",
+      "alternativas": [
+        "Sábado",
+        "Domingo",
+        "Sexta-feira",
+        "Quinta-feira"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus ressuscitou no primeiro dia da semana, que os cristãos chamam de Dia do Senhor.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2174
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.005",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual celebração abre a Quaresma, com jejum e abstinência?",
+      "alternativas": [
+        "Domingo de Ramos",
+        "Quarta-feira de Cinzas",
+        "Sexta-feira Santa",
+        "Corpus Christi"
+      ],
+      "correta": 1,
+      "explicacao": "A Quarta-feira de Cinzas e a Sexta-feira Santa são dias de jejum e abstinência.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 1251
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.006",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Como se chama a oração que recorda o anúncio do anjo a Maria e a Encarnação, tradicionalmente rezada ao meio-dia?",
+      "alternativas": [
+        "Ângelus",
+        "Magnificat",
+        "Salve-Rainha",
+        "Te Deum"
+      ],
+      "correta": 0,
+      "explicacao": "O Ângelus medita o anúncio do anjo e o \"sim\" de Maria.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 1,
+        "versiculos": "26-38"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.007",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "A fórmula \"em nome do Pai, e do Filho e do Espírito Santo\" vem de qual ordem de Jesus?",
+      "alternativas": [
+        "Do Sermão da Montanha",
+        "Do envio dos discípulos para batizar todos os povos",
+        "Da Última Ceia",
+        "Das bodas de Caná"
+      ],
+      "correta": 1,
+      "explicacao": "Antes de subir ao céu, Jesus mandou fazer discípulos de todos os povos, batizando-os em nome da Trindade.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 28,
+        "versiculos": "19"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.008",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que a Igreja celebra no Natal?",
+      "alternativas": [
+        "A Ressurreição",
+        "O nascimento de Jesus",
+        "A vinda do Espírito Santo",
+        "A Assunção de Maria"
+      ],
+      "correta": 1,
+      "explicacao": "No Natal celebramos o nascimento do Salvador em Belém.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Lc",
+        "capitulo": 2,
+        "versiculos": "1-14"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.009",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Contando o domingo da Páscoa, em que dia do Tempo Pascal se celebra Pentecostes?",
+      "alternativas": [
+        "7º dia",
+        "40º dia",
+        "50º dia",
+        "100º dia"
+      ],
+      "correta": 2,
+      "explicacao": "Pentecostes encerra as sete semanas do Tempo Pascal (\"pentecoste\" quer dizer quinquagésimo dia).",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 731
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.010",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem é o Papa?",
+      "alternativas": [
+        "O bispo de Roma, sucessor de Pedro",
+        "O padre mais idoso",
+        "O presidente do Vaticano eleito pelo povo",
+        "Um título só honorífico"
+      ],
+      "correta": 0,
+      "explicacao": "O Papa, bispo de Roma e sucessor de Pedro, é princípio perpétuo e visível de unidade da Igreja.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 882
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.011",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Como se chamam sinais sagrados como a água benta, as bênçãos e o terço?",
+      "alternativas": [
+        "Sacramentos",
+        "Sacramentais",
+        "Dogmas",
+        "Concílios"
+      ],
+      "correta": 1,
+      "explicacao": "Sacramentais são sinais instituídos pela Igreja que preparam para receber a graça e dispõem a cooperar com ela.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1667
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.012",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual oração começa com \"Creio em Deus Pai todo-poderoso, criador do céu e da terra\"?",
+      "alternativas": [
+        "Símbolo dos Apóstolos (Credo)",
+        "Glória",
+        "Salve-Rainha",
+        "Ato de contrição"
+      ],
+      "correta": 0,
+      "explicacao": "O Símbolo dos Apóstolos é o antigo símbolo batismal da Igreja de Roma.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 194
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.013",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual é o primeiro mandamento da Igreja?",
+      "alternativas": [
+        "Confessar-se uma vez por ano",
+        "Participar da Missa aos domingos e festas de guarda",
+        "Jejuar às sextas",
+        "Contribuir com o dízimo"
+      ],
+      "correta": 1,
+      "explicacao": "Os mandamentos da Igreja garantem o mínimo indispensável de oração e esforço moral.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2042
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.014",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Segundo os mandamentos da Igreja, com que frequência mínima o fiel deve se confessar?",
+      "alternativas": [
+        "Uma vez por semana",
+        "Uma vez por mês",
+        "Ao menos uma vez por ano",
+        "Só antes de casar"
+      ],
+      "correta": 2,
+      "explicacao": "É o mínimo pedido. A Igreja recomenda a confissão frequente.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2042
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.015",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em que época o fiel deve comungar, ao menos uma vez por ano?",
+      "alternativas": [
+        "No Natal",
+        "Na Páscoa",
+        "No dia do aniversário",
+        "No dia de Todos os Santos"
+      ],
+      "correta": 1,
+      "explicacao": "O terceiro mandamento da Igreja pede comungar ao menos no tempo da Páscoa.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2042
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.016",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quais são as duas grandes partes da Missa?",
+      "alternativas": [
+        "Entrada e saída",
+        "Liturgia da Palavra e Liturgia Eucarística",
+        "Cantos e leituras",
+        "Homilia e avisos"
+      ],
+      "correta": 1,
+      "explicacao": "Juntas, elas formam um só ato de culto.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1346
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n1.017",
+      "trilha": "fe_catolica",
+      "nivel": 1,
+      "tipo": "verdadeiro_falso",
+      "pergunta": "O Advento é o tempo em que a Igreja se prepara para o Natal, revivendo a espera do Messias.",
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "explicacao": "Celebrando o Advento, a Igreja torna presente essa longa espera e renova o desejo da segunda vinda de Cristo.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 524
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.001",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em que dia da semana a Igreja pede uma penitência especial, como a abstinência de carne?",
+      "alternativas": [
+        "Segunda",
+        "Quarta",
+        "Sexta",
+        "Sábado"
+      ],
+      "correta": 2,
+      "explicacao": "Em memória da Paixão do Senhor. A Conferência Episcopal pode indicar outra forma de penitência, salvo se cair uma solenidade.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 1251
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.002",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Pelo Código de Direito Canônico, em que idade a lei do jejum obriga?",
+      "alternativas": [
+        "Dos 7 aos 70 anos",
+        "Dos 14 anos em diante",
+        "Dos 18 anos até o início dos 60",
+        "Só para religiosos"
+      ],
+      "correta": 2,
+      "explicacao": "A abstinência obriga a partir dos 14 anos; o jejum, dos 18 até o início dos 60.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 1252
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.003",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual é a cor litúrgica do Tempo Comum?",
+      "alternativas": [
+        "Verde",
+        "Roxo",
+        "Branco",
+        "Rosa"
+      ],
+      "correta": 0,
+      "explicacao": "O verde é usado nos domingos e dias de semana do Tempo Comum.",
+      "referencia": {
+        "tipo": "documento",
+        "titulo": "Instrução Geral do Missal Romano",
+        "numero": 346
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.004",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual cor se usa nas festas dos mártires?",
+      "alternativas": [
+        "Verde",
+        "Vermelho",
+        "Roxo",
+        "Azul"
+      ],
+      "correta": 1,
+      "explicacao": "O vermelho também é usado no Domingo de Ramos, na Sexta-feira Santa, em Pentecostes e nas festas dos apóstolos e evangelistas.",
+      "referencia": {
+        "tipo": "documento",
+        "titulo": "Instrução Geral do Missal Romano",
+        "numero": 346
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.005",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem é o ministro ordinário da Sagrada Comunhão?",
+      "alternativas": [
+        "Só o Papa",
+        "O bispo, o presbítero e o diácono",
+        "Qualquer fiel batizado",
+        "Só o bispo"
+      ],
+      "correta": 1,
+      "explicacao": "Ministros extraordinários podem distribuí-la quando necessário.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 910
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.006",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantas vezes no mesmo dia é possível comungar?",
+      "alternativas": [
+        "Só uma",
+        "Até duas, desde que a segunda seja participando da Missa",
+        "Quantas quiser",
+        "Três, se for domingo"
+      ],
+      "correta": 1,
+      "explicacao": "A segunda comunhão no mesmo dia só se recebe dentro da celebração eucarística da qual se participa (há exceção para o perigo de morte).",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 917
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.007",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem é o ministro ordinário do Batismo?",
+      "alternativas": [
+        "O padrinho",
+        "O bispo, o presbítero e o diácono",
+        "O catequista",
+        "Os pais"
+      ],
+      "correta": 1,
+      "explicacao": "Em caso de necessidade, qualquer pessoa com a devida intenção pode batizar.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 861
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.008",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Pelo Código de Direito Canônico, qual a idade mínima para ser padrinho de Batismo?",
+      "alternativas": [
+        "12 anos",
+        "14 anos",
+        "16 anos",
+        "21 anos"
+      ],
+      "correta": 2,
+      "explicacao": "O bispo diocesano pode estabelecer outra idade, e o pároco pode admitir exceção por justa causa.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 874
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.009",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos padrinhos o batizando pode ter?",
+      "alternativas": [
+        "Quantos a família quiser",
+        "Um padrinho, ou uma madrinha, ou um padrinho e uma madrinha",
+        "Exatamente quatro",
+        "Nenhum"
+      ],
+      "correta": 1,
+      "explicacao": "A missão do padrinho é ajudar o afilhado a levar uma vida cristã coerente.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 873
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.010",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "O padre pode revelar o que ouviu em confissão?",
+      "alternativas": [
+        "Sim, se for grave",
+        "Nunca: o sigilo sacramental é absoluto",
+        "Sim, à família",
+        "Sim, depois de dez anos"
+      ],
+      "correta": 1,
+      "explicacao": "O sigilo da confissão não admite exceções.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1467
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.011",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que é a Liturgia das Horas?",
+      "alternativas": [
+        "Uma lista de horários de Missa",
+        "A oração pública da Igreja que santifica o dia",
+        "Um relógio litúrgico",
+        "Uma devoção particular"
+      ],
+      "correta": 1,
+      "explicacao": "Também chamada Ofício Divino, ela faz o mistério de Cristo permear cada hora do dia.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1174
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.012",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual Papa propôs acrescentar os Mistérios Luminosos ao terço?",
+      "alternativas": [
+        "Pio X",
+        "Paulo VI",
+        "João Paulo II",
+        "Bento XVI"
+      ],
+      "correta": 2,
+      "explicacao": "Ele os propôs na carta Rosarium Virginis Mariae (2002), para contemplar a vida pública de Jesus.",
+      "referencia": {
+        "tipo": "documento",
+        "titulo": "Carta apostólica Rosarium Virginis Mariae",
+        "numero": 19
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.013",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em quais tempos litúrgicos não se canta o Glória na Missa de domingo?",
+      "alternativas": [
+        "Advento e Quaresma",
+        "Natal e Páscoa",
+        "Tempo Comum",
+        "Nunca se omite"
+      ],
+      "correta": 0,
+      "explicacao": "O Glória volta com alegria nas grandes festas do Natal e da Páscoa.",
+      "referencia": {
+        "tipo": "documento",
+        "titulo": "Instrução Geral do Missal Romano",
+        "numero": 53
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.014",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Em qual tempo litúrgico não se canta o Aleluia?",
+      "alternativas": [
+        "Advento",
+        "Quaresma",
+        "Tempo Pascal",
+        "Tempo Comum"
+      ],
+      "correta": 1,
+      "explicacao": "Na Quaresma, o Aleluia é substituído por outra aclamação antes do Evangelho.",
+      "referencia": {
+        "tipo": "documento",
+        "titulo": "Instrução Geral do Missal Romano",
+        "numero": 62
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.015",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem pode receber a Unção dos Enfermos?",
+      "alternativas": [
+        "Só quem está morrendo",
+        "O fiel que começa a correr perigo por doença ou velhice",
+        "Qualquer pessoa, a qualquer momento",
+        "Só os padres"
+      ],
+      "correta": 1,
+      "explicacao": "Não é o sacramento \"só da hora da morte\": convém recebê-lo assim que começa o perigo.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1514
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.016",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "verdadeiro_falso",
+      "pergunta": "Quem já recebeu a Unção dos Enfermos pode recebê-la de novo se, curado, voltar a adoecer gravemente.",
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "explicacao": "Também pode recebê-la de novo se, na mesma doença, o estado se agravar.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1515
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n2.017",
+      "trilha": "fe_catolica",
+      "nivel": 2,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que se celebra na solenidade de Corpus Christi?",
+      "alternativas": [
+        "A Ascensão de Jesus",
+        "O Santíssimo Corpo e Sangue de Cristo",
+        "A Sagrada Família",
+        "Todos os Santos"
+      ],
+      "correta": 1,
+      "explicacao": "É uma das festas de preceito previstas pelo Código.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 1246
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.001",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual é a maior festa do ano litúrgico, chamada de \"festa das festas\"?",
+      "alternativas": [
+        "Natal",
+        "Páscoa",
+        "Pentecostes",
+        "Assunção"
+      ],
+      "correta": 1,
+      "explicacao": "A Páscoa não é uma festa entre outras: é a \"solenidade das solenidades\".",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1169
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.002",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Segundo o critério do Concílio de Niceia, quando se celebra a Páscoa?",
+      "alternativas": [
+        "Sempre em 25 de março",
+        "No domingo após a primeira lua cheia depois do equinócio de primavera (hemisfério norte)",
+        "No primeiro domingo de abril",
+        "Na data escolhida a cada ano pelo Papa"
+      ],
+      "correta": 1,
+      "explicacao": "Por isso a data muda a cada ano. O app usa esse cálculo para sugerir as novenas.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1170
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.003",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual concílio, em 325, afirmou que o Filho é consubstancial ao Pai, contra Ário?",
+      "alternativas": [
+        "Niceia",
+        "Trento",
+        "Éfeso",
+        "Vaticano I"
+      ],
+      "correta": 0,
+      "explicacao": "O primeiro concílio ecumênico professou que o Filho de Deus é da mesma substância do Pai.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 465
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.004",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual concílio, em 431, proclamou Maria Mãe de Deus (Theotokos)?",
+      "alternativas": [
+        "Niceia",
+        "Éfeso",
+        "Calcedônia",
+        "Constantinopla"
+      ],
+      "correta": 1,
+      "explicacao": "Contra Nestório, o Concílio de Éfeso confessou que o Verbo se uniu à carne em Maria desde a concepção.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 466
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.005",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual concílio, em 451, ensinou que Cristo tem duas naturezas, divina e humana, numa só Pessoa?",
+      "alternativas": [
+        "Calcedônia",
+        "Trento",
+        "Latrão",
+        "Niceia"
+      ],
+      "correta": 0,
+      "explicacao": "As duas naturezas estão unidas sem confusão, sem mudança, sem divisão e sem separação.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 467
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.006",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual Papa proclamou o dogma da Imaculada Conceição, em 1854?",
+      "alternativas": [
+        "Pio IX",
+        "Pio XII",
+        "Leão XIII",
+        "João XXIII"
+      ],
+      "correta": 0,
+      "explicacao": "O dogma foi definido na bula Ineffabilis Deus.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 491
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.007",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual Papa proclamou o dogma da Assunção de Maria, em 1950?",
+      "alternativas": [
+        "Pio IX",
+        "Pio XI",
+        "Pio XII",
+        "Paulo VI"
+      ],
+      "correta": 2,
+      "explicacao": "O dogma foi definido na constituição Munificentissimus Deus.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 966
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.008",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual destes concílios ensinou solenemente que os sacramentos são sete e foram instituídos por Cristo?",
+      "alternativas": [
+        "Trento",
+        "Niceia",
+        "Éfeso",
+        "Jerusalém"
+      ],
+      "correta": 0,
+      "explicacao": "O Catecismo retoma esse ensinamento ao tratar dos sacramentos da Nova Lei.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1114
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.009",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Segundo o Código de Direito Canônico, qual destas é uma festa de preceito na Igreja universal?",
+      "alternativas": [
+        "Sagrada Família",
+        "Imaculada Conceição",
+        "São Francisco de Assis",
+        "Cristo Rei"
+      ],
+      "correta": 1,
+      "explicacao": "A Conferência Episcopal pode suprimir algumas festas ou transferi-las para o domingo, com aprovação da Santa Sé.",
+      "referencia": {
+        "tipo": "cdc",
+        "canon": 1246
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária, com base no documento citado",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.010",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que é o \"depósito da fé\"?",
+      "alternativas": [
+        "Um arquivo do Vaticano",
+        "O patrimônio sagrado da fé, contido na Escritura e na Tradição, confiado à Igreja",
+        "As doações dos fiéis",
+        "Os livros apócrifos"
+      ],
+      "correta": 1,
+      "explicacao": "Os apóstolos confiaram esse patrimônio a toda a Igreja.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 84
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.011",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "O que é o \"cânon\" das Escrituras?",
+      "alternativas": [
+        "Um instrumento musical",
+        "A lista dos livros reconhecidos como inspirados",
+        "Uma regra de jejum",
+        "Um tipo de oração"
+      ],
+      "correta": 1,
+      "explicacao": "Foi a Tradição apostólica que permitiu à Igreja discernir quais livros entram na lista.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 120
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.012",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Qual ensinamento de Jesus é conhecido como \"regra de ouro\"?",
+      "alternativas": [
+        "Dai a César o que é de César",
+        "Tudo o que quereis que os outros vos façam, fazei-o vós a eles",
+        "Vigiai e orai",
+        "Ide e anunciai"
+      ],
+      "correta": 1,
+      "explicacao": "Jesus diz que nisso se resumem a Lei e os Profetas.",
+      "referencia": {
+        "tipo": "biblia",
+        "livro": "Mt",
+        "capitulo": 7,
+        "versiculos": "12"
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; texto bíblico apenas parafraseado ou citado pela referência",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.013",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "verdadeiro_falso",
+      "pergunta": "O diaconato permanente pode ser conferido a homens casados.",
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "explicacao": "Depois do Concílio Vaticano II, a Igreja latina restabeleceu o diaconato permanente, que pode ser conferido a homens casados.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1571
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.014",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quem pode receber validamente a sagrada ordenação?",
+      "alternativas": [
+        "Qualquer pessoa batizada",
+        "Somente o homem batizado",
+        "Só quem estudou teologia",
+        "Qualquer cristão eleito pela comunidade"
+      ],
+      "correta": 1,
+      "explicacao": "O Senhor escolheu homens para formar o colégio dos Doze, e a Igreja se reconhece vinculada a essa escolha.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1577
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.015",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Na Igreja latina, os sacerdotes são normalmente escolhidos entre homens que:",
+      "alternativas": [
+        "Já são casados",
+        "Vivem o celibato pelo Reino dos Céus",
+        "Têm mais de 40 anos",
+        "São filhos de padres"
+      ],
+      "correta": 1,
+      "explicacao": "Nas Igrejas orientais há outra disciplina: homens casados podem ser ordenados presbíteros.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1579
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.016",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "multipla_escolha",
+      "pergunta": "Quantos são os mandamentos da Igreja, segundo o Catecismo?",
+      "alternativas": [
+        "3",
+        "5",
+        "7",
+        "10"
+      ],
+      "correta": 1,
+      "explicacao": "Missa dominical, confissão anual, comunhão pascal, jejum e abstinência nos dias marcados, e ajudar nas necessidades da Igreja.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 2041
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    },
+    {
+      "id": "quiz.fe_catolica.n3.017",
+      "trilha": "fe_catolica",
+      "nivel": 3,
+      "tipo": "verdadeiro_falso",
+      "pergunta": "A Missa torna presente o único sacrifício de Cristo na cruz; não é um novo sacrifício.",
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "explicacao": "O sacrifício de Cristo e o sacrifício da Eucaristia são um único sacrifício; só a maneira de oferecer é diferente.",
+      "referencia": {
+        "tipo": "cic",
+        "paragrafo": 1367
+      },
+      "fonte": "Pergunta e explicação originais do FéDiária; o Catecismo é citado só pelo número do parágrafo",
+      "revisado": false
+    }
+  ]
+}

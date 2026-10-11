@@ -9,6 +9,7 @@ class ConteudoRepository {
     private val mutex = Mutex()
     private var terco: ConteudoTerco? = null
     private var novenas: ConteudoNovenas? = null
+    private var quiz: ConteudoQuiz? = null
 
     suspend fun terco(): ConteudoTerco =
         mutex.withLock {
@@ -18,6 +19,11 @@ class ConteudoRepository {
     suspend fun novenas(): ConteudoNovenas =
         mutex.withLock {
             novenas ?: ConteudoNovenas.deJson(ler("novenas.json")).also { novenas = it }
+        }
+
+    suspend fun quiz(): ConteudoQuiz =
+        mutex.withLock {
+            quiz ?: ConteudoQuiz.deJson(ler("quiz.json")).also { quiz = it }
         }
 
     private suspend fun ler(arquivo: String) = Res.readBytes("files/conteudo/$arquivo").decodeToString()

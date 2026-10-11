@@ -39,6 +39,11 @@ sealed interface Rota {
         val novenaId: String,
     ) : Rota
 
+    /** Uma lição do quiz ([licaoId] de MontadorDeLicoes, ou "revisao"). */
+    @Serializable data class Licao(
+        val licaoId: String,
+    ) : Rota
+
     /** Uma novena do usuário (id no banco). */
     @Serializable data class NovenaAtiva(
         val id: Long,

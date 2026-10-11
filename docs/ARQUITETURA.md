@@ -54,8 +54,8 @@ Referência do Catecismo: `{ "tipo": "cic", "paragrafo": 1213 }`. Do Catecismo d
 **Progresso do usuário (Room)**. As tabelas guardam só ids de conteúdo e datas:
 - `dia_rezado(data LocalDate PK, origem GUIADO|MANUAL, registrado_em Instant)`
 - `novena_ativa(id, novena_id, iniciada_em, lembrete_hora, concluida_em?)` + `novena_dia(novena_ativa_id, dia 1..9, rezado_em)`
-- `srs_item(item_id PK, caixa 0..5, proxima_revisao LocalDate, acertos, erros)`: usado tanto pelo quiz quanto pelos flashcards de latim
-- `licao_concluida(licao_id, concluida_em, xp)`, `conquista(id, obtida_em)`
+- `srs_item(item_id PK, caixa 1..5, proxima_revisao LocalDate, acertos, erros)`: usado tanto pelo quiz quanto pelos flashcards de latim
+- `licao_concluida(id PK, licao_id, concluida_em, acertos, total, xp)` (a revisão pode se repetir), `conquista(id, obtida_em)`
 
 **Configurações (DataStore):** horários dos lembretes, mapeamento de mistérios, orações opcionais do terço, tema, tamanho de fonte, onboarding concluído.
 
@@ -92,9 +92,12 @@ Observação: o briefing não citava as 3 Ave-Marias iniciais. Incluí porque s�
 - No máximo **um dia da novena por data** (como manda a tradição). Toque por engano pode ser desfeito no mesmo dia.
 - Lembrete próprio por novena (canal de notificação separado), que para sozinho ao concluir; tocar na notificação abre a novena.
 - Banco v2: tabelas `novena_ativa` e `novena_dia` (migração automática 1→2, coberta por teste instrumentado).
+- Banco v3: tabelas `srs_item` e `licao_concluida` (migração automática 2→3, coberta por teste instrumentado).
 
 ### Quiz e Latim: repetição espaçada
-Sistema de **Leitner** com caixas de intervalos 1, 3, 7, 14 e 30 dias. Errou, a pergunta volta para a caixa 1. Acertou, sobe uma caixa. Uma lição de "Revisão" aparece quando há itens vencidos. Sem vidas e sem punição: um erro mostra a explicação e a referência com calma.
+Sistema de **Leitner** com caixas de intervalos 1, 3, 7, 14 e 30 dias. Errou, a pergunta volta para a caixa 1. Acertou, sobe uma caixa (uma pergunta nova que acerta vai direto para a 2ª). Uma lição de "Revisão" (até 10 perguntas, as mais atrasadas primeiro) aparece quando há itens vencidos. Sem vidas e sem punição: um erro mostra a explicação e a referência com calma.
+
+**Quiz (Fase 4):** 3 trilhas (`escrituras`, `catecismo`, `fe_catolica`) × 3 níveis. As lições são fixas e derivadas da ordem do JSON: cada nível é dividido em lições equilibradas de 5 a 10 perguntas (17 → 6 + 6 + 5), com id estável `<trilha>.n<nível>.l<n>`. O nível 1 já começa aberto; os seguintes abrem quando todas as lições do anterior forem feitas (uma lição conta como feita mesmo com erros). XP = 10 por acerto, só no quiz e no latim. A ordem das alternativas é embaralhada por dia (semente = id + data), para a resposta certa não ficar sempre na mesma posição; Verdadeiro/Falso não é embaralhado. A resposta é gravada no SRS assim que é dada, então sair no meio da lição não perde nada. Referências: `biblia`, `cic` (nº do parágrafo), `cdc` (cânon) e `documento` (título + nº), validadas por `ConteudoQuizTest`.
 
 ## 5. UI
 

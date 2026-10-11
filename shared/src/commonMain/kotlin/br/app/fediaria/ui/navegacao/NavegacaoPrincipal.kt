@@ -33,15 +33,17 @@ import br.app.fediaria.shared.resources.ic_configuracoes
 import br.app.fediaria.shared.resources.ic_voltar
 import br.app.fediaria.shared.resources.titulo_ajuda_lembretes
 import br.app.fediaria.shared.resources.titulo_historico
+import br.app.fediaria.shared.resources.titulo_licao
 import br.app.fediaria.shared.resources.titulo_novena
 import br.app.fediaria.shared.resources.titulo_terco_guiado
 import br.app.fediaria.ui.novena.TelaDetalheNovena
 import br.app.fediaria.ui.novena.TelaNovenaAtiva
 import br.app.fediaria.ui.novena.TelaNovenas
+import br.app.fediaria.ui.quiz.TelaLicao
+import br.app.fediaria.ui.quiz.TelaQuiz
 import br.app.fediaria.ui.telas.TelaAjudaLembretes
 import br.app.fediaria.ui.telas.TelaConfiguracoes
 import br.app.fediaria.ui.telas.TelaLatim
-import br.app.fediaria.ui.telas.TelaQuiz
 import br.app.fediaria.ui.terco.TelaHistorico
 import br.app.fediaria.ui.terco.TelaTerco
 import br.app.fediaria.ui.terco.TelaTercoGuiado
@@ -101,7 +103,7 @@ fun NavegacaoPrincipal(
                     aoAbrirDetalhe = { navController.navigate(Rota.DetalheNovena(it)) },
                 )
             }
-            composable<Rota.Quiz> { TelaQuiz() }
+            composable<Rota.Quiz> { TelaQuiz(aoAbrirLicao = { navController.navigate(Rota.Licao(it)) }) }
             composable<Rota.Latim> { TelaLatim() }
             composable<Rota.Configuracoes> {
                 TelaConfiguracoes(
@@ -127,6 +129,12 @@ fun NavegacaoPrincipal(
                     },
                 )
             }
+            composable<Rota.Licao> { entrada ->
+                TelaLicao(
+                    licaoId = entrada.toRoute<Rota.Licao>().licaoId,
+                    aoSair = { navController.popBackStack() },
+                )
+            }
             composable<Rota.NovenaAtiva> { entrada ->
                 TelaNovenaAtiva(
                     id = entrada.toRoute<Rota.NovenaAtiva>().id,
@@ -143,6 +151,7 @@ private fun tituloDaTela(destino: NavDestination?): StringResource =
         destino.eh(Rota.Historico::class) -> Res.string.titulo_historico
         destino.eh(Rota.AjudaLembretes::class) -> Res.string.titulo_ajuda_lembretes
         destino.eh(Rota.DetalheNovena::class) || destino.eh(Rota.NovenaAtiva::class) -> Res.string.titulo_novena
+        destino.eh(Rota.Licao::class) -> Res.string.titulo_licao
         else -> Res.string.configuracoes_titulo
     }
 
