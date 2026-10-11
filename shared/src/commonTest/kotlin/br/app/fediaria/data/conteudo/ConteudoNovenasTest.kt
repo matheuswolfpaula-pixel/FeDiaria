@@ -47,8 +47,8 @@ class ConteudoNovenasTest {
     @Test
     fun oracoesDiariasExistemNoConteudoDoTerco() {
         val ids = terco.oracoes.map { it.id }.toSet()
+        // A lista pode ser vazia: a novena de Santo Afonso não tem orações fixas após a meditação.
         conteudo.novenas.forEach { novena ->
-            assertTrue(novena.oracoesDiarias.isNotEmpty())
             novena.oracoesDiarias.forEach {
                 assertTrue(
                     it in ids,

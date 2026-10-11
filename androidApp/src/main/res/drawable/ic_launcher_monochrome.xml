@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Silhueta do vitral para ícones temáticos (Android 13+). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M34.2,80.8 L34.2,49 A24.8,24.8 0 0,1 54,24.71 A24.8,24.8 0 0,1 73.8,49 L73.8,80.8 Z M38.3,45.7 L38.3,45.7 A20.7,20.7 0 0,1 54,25.61 A20.7,20.7 0 0,1 69.7,45.7 L69.7,45.7 Z M38.3,48.3 L52.7,48.3 L52.7,55.7 L38.3,55.7 Z M55.3,48.3 L69.7,48.3 L69.7,55.7 L55.3,55.7 Z M38.3,58.3 L52.7,58.3 L52.7,66.2 L38.3,66.2 Z M55.3,58.3 L69.7,58.3 L69.7,66.2 L55.3,66.2 Z M38.3,68.8 L52.7,68.8 L52.7,76.7 L38.3,76.7 Z M55.3,68.8 L69.7,68.8 L69.7,76.7 L55.3,76.7 Z M45.5,51 L49.8,52 L45.5,53 L41.2,52 Z M62.5,51 L66.8,52 L62.5,53 L58.2,52 Z M45.5,61 L49.8,62.25 L45.5,63.5 L41.2,62.25 Z M62.5,61 L66.8,62.25 L62.5,63.5 L58.2,62.25 Z M45.5,71.5 L49.8,72.75 L45.5,74 L41.2,72.75 Z M62.5,71.5 L66.8,72.75 L62.5,74 L58.2,72.75 Z M50.8,40.5 A3.2,3.2 0 1,1 57.2,40.5 A3.2,3.2 0 1,1 50.8,40.5 Z" />
+</vector>

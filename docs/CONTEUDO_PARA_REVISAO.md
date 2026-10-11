@@ -110,27 +110,38 @@ Conferir a tradução do "Lembrai-vos" (Memorare) e a menção ao dogma de 1854 
 | `imaculada_conceicao.8` | Mãe ao pé da cruz | Jo 19,25-27 |
 | `imaculada_conceicao.9` | A mulher vestida de sol | Ap 12,1 |
 
-### Novena de Natal (`natal`)
+### Novena de Natal de Santo Afonso (`natal`)
 
-Conferir numeração de Is 9,1 e Mq 5,1 (algumas Bíblias usam 9,2 e 5,2).
+Substitui a novena de Natal original do app (a pedido do dono). **Tradução do FéDiária**, feita a partir do texto italiano de Santo Afonso Maria de Ligório (1696-1787, domínio público). Fonte usada: edição italiana em Documenta Catholica Omnia (`1696-1787,_De_Ligorio_Alphonsus,_Novena_di_Natale,_IT.doc`), que reproduz uma edição moderna (floscarmeli.org) com citações bíblicas acrescentadas pelo editor. Conferir com uma edição crítica das *Opere ascetiche*, se possível.
+
+Pontos para o revisor:
+- **Fidelidade da tradução:** traduzido com "vós" (como as demais orações do app); o original trata Jesus por "tu".
+- **Coroinha inicial:** o original traz "Pai-Nosso, Ave-Maria, Glória" só depois da 1ª invocação, e depois "Abbi pietà, ecc." Não está claro se as três orações se repetem a cada invocação; o app segue o texto literalmente.
+- **Sem Pai-Nosso/Ave-Maria/Glória após a meditação:** o original não manda rezá-los nesse ponto, então essa seção não aparece nesta novena.
+- **Oração final e jaculatória** não fazem parte das nove meditações: vêm de outras devoções do mesmo livro ("Graus da infância de Jesus Cristo" e "Coroinha em honra do Menino Jesus"). A jaculatória é tradução livre, em prosa, de versos rimados.
+- **Numeração:** Is 9,5 segue as Bíblias modernas (em outras é 9,6).
+- **Erro corrigido na fonte:** a meditação IV cita "Lc 2, 72", que não existe; o app usa Lc 2,12 (o sinal dado aos pastores).
+- **Referências da tabela:** as de `natal.1`, `natal.2`, `natal.4`, `natal.5` e `natal.8` vêm do próprio texto. As de `natal.3` (Lc 2,1-7), `natal.6` (Tt 3,4), `natal.7` (Mt 2,13-14) e `natal.9` (Lc 2,4-7) foram escolhidas pelo app.
+- **Afirmações devocionais de Santo Afonso, mantidas como estão no original:** viagem de 4 dias, 7 anos no Egito, o diálogo entre Maria e José, e as histórias da bofetada do demônio, da Irmã Maria Madalena Orsini e de Santa Margarida de Cortona. São tradição piedosa, não dados históricos.
+- **Tom:** o texto é do século XVIII e fala de inferno, ingratidão e arrependimento com mais força que o resto do app. Foi mantido fiel ao original.
 
 | Item | Fonte declarada |
 |---|---|
-| Oração inicial: Oração inicial | Texto original do FéDiária |
-| Oração final: Oração final | Texto original do FéDiária |
-| Jaculatória: Jaculatória | Ap 22,20 (invocação "Maranatha") |
+| Oração inicial: Coroinha ao Menino Jesus | Santo Afonso, coroinha para rezar antes de cada meditação |
+| Oração final: Oferecimento ao Menino Jesus | Santo Afonso, oração final dos "Graus da infância de Jesus Cristo" |
+| Jaculatória: Cantiga ao Menino Jesus | Santo Afonso, versos da "Coroinha em honra do Menino Jesus" |
 
-| id | Tema | Referência |
+| id | Tema (meditação de Santo Afonso) | Referência |
 |---|---|---|
-| `natal.1` | O povo que andava nas trevas | Is 9,1 |
-| `natal.2` | Deus conosco | Is 7,14 |
-| `natal.3` | Preparai o caminho do Senhor | Is 40,3 |
-| `natal.4` | O anúncio a José | Mt 1,20-21 |
-| `natal.5` | Belém, a pequena | Mq 5,1 |
-| `natal.6` | A viagem a Belém | Lc 2,1-5 |
-| `natal.7` | Não havia lugar para eles | Lc 2,6-7 |
-| `natal.8` | O Verbo se fez carne | Jo 1,14 |
-| `natal.9` | Glória a Deus nas alturas | Lc 2,13-14 |
+| `natal.1` | O amor de Deus em fazer-se homem | Jo 1,14; Ef 5,2 |
+| `natal.2` | O amor de Deus em nascer menino | Is 9,5 |
+| `natal.3` | A vida pobre que Jesus começou a levar desde o nascimento | Lc 2,1-7 |
+| `natal.4` | A vida humilde que Jesus começou a levar desde menino | Lc 2,12 |
+| `natal.5` | A vida de sofrimentos que Jesus começou a levar desde o nascimento | Is 53,3 |
+| `natal.6` | A misericórdia de Deus em vir do céu para nos salvar com a sua morte | Tt 3,4 |
+| `natal.7` | A viagem do Menino Jesus para o Egito | Mt 2,13-14 |
+| `natal.8` | A morada do Menino Jesus no Egito e em Nazaré | Lc 2,51 |
+| `natal.9` | O nascimento do Menino Jesus na gruta de Belém | Lc 2,4-7 |
 
 ### Novena a Nossa Senhora Aparecida (`aparecida`)
 

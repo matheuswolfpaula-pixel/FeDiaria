@@ -127,11 +127,14 @@ fun TelaNovenaAtiva(
         )
         Text(dia.meditacao, style = estiloOracao)
 
-        TituloDeSecao(stringResource(Res.string.novena_oracoes_diarias), recuo = 0.dp)
-        novena.oracoesDiarias.forEach { idOracao ->
-            val oracao = terco.oracao(idOracao)
-            Text(oracao.titulo, style = MaterialTheme.typography.titleSmall)
-            Text(oracao.texto, style = estiloOracao)
+        // Algumas novenas (ex.: a de Santo Afonso) não mandam rezar orações fixas após a meditação.
+        if (novena.oracoesDiarias.isNotEmpty()) {
+            TituloDeSecao(stringResource(Res.string.novena_oracoes_diarias), recuo = 0.dp)
+            novena.oracoesDiarias.forEach { idOracao ->
+                val oracao = terco.oracao(idOracao)
+                Text(oracao.titulo, style = MaterialTheme.typography.titleSmall)
+                Text(oracao.texto, style = estiloOracao)
+            }
         }
 
         BlocoDeOracao(novena.oracaoFinal)
