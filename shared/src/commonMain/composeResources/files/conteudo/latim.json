@@ -1,0 +1,805 @@
+{
+  "versao": 1,
+  "lema": {
+    "latim": "Ad Maiorem Dei Gloriam",
+    "pronuncia": "ad ma-IO-rem DE-i GLO-ri-am",
+    "traducao": "Para a maior glória de Deus",
+    "nota": "Lema de Santo Inácio de Loyola e da Companhia de Jesus. Pode ser rezado como jaculatória ao oferecer o dia ou um trabalho a Deus.",
+    "fonte": "Lema tradicional (domínio público); tradução e pronúncia originais do FéDiária",
+    "revisado": false
+  },
+  "guiaPronuncia": [
+    {
+      "tema": "Sílaba forte",
+      "explicacao": "A sílaba em MAIÚSCULAS é a tônica: PA-ter NOS-ter."
+    },
+    {
+      "tema": "Vogais",
+      "explicacao": "Leia todas as vogais abertas e claras, como no italiano. O \"e\" final soa \"é\" (nunca \"i\"), e o \"o\" final soa \"ó\" (nunca \"u\"): DO-mi-ne, SANK-to."
+    },
+    {
+      "tema": "ae e oe",
+      "explicacao": "Soam como \"é\": caelis = TCHE-lis, nostrae = NOS-tre."
+    },
+    {
+      "tema": "c",
+      "explicacao": "Antes de e, i, ae, oe soa \"tch\" (caelis = TCHE-lis). Nos outros casos, \"k\" (Dominus tecum = TE-kum)."
+    },
+    {
+      "tema": "g",
+      "explicacao": "Antes de e, i soa \"dj\" (Regina = re-DJI-na). Nos outros casos, como em \"gato\"."
+    },
+    {
+      "tema": "gn",
+      "explicacao": "Soa \"nh\": regnum = RE-nhum, ignem = I-nhem."
+    },
+    {
+      "tema": "sc",
+      "explicacao": "Antes de e, i soa como o \"ch\" de \"chá\": descendit = de-CHEN-dit."
+    },
+    {
+      "tema": "ti",
+      "explicacao": "Antes de vogal soa \"tsi\": gratia = GRA-tsi-a."
+    },
+    {
+      "tema": "h",
+      "explicacao": "É mudo (hodie = O-di-e), menos em mihi e nihil, onde soa \"k\": MI-ki."
+    },
+    {
+      "tema": "ch",
+      "explicacao": "Soa \"k\": Christus = KRIS-tus."
+    },
+    {
+      "tema": "qu",
+      "explicacao": "Soa \"ku\": qui = kui."
+    },
+    {
+      "tema": "x",
+      "explicacao": "Soa \"ks\": Genetrix = DJE-ne-triks. \"Ex\" antes de vogal soa \"egz\": exaudi = eg-ZAU-di."
+    },
+    {
+      "tema": "j e i",
+      "explicacao": "No começo da palavra, antes de vogal, soa como \"i\" rápido: Iesus = IE-sus."
+    },
+    {
+      "tema": "s",
+      "explicacao": "Soa como em \"sapo\"; entre vogais pode ficar um pouco mais suave."
+    },
+    {
+      "tema": "Consoantes dobradas",
+      "explicacao": "Pronuncie as duas: Ecce = ET-tche, terra = TER-ra."
+    }
+  ],
+  "oracoes": [
+    {
+      "id": "signum_crucis",
+      "latim": "Signum Crucis",
+      "titulo": "Sinal da Cruz",
+      "descricao": "A oração mais curta e mais antiga: abre e fecha toda oração.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.signum_crucis.01",
+          "latim": "In nomine Patris,",
+          "pronuncia": "in NO-mi-ne PA-tris,",
+          "traducao": "Em nome do Pai,"
+        },
+        {
+          "id": "latim.signum_crucis.02",
+          "latim": "et Filii,",
+          "pronuncia": "et FI-li-i,",
+          "traducao": "e do Filho,",
+          "nota": "Filii tem dois \"i\": fi-li-i."
+        },
+        {
+          "id": "latim.signum_crucis.03",
+          "latim": "et Spiritus Sancti.",
+          "pronuncia": "et SPI-ri-tus SANK-ti.",
+          "traducao": "e do Espírito Santo."
+        },
+        {
+          "id": "latim.signum_crucis.04",
+          "latim": "Amen.",
+          "pronuncia": "A-men.",
+          "traducao": "Amém."
+        }
+      ]
+    },
+    {
+      "id": "pater_noster",
+      "latim": "Pater Noster",
+      "titulo": "Pai-Nosso",
+      "descricao": "A oração que o próprio Jesus ensinou.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.pater_noster.01",
+          "latim": "Pater noster, qui es in caelis,",
+          "pronuncia": "PA-ter NOS-ter, kui es in TCHE-lis,",
+          "traducao": "Pai nosso, que estais nos céus,",
+          "nota": "\"Caelis\": o \"ae\" soa como \"é\", e o \"c\" antes de \"e\" soa \"tch\"."
+        },
+        {
+          "id": "latim.pater_noster.02",
+          "latim": "sanctificetur nomen tuum.",
+          "pronuncia": "sank-ti-fi-TCHE-tur NO-men TU-um.",
+          "traducao": "santificado seja o vosso nome."
+        },
+        {
+          "id": "latim.pater_noster.03",
+          "latim": "Adveniat regnum tuum.",
+          "pronuncia": "ad-VE-ni-at RE-nhum TU-um.",
+          "traducao": "Venha o vosso reino.",
+          "nota": "\"Gn\" soa como \"nh\": re-nhum."
+        },
+        {
+          "id": "latim.pater_noster.04",
+          "latim": "Fiat voluntas tua,",
+          "pronuncia": "FI-at vo-LUN-tas TU-a,",
+          "traducao": "Seja feita a vossa vontade,"
+        },
+        {
+          "id": "latim.pater_noster.05",
+          "latim": "sicut in caelo et in terra.",
+          "pronuncia": "SI-kut in TCHE-lo et in TER-ra.",
+          "traducao": "assim no céu como na terra."
+        },
+        {
+          "id": "latim.pater_noster.06",
+          "latim": "Panem nostrum quotidianum da nobis hodie,",
+          "pronuncia": "PA-nem NOS-trum kuo-ti-di-A-num da NO-bis O-di-e,",
+          "traducao": "O pão nosso de cada dia dai-nos hoje,",
+          "nota": "O \"h\" é mudo: hodie = o-di-e."
+        },
+        {
+          "id": "latim.pater_noster.07",
+          "latim": "et dimitte nobis debita nostra,",
+          "pronuncia": "et di-MIT-te NO-bis DE-bi-ta NOS-tra,",
+          "traducao": "e perdoai-nos as nossas dívidas,",
+          "nota": "Em português rezamos \"ofensas\"; o latim diz \"dívidas\"."
+        },
+        {
+          "id": "latim.pater_noster.08",
+          "latim": "sicut et nos dimittimus debitoribus nostris.",
+          "pronuncia": "SI-kut et nos di-MIT-ti-mus de-bi-TO-ri-bus NOS-tris.",
+          "traducao": "assim como nós perdoamos aos nossos devedores."
+        },
+        {
+          "id": "latim.pater_noster.09",
+          "latim": "Et ne nos inducas in tentationem,",
+          "pronuncia": "et ne nos in-DU-kas in ten-ta-tsi-O-nem,",
+          "traducao": "E não nos induzais em tentação,",
+          "nota": "\"Ti\" antes de vogal soa \"tsi\": ten-ta-tsi-o-nem."
+        },
+        {
+          "id": "latim.pater_noster.10",
+          "latim": "sed libera nos a malo.",
+          "pronuncia": "sed LI-be-ra nos a MA-lo.",
+          "traducao": "mas livrai-nos do mal."
+        },
+        {
+          "id": "latim.pater_noster.11",
+          "latim": "Amen.",
+          "pronuncia": "A-men.",
+          "traducao": "Amém."
+        }
+      ]
+    },
+    {
+      "id": "ave_maria",
+      "latim": "Ave Maria",
+      "titulo": "Ave-Maria",
+      "descricao": "A saudação do anjo e de Isabel, completada pela súplica da Igreja.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.ave_maria.01",
+          "latim": "Ave Maria, gratia plena,",
+          "pronuncia": "A-ve ma-RI-a, GRA-tsi-a PLE-na,",
+          "traducao": "Ave, Maria, cheia de graça,"
+        },
+        {
+          "id": "latim.ave_maria.02",
+          "latim": "Dominus tecum.",
+          "pronuncia": "DO-mi-nus TE-kum.",
+          "traducao": "o Senhor é convosco."
+        },
+        {
+          "id": "latim.ave_maria.03",
+          "latim": "Benedicta tu in mulieribus,",
+          "pronuncia": "be-ne-DIK-ta tu in mu-li-E-ri-bus,",
+          "traducao": "Bendita sois vós entre as mulheres,"
+        },
+        {
+          "id": "latim.ave_maria.04",
+          "latim": "et benedictus fructus ventris tui, Iesus.",
+          "pronuncia": "et be-ne-DIK-tus FRUK-tus VEN-tris TU-i, IE-sus.",
+          "traducao": "e bendito é o fruto do vosso ventre, Jesus.",
+          "nota": "\"Iesus\" tem duas sílabas: ie-sus (o \"i\" inicial soa como um \"i\" rápido)."
+        },
+        {
+          "id": "latim.ave_maria.05",
+          "latim": "Sancta Maria, Mater Dei,",
+          "pronuncia": "SANK-ta ma-RI-a, MA-ter DE-i,",
+          "traducao": "Santa Maria, Mãe de Deus,"
+        },
+        {
+          "id": "latim.ave_maria.06",
+          "latim": "ora pro nobis peccatoribus,",
+          "pronuncia": "O-ra pro NO-bis pek-ka-TO-ri-bus,",
+          "traducao": "rogai por nós, pecadores,"
+        },
+        {
+          "id": "latim.ave_maria.07",
+          "latim": "nunc et in hora mortis nostrae.",
+          "pronuncia": "nunk et in O-ra MOR-tis NOS-tre.",
+          "traducao": "agora e na hora da nossa morte."
+        },
+        {
+          "id": "latim.ave_maria.08",
+          "latim": "Amen.",
+          "pronuncia": "A-men.",
+          "traducao": "Amém."
+        }
+      ]
+    },
+    {
+      "id": "gloria_patri",
+      "latim": "Gloria Patri",
+      "titulo": "Glória ao Pai",
+      "descricao": "O louvor à Santíssima Trindade.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.gloria_patri.01",
+          "latim": "Gloria Patri,",
+          "pronuncia": "GLO-ri-a PA-tri,",
+          "traducao": "Glória ao Pai,"
+        },
+        {
+          "id": "latim.gloria_patri.02",
+          "latim": "et Filio, et Spiritui Sancto.",
+          "pronuncia": "et FI-li-o, et spi-RI-tu-i SANK-to.",
+          "traducao": "e ao Filho, e ao Espírito Santo."
+        },
+        {
+          "id": "latim.gloria_patri.03",
+          "latim": "Sicut erat in principio,",
+          "pronuncia": "SI-kut E-rat in prin-TCHI-pi-o,",
+          "traducao": "Como era no princípio,"
+        },
+        {
+          "id": "latim.gloria_patri.04",
+          "latim": "et nunc, et semper,",
+          "pronuncia": "et nunk, et SEM-per,",
+          "traducao": "agora e sempre,"
+        },
+        {
+          "id": "latim.gloria_patri.05",
+          "latim": "et in saecula saeculorum.",
+          "pronuncia": "et in SE-ku-la se-ku-LO-rum.",
+          "traducao": "e pelos séculos dos séculos."
+        },
+        {
+          "id": "latim.gloria_patri.06",
+          "latim": "Amen.",
+          "pronuncia": "A-men.",
+          "traducao": "Amém."
+        }
+      ]
+    },
+    {
+      "id": "credo",
+      "latim": "Symbolum Apostolorum",
+      "titulo": "Credo (Símbolo dos Apóstolos)",
+      "descricao": "O resumo da fé que professamos no Batismo.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.credo.01",
+          "latim": "Credo in Deum Patrem omnipotentem,",
+          "pronuncia": "KRE-do in DE-um PA-trem om-ni-po-TEN-tem,",
+          "traducao": "Creio em Deus Pai todo-poderoso,"
+        },
+        {
+          "id": "latim.credo.02",
+          "latim": "Creatorem caeli et terrae.",
+          "pronuncia": "kre-a-TO-rem TCHE-li et TER-re.",
+          "traducao": "Criador do céu e da terra."
+        },
+        {
+          "id": "latim.credo.03",
+          "latim": "Et in Iesum Christum, Filium eius unicum,",
+          "pronuncia": "et in IE-sum KRIS-tum, FI-li-um E-ius U-ni-kum,",
+          "traducao": "E em Jesus Cristo, seu único Filho,",
+          "nota": "\"Ch\" soa \"k\": Kris-tum."
+        },
+        {
+          "id": "latim.credo.04",
+          "latim": "Dominum nostrum,",
+          "pronuncia": "DO-mi-num NOS-trum,",
+          "traducao": "nosso Senhor,"
+        },
+        {
+          "id": "latim.credo.05",
+          "latim": "qui conceptus est de Spiritu Sancto,",
+          "pronuncia": "kui kon-TCHEP-tus est de SPI-ri-tu SANK-to,",
+          "traducao": "que foi concebido pelo Espírito Santo,"
+        },
+        {
+          "id": "latim.credo.06",
+          "latim": "natus ex Maria Virgine,",
+          "pronuncia": "NA-tus eks ma-RI-a VIR-dji-ne,",
+          "traducao": "nasceu da Virgem Maria,"
+        },
+        {
+          "id": "latim.credo.07",
+          "latim": "passus sub Pontio Pilato,",
+          "pronuncia": "PAS-sus sub PON-tsi-o pi-LA-to,",
+          "traducao": "padeceu sob Pôncio Pilatos,"
+        },
+        {
+          "id": "latim.credo.08",
+          "latim": "crucifixus, mortuus, et sepultus,",
+          "pronuncia": "kru-tchi-FIK-sus, MOR-tu-us, et se-PUL-tus,",
+          "traducao": "foi crucificado, morto e sepultado,"
+        },
+        {
+          "id": "latim.credo.09",
+          "latim": "descendit ad inferos,",
+          "pronuncia": "de-CHEN-dit ad IN-fe-ros,",
+          "traducao": "desceu à mansão dos mortos,",
+          "nota": "\"Sc\" antes de \"e\" soa como \"ch\" em \"chá\". \"Inferos\" é a morada dos mortos, não o inferno dos condenados."
+        },
+        {
+          "id": "latim.credo.10",
+          "latim": "tertia die resurrexit a mortuis,",
+          "pronuncia": "TER-tsi-a DI-e re-sur-REK-sit a MOR-tu-is,",
+          "traducao": "ao terceiro dia ressuscitou dos mortos,"
+        },
+        {
+          "id": "latim.credo.11",
+          "latim": "ascendit ad caelos,",
+          "pronuncia": "a-CHEN-dit ad TCHE-los,",
+          "traducao": "subiu aos céus,"
+        },
+        {
+          "id": "latim.credo.12",
+          "latim": "sedet ad dexteram Dei Patris omnipotentis,",
+          "pronuncia": "SE-det ad DEK-ste-ram DE-i PA-tris om-ni-po-TEN-tis,",
+          "traducao": "está sentado à direita de Deus Pai todo-poderoso,"
+        },
+        {
+          "id": "latim.credo.13",
+          "latim": "inde venturus est iudicare vivos et mortuos.",
+          "pronuncia": "IN-de ven-TU-rus est iu-di-KA-re VI-vos et MOR-tu-os.",
+          "traducao": "de onde há de vir a julgar os vivos e os mortos."
+        },
+        {
+          "id": "latim.credo.14",
+          "latim": "Credo in Spiritum Sanctum,",
+          "pronuncia": "KRE-do in SPI-ri-tum SANK-tum,",
+          "traducao": "Creio no Espírito Santo,"
+        },
+        {
+          "id": "latim.credo.15",
+          "latim": "sanctam Ecclesiam catholicam,",
+          "pronuncia": "SANK-tam ek-KLE-si-am ka-TO-li-kam,",
+          "traducao": "na santa Igreja católica,"
+        },
+        {
+          "id": "latim.credo.16",
+          "latim": "sanctorum communionem,",
+          "pronuncia": "sank-TO-rum kom-mu-ni-O-nem,",
+          "traducao": "na comunhão dos santos,"
+        },
+        {
+          "id": "latim.credo.17",
+          "latim": "remissionem peccatorum,",
+          "pronuncia": "re-mis-si-O-nem pek-ka-TO-rum,",
+          "traducao": "na remissão dos pecados,"
+        },
+        {
+          "id": "latim.credo.18",
+          "latim": "carnis resurrectionem,",
+          "pronuncia": "KAR-nis re-sur-rek-tsi-O-nem,",
+          "traducao": "na ressurreição da carne,"
+        },
+        {
+          "id": "latim.credo.19",
+          "latim": "vitam aeternam.",
+          "pronuncia": "VI-tam e-TER-nam.",
+          "traducao": "na vida eterna."
+        },
+        {
+          "id": "latim.credo.20",
+          "latim": "Amen.",
+          "pronuncia": "A-men.",
+          "traducao": "Amém."
+        }
+      ]
+    },
+    {
+      "id": "salve_regina",
+      "latim": "Salve Regina",
+      "titulo": "Salve-Rainha",
+      "descricao": "A antífona mariana que encerra o terço.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.salve_regina.01",
+          "latim": "Salve, Regina, mater misericordiae;",
+          "pronuncia": "SAL-ve, re-DJI-na, MA-ter mi-se-ri-KOR-di-e;",
+          "traducao": "Salve, Rainha, mãe de misericórdia;",
+          "nota": "\"G\" antes de \"i\" soa \"dj\": re-dji-na."
+        },
+        {
+          "id": "latim.salve_regina.02",
+          "latim": "vita, dulcedo et spes nostra, salve.",
+          "pronuncia": "VI-ta, dul-TCHE-do et spes NOS-tra, SAL-ve.",
+          "traducao": "vida, doçura e esperança nossa, salve."
+        },
+        {
+          "id": "latim.salve_regina.03",
+          "latim": "Ad te clamamus, exsules filii Hevae.",
+          "pronuncia": "ad te kla-MA-mus, EK-su-les FI-li-i E-ve.",
+          "traducao": "A vós clamamos, os degredados filhos de Eva."
+        },
+        {
+          "id": "latim.salve_regina.04",
+          "latim": "Ad te suspiramus, gementes et flentes",
+          "pronuncia": "ad te sus-pi-RA-mus, dje-MEN-tes et FLEN-tes",
+          "traducao": "A vós suspiramos, gemendo e chorando"
+        },
+        {
+          "id": "latim.salve_regina.05",
+          "latim": "in hac lacrimarum valle.",
+          "pronuncia": "in ak la-kri-MA-rum VAL-le.",
+          "traducao": "neste vale de lágrimas."
+        },
+        {
+          "id": "latim.salve_regina.06",
+          "latim": "Eia ergo, advocata nostra,",
+          "pronuncia": "E-ia ER-go, ad-vo-KA-ta NOS-tra,",
+          "traducao": "Eia, pois, advogada nossa,"
+        },
+        {
+          "id": "latim.salve_regina.07",
+          "latim": "illos tuos misericordes oculos ad nos converte.",
+          "pronuncia": "IL-los TU-os mi-se-ri-KOR-des O-ku-los ad nos kon-VER-te.",
+          "traducao": "esses vossos olhos misericordiosos a nós volvei."
+        },
+        {
+          "id": "latim.salve_regina.08",
+          "latim": "Et Iesum, benedictum fructum ventris tui,",
+          "pronuncia": "et IE-sum, be-ne-DIK-tum FRUK-tum VEN-tris TU-i,",
+          "traducao": "E Jesus, bendito fruto do vosso ventre,"
+        },
+        {
+          "id": "latim.salve_regina.09",
+          "latim": "nobis post hoc exsilium ostende.",
+          "pronuncia": "NO-bis post ok ek-SI-li-um os-TEN-de.",
+          "traducao": "depois deste desterro mostrai-nos."
+        },
+        {
+          "id": "latim.salve_regina.10",
+          "latim": "O clemens, o pia, o dulcis Virgo Maria.",
+          "pronuncia": "o KLE-mens, o PI-a, o DUL-tchis VIR-go ma-RI-a.",
+          "traducao": "Ó clemente, ó piedosa, ó doce Virgem Maria."
+        }
+      ]
+    },
+    {
+      "id": "angelus",
+      "latim": "Angelus",
+      "titulo": "Ângelus",
+      "descricao": "A oração do meio-dia (e da manhã e da tarde) que recorda a Encarnação.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.angelus.01",
+          "papel": "V",
+          "latim": "Angelus Domini nuntiavit Mariae.",
+          "pronuncia": "AN-dje-lus DO-mi-ni nun-tsi-A-vit ma-RI-e.",
+          "traducao": "O anjo do Senhor anunciou a Maria."
+        },
+        {
+          "id": "latim.angelus.02",
+          "papel": "R",
+          "latim": "Et concepit de Spiritu Sancto.",
+          "pronuncia": "et kon-TCHE-pit de SPI-ri-tu SANK-to.",
+          "traducao": "E ela concebeu do Espírito Santo.",
+          "nota": "Depois de cada resposta reza-se uma Ave-Maria."
+        },
+        {
+          "id": "latim.angelus.03",
+          "papel": "V",
+          "latim": "Ecce ancilla Domini.",
+          "pronuncia": "ET-tche an-TCHIL-la DO-mi-ni.",
+          "traducao": "Eis a serva do Senhor.",
+          "nota": "\"Cc\" antes de \"e\" soa \"ttch\": et-tche."
+        },
+        {
+          "id": "latim.angelus.04",
+          "papel": "R",
+          "latim": "Fiat mihi secundum verbum tuum.",
+          "pronuncia": "FI-at MI-ki se-KUN-dum VER-bum TU-um.",
+          "traducao": "Faça-se em mim segundo a vossa palavra.",
+          "nota": "\"Mihi\" é exceção: o \"h\" soa \"k\" (mi-ki)."
+        },
+        {
+          "id": "latim.angelus.05",
+          "papel": "V",
+          "latim": "Et Verbum caro factum est.",
+          "pronuncia": "et VER-bum KA-ro FAK-tum est.",
+          "traducao": "E o Verbo se fez carne."
+        },
+        {
+          "id": "latim.angelus.06",
+          "papel": "R",
+          "latim": "Et habitavit in nobis.",
+          "pronuncia": "et a-bi-TA-vit in NO-bis.",
+          "traducao": "E habitou entre nós."
+        },
+        {
+          "id": "latim.angelus.07",
+          "papel": "V",
+          "latim": "Ora pro nobis, sancta Dei Genetrix.",
+          "pronuncia": "O-ra pro NO-bis, SANK-ta DE-i DJE-ne-triks.",
+          "traducao": "Rogai por nós, santa Mãe de Deus."
+        },
+        {
+          "id": "latim.angelus.08",
+          "papel": "R",
+          "latim": "Ut digni efficiamur promissionibus Christi.",
+          "pronuncia": "ut DI-nhi ef-fi-tchi-A-mur pro-mis-si-O-ni-bus KRIS-ti.",
+          "traducao": "Para que sejamos dignos das promessas de Cristo."
+        },
+        {
+          "id": "latim.angelus.09",
+          "latim": "Oremus.",
+          "pronuncia": "o-RE-mus.",
+          "traducao": "Oremos."
+        },
+        {
+          "id": "latim.angelus.10",
+          "latim": "Gratiam tuam, quaesumus, Domine, mentibus nostris infunde;",
+          "pronuncia": "GRA-tsi-am TU-am, KUE-su-mus, DO-mi-ne, MEN-ti-bus NOS-tris in-FUN-de;",
+          "traducao": "Infundi, Senhor, vos pedimos, a vossa graça em nossas almas,"
+        },
+        {
+          "id": "latim.angelus.11",
+          "latim": "ut qui, Angelo nuntiante, Christi Filii tui incarnationem cognovimus,",
+          "pronuncia": "ut kui, AN-dje-lo nun-tsi-AN-te, KRIS-ti FI-li-i TU-i in-kar-na-tsi-O-nem ko-NHO-vi-mus,",
+          "traducao": "para que nós, que pelo anúncio do anjo conhecemos a encarnação de Cristo, vosso Filho,"
+        },
+        {
+          "id": "latim.angelus.12",
+          "latim": "per passionem eius et crucem ad resurrectionis gloriam perducamur.",
+          "pronuncia": "per pas-si-O-nem E-ius et KRU-tchem ad re-sur-rek-tsi-O-nis GLO-ri-am per-du-KA-mur.",
+          "traducao": "por sua paixão e cruz sejamos conduzidos à glória da ressurreição."
+        },
+        {
+          "id": "latim.angelus.13",
+          "latim": "Per eundem Christum Dominum nostrum. Amen.",
+          "pronuncia": "per e-UN-dem KRIS-tum DO-mi-num NOS-trum. A-men.",
+          "traducao": "Pelo mesmo Cristo, nosso Senhor. Amém."
+        }
+      ]
+    },
+    {
+      "id": "anima_christi",
+      "latim": "Anima Christi",
+      "titulo": "Alma de Cristo",
+      "descricao": "Oração medieval muito amada, rezada depois da Comunhão.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.anima_christi.01",
+          "latim": "Anima Christi, sanctifica me.",
+          "pronuncia": "A-ni-ma KRIS-ti, sank-TI-fi-ka me.",
+          "traducao": "Alma de Cristo, santificai-me."
+        },
+        {
+          "id": "latim.anima_christi.02",
+          "latim": "Corpus Christi, salva me.",
+          "pronuncia": "KOR-pus KRIS-ti, SAL-va me.",
+          "traducao": "Corpo de Cristo, salvai-me."
+        },
+        {
+          "id": "latim.anima_christi.03",
+          "latim": "Sanguis Christi, inebria me.",
+          "pronuncia": "SAN-gwis KRIS-ti, i-NE-bri-a me.",
+          "traducao": "Sangue de Cristo, inebriai-me."
+        },
+        {
+          "id": "latim.anima_christi.04",
+          "latim": "Aqua lateris Christi, lava me.",
+          "pronuncia": "A-kua LA-te-ris KRIS-ti, LA-va me.",
+          "traducao": "Água do lado de Cristo, lavai-me."
+        },
+        {
+          "id": "latim.anima_christi.05",
+          "latim": "Passio Christi, conforta me.",
+          "pronuncia": "PAS-si-o KRIS-ti, kon-FOR-ta me.",
+          "traducao": "Paixão de Cristo, confortai-me."
+        },
+        {
+          "id": "latim.anima_christi.06",
+          "latim": "O bone Iesu, exaudi me.",
+          "pronuncia": "o BO-ne IE-su, eg-ZAU-di me.",
+          "traducao": "Ó bom Jesus, ouvi-me.",
+          "nota": "\"Ex\" antes de vogal soa \"egz\": eg-zau-di."
+        },
+        {
+          "id": "latim.anima_christi.07",
+          "latim": "Intra tua vulnera absconde me.",
+          "pronuncia": "IN-tra TU-a VUL-ne-ra abs-KON-de me.",
+          "traducao": "Dentro de vossas chagas, escondei-me."
+        },
+        {
+          "id": "latim.anima_christi.08",
+          "latim": "Ne permittas me separari a te.",
+          "pronuncia": "ne per-MIT-tas me se-pa-RA-ri a te.",
+          "traducao": "Não permitais que eu me separe de vós."
+        },
+        {
+          "id": "latim.anima_christi.09",
+          "latim": "Ab hoste maligno defende me.",
+          "pronuncia": "ab OS-te ma-LI-nho de-FEN-de me.",
+          "traducao": "Do inimigo maligno, defendei-me."
+        },
+        {
+          "id": "latim.anima_christi.10",
+          "latim": "In hora mortis meae voca me.",
+          "pronuncia": "in O-ra MOR-tis ME-e VO-ka me.",
+          "traducao": "Na hora da minha morte, chamai-me."
+        },
+        {
+          "id": "latim.anima_christi.11",
+          "latim": "Et iube me venire ad te,",
+          "pronuncia": "et IU-be me ve-NI-re ad te,",
+          "traducao": "E mandai-me ir para vós,"
+        },
+        {
+          "id": "latim.anima_christi.12",
+          "latim": "ut cum Sanctis tuis laudem te",
+          "pronuncia": "ut kum SANK-tis TU-is LAU-dem te",
+          "traducao": "para que, com os vossos santos, vos louve"
+        },
+        {
+          "id": "latim.anima_christi.13",
+          "latim": "in saecula saeculorum. Amen.",
+          "pronuncia": "in SE-ku-la se-ku-LO-rum. A-men.",
+          "traducao": "pelos séculos dos séculos. Amém."
+        }
+      ]
+    },
+    {
+      "id": "veni_sancte_spiritus",
+      "latim": "Veni, Sancte Spiritus",
+      "titulo": "Vinde, Espírito Santo",
+      "descricao": "A invocação ao Espírito Santo, com o versículo e a oração que a acompanham.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.veni_sancte_spiritus.01",
+          "latim": "Veni, Sancte Spiritus,",
+          "pronuncia": "VE-ni, SANK-te SPI-ri-tus,",
+          "traducao": "Vinde, Espírito Santo,"
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.02",
+          "latim": "reple tuorum corda fidelium,",
+          "pronuncia": "RE-ple tu-O-rum KOR-da fi-DE-li-um,",
+          "traducao": "enchei os corações dos vossos fiéis,"
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.03",
+          "latim": "et tui amoris in eis ignem accende.",
+          "pronuncia": "et TU-i a-MO-ris in E-is I-nhem at-TCHEN-de.",
+          "traducao": "e acendei neles o fogo do vosso amor."
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.04",
+          "papel": "V",
+          "latim": "Emitte Spiritum tuum et creabuntur.",
+          "pronuncia": "e-MIT-te SPI-ri-tum TU-um et kre-a-BUN-tur.",
+          "traducao": "Enviai o vosso Espírito, e tudo será criado."
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.05",
+          "papel": "R",
+          "latim": "Et renovabis faciem terrae.",
+          "pronuncia": "et re-no-VA-bis FA-tchi-em TER-re.",
+          "traducao": "E renovareis a face da terra."
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.06",
+          "latim": "Oremus.",
+          "pronuncia": "o-RE-mus.",
+          "traducao": "Oremos."
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.07",
+          "latim": "Deus, qui corda fidelium Sancti Spiritus illustratione docuisti,",
+          "pronuncia": "DE-us, kui KOR-da fi-DE-li-um SANK-ti SPI-ri-tus il-lus-tra-tsi-O-ne do-ku-IS-ti,",
+          "traducao": "Ó Deus, que instruístes os corações dos vossos fiéis com a luz do Espírito Santo,"
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.08",
+          "latim": "da nobis in eodem Spiritu recta sapere,",
+          "pronuncia": "da NO-bis in e-O-dem SPI-ri-tu REK-ta SA-pe-re,",
+          "traducao": "concedei-nos, no mesmo Espírito, saborear o que é reto"
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.09",
+          "latim": "et de eius semper consolatione gaudere.",
+          "pronuncia": "et de E-ius SEM-per kon-so-la-tsi-O-ne gau-DE-re.",
+          "traducao": "e gozar sempre da sua consolação."
+        },
+        {
+          "id": "latim.veni_sancte_spiritus.10",
+          "latim": "Per Christum Dominum nostrum. Amen.",
+          "pronuncia": "per KRIS-tum DO-mi-num NOS-trum. A-men.",
+          "traducao": "Por Cristo, nosso Senhor. Amém."
+        }
+      ]
+    },
+    {
+      "id": "sub_tuum",
+      "latim": "Sub tuum praesidium",
+      "titulo": "À vossa proteção",
+      "descricao": "A oração mariana mais antiga que se conhece, já rezada pelos primeiros cristãos.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.sub_tuum.01",
+          "latim": "Sub tuum praesidium confugimus,",
+          "pronuncia": "sub TU-um pre-SI-di-um kon-FU-dji-mus,",
+          "traducao": "À vossa proteção recorremos,"
+        },
+        {
+          "id": "latim.sub_tuum.02",
+          "latim": "sancta Dei Genetrix.",
+          "pronuncia": "SANK-ta DE-i DJE-ne-triks.",
+          "traducao": "santa Mãe de Deus."
+        },
+        {
+          "id": "latim.sub_tuum.03",
+          "latim": "Nostras deprecationes ne despicias",
+          "pronuncia": "NOS-tras de-pre-ka-tsi-O-nes ne de-SPI-tchi-as",
+          "traducao": "Não desprezeis as nossas súplicas"
+        },
+        {
+          "id": "latim.sub_tuum.04",
+          "latim": "in necessitatibus,",
+          "pronuncia": "in ne-tches-si-TA-ti-bus,",
+          "traducao": "em nossas necessidades,"
+        },
+        {
+          "id": "latim.sub_tuum.05",
+          "latim": "sed a periculis cunctis libera nos semper,",
+          "pronuncia": "sed a pe-RI-ku-lis KUNK-tis LI-be-ra nos SEM-per,",
+          "traducao": "mas livrai-nos sempre de todos os perigos,"
+        },
+        {
+          "id": "latim.sub_tuum.06",
+          "latim": "Virgo gloriosa et benedicta. Amen.",
+          "pronuncia": "VIR-go glo-ri-O-sa et be-ne-DIK-ta. A-men.",
+          "traducao": "ó Virgem gloriosa e bendita. Amém."
+        }
+      ]
+    }
+  ]
+}

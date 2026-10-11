@@ -32,10 +32,23 @@ import br.app.fediaria.shared.resources.configuracoes_titulo
 import br.app.fediaria.shared.resources.ic_configuracoes
 import br.app.fediaria.shared.resources.ic_voltar
 import br.app.fediaria.shared.resources.titulo_ajuda_lembretes
+import br.app.fediaria.shared.resources.titulo_exercicios_latim
+import br.app.fediaria.shared.resources.titulo_flashcards
 import br.app.fediaria.shared.resources.titulo_historico
+import br.app.fediaria.shared.resources.titulo_latim
+import br.app.fediaria.shared.resources.titulo_leitura_latim
 import br.app.fediaria.shared.resources.titulo_licao
 import br.app.fediaria.shared.resources.titulo_novena
+import br.app.fediaria.shared.resources.titulo_pronuncia
+import br.app.fediaria.shared.resources.titulo_rezar_latim
 import br.app.fediaria.shared.resources.titulo_terco_guiado
+import br.app.fediaria.ui.latim.TelaExerciciosLatim
+import br.app.fediaria.ui.latim.TelaFlashcards
+import br.app.fediaria.ui.latim.TelaGuiaPronuncia
+import br.app.fediaria.ui.latim.TelaLatim
+import br.app.fediaria.ui.latim.TelaLeituraLatim
+import br.app.fediaria.ui.latim.TelaOracaoLatim
+import br.app.fediaria.ui.latim.TelaRezarLatim
 import br.app.fediaria.ui.novena.TelaDetalheNovena
 import br.app.fediaria.ui.novena.TelaNovenaAtiva
 import br.app.fediaria.ui.novena.TelaNovenas
@@ -43,7 +56,6 @@ import br.app.fediaria.ui.quiz.TelaLicao
 import br.app.fediaria.ui.quiz.TelaQuiz
 import br.app.fediaria.ui.telas.TelaAjudaLembretes
 import br.app.fediaria.ui.telas.TelaConfiguracoes
-import br.app.fediaria.ui.telas.TelaLatim
 import br.app.fediaria.ui.terco.TelaHistorico
 import br.app.fediaria.ui.terco.TelaTerco
 import br.app.fediaria.ui.terco.TelaTercoGuiado
@@ -104,7 +116,37 @@ fun NavegacaoPrincipal(
                 )
             }
             composable<Rota.Quiz> { TelaQuiz(aoAbrirLicao = { navController.navigate(Rota.Licao(it)) }) }
-            composable<Rota.Latim> { TelaLatim() }
+            composable<Rota.Latim> {
+                TelaLatim(
+                    aoAbrirOracao = { navController.navigate(Rota.OracaoLatim(it)) },
+                    aoAbrirFlashcards = { navController.navigate(Rota.Flashcards(it)) },
+                    aoAbrirGuia = { navController.navigate(Rota.GuiaPronuncia) },
+                )
+            }
+            composable<Rota.OracaoLatim> { entrada ->
+                val id = entrada.toRoute<Rota.OracaoLatim>().id
+                TelaOracaoLatim(
+                    id = id,
+                    aoLer = { navController.navigate(Rota.LeituraLatim(id)) },
+                    aoExercitar = { navController.navigate(Rota.ExerciciosLatim(id)) },
+                    aoFlashcards = { navController.navigate(Rota.Flashcards(id)) },
+                    aoRezar = { navController.navigate(Rota.RezarLatim(id)) },
+                )
+            }
+            composable<Rota.LeituraLatim> { entrada ->
+                TelaLeituraLatim(entrada.toRoute<Rota.LeituraLatim>().id, aoConcluir = { navController.popBackStack() })
+            }
+            composable<Rota.RezarLatim> { entrada -> TelaRezarLatim(entrada.toRoute<Rota.RezarLatim>().id) }
+            composable<Rota.ExerciciosLatim> { entrada ->
+                TelaExerciciosLatim(
+                    entrada.toRoute<Rota.ExerciciosLatim>().id,
+                    aoSair = { navController.popBackStack() },
+                )
+            }
+            composable<Rota.Flashcards> { entrada ->
+                TelaFlashcards(entrada.toRoute<Rota.Flashcards>().alvo, aoSair = { navController.popBackStack() })
+            }
+            composable<Rota.GuiaPronuncia> { TelaGuiaPronuncia() }
             composable<Rota.Configuracoes> {
                 TelaConfiguracoes(
                     aoAbrirAjudaLembretes = { navController.navigate(Rota.AjudaLembretes) },
@@ -152,6 +194,12 @@ private fun tituloDaTela(destino: NavDestination?): StringResource =
         destino.eh(Rota.AjudaLembretes::class) -> Res.string.titulo_ajuda_lembretes
         destino.eh(Rota.DetalheNovena::class) || destino.eh(Rota.NovenaAtiva::class) -> Res.string.titulo_novena
         destino.eh(Rota.Licao::class) -> Res.string.titulo_licao
+        destino.eh(Rota.OracaoLatim::class) -> Res.string.titulo_latim
+        destino.eh(Rota.LeituraLatim::class) -> Res.string.titulo_leitura_latim
+        destino.eh(Rota.RezarLatim::class) -> Res.string.titulo_rezar_latim
+        destino.eh(Rota.ExerciciosLatim::class) -> Res.string.titulo_exercicios_latim
+        destino.eh(Rota.Flashcards::class) -> Res.string.titulo_flashcards
+        destino.eh(Rota.GuiaPronuncia::class) -> Res.string.titulo_pronuncia
         else -> Res.string.configuracoes_titulo
     }
 

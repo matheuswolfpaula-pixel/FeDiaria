@@ -18,7 +18,7 @@ Briefing, decisões, arquitetura (`docs/ARQUITETURA.md`), este roadmap, `CLAUDE.
 
 **Aceite:** `./gradlew check` verde localmente e no CI · o app abre no emulador · as 4 abas navegam · o tema escuro segue o sistema · nenhuma permissão além do previsto no manifesto final.
 
-## Fase 2 — Terço + ofensiva + lembretes ✅ (teste do dono pendente)
+## Fase 2 — Terço + ofensiva + lembretes ✅
 - Terço guiado completo (contas, contador, mistérios do dia, retomar, vibração opcional) e marcação manual (hoje/ontem).
 - Ofensiva com chama animada, dia de graça, recorde, calendário/histórico, conquistas simples.
 - Lembrete diário + 2º lembrete condicional, reagendamento (boot/fuso/hora/atualização), WorkManager vigia, pedido de notificação no Android 13+, tela "Lembretes não chegam?".
@@ -26,19 +26,19 @@ Briefing, decisões, arquitetura (`docs/ARQUITETURA.md`), este roadmap, `CLAUDE.
 
 **Aceite:** testes unitários cobrindo ofensiva (sequência, quebra, graça ganha/usada/limite 2, pendente hoje, ontem manual, mudança de fuso, horário de verão, virada de ano) e agendamento (próximo disparo, 2º lembrete suprimido se já rezou) · teste de UI "rezar terço inteiro → ofensiva +1" · no emulador: lembrete chega, some se já rezou, sobrevive a reinício.
 
-## Fase 3 — Novenas ✅ (teste do dono pendente)
+## Fase 3 — Novenas ✅
 - Catálogo com 6 novenas: Espírito Santo, Imaculada Conceição, Natal, N. Sra. Aparecida, São José, Sagrado Coração. Divina Misericórdia é candidata a 7ª, com o texto original de S. Faustina descartado por direitos autorais.
 - Iniciar em uma data, texto do dia 1–9, marcar rezado, retomar sem punir, várias simultâneas, lembrete por novena, datas sugeridas (incl. cálculo da Páscoa).
 
 **Aceite:** testes de progresso/retomada e do cálculo da Páscoa (2000–2100 contra tabela conhecida) · teste de UI "iniciar novena → marcar dia 1" · lembrete para quando a novena termina.
 
-## Fase 4 — Quiz ✅ (aguardando ok)
+## Fase 4 — Quiz ✅
 - 3 trilhas (Escrituras, Catecismo, Fé Católica) × 3 níveis, ~150 perguntas originais com explicação e referência, lições de 5–10 perguntas, XP, feedback imediato, revisão espaçada.
 - 👤 **Sugestão:** criar a conta de desenvolvedor Google Play nesta fase. A verificação de identidade leva dias, e o teste fechado obrigatório (Fase 8) leva semanas.
 
 **Aceite:** testes do SRS e da montagem de lições · validador automático do JSON (todo item tem `fonte`, `revisado` e `referencia` válidos, sem ids duplicados) rodando no `check` · teste de UI de uma lição completa.
 
-## Fase 5 — Latim
+## Fase 5 — Latim ✅ (aguardando ok)
 - 10 orações: Signum Crucis, Pater Noster, Ave Maria, Gloria Patri, Credo (Apostólico), Salve Regina, Angelus, Anima Christi, Veni Sancte Spiritus, Sub tuum praesidium. *Ad Maiorem Dei Gloriam* entra como jaculatória/lema, não como oração.
 - Leitura frase a frase com tradução e pronúncia eclesiástica, flashcards (SRS), exercícios (lacuna, ordenar, associar), modo "rezar em latim". Sem áudio (v2).
 

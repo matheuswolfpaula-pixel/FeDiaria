@@ -14,9 +14,6 @@
   <string name="titulo_historico">Histórico e conquistas</string>
   <string name="titulo_ajuda_lembretes">Lembretes não chegam?</string>
 
-  <!-- Telas ainda em preparação -->
-  <string name="latim_descricao">Aprenda a rezar as orações tradicionais em latim.</string>
-  <string name="em_breve">Em preparação</string>
 
   <!-- Ofensiva -->
   <plurals name="ofensiva_dias">
@@ -249,6 +246,63 @@
   <string name="ref_cdc">Código de Direito Canônico, cân. %1$d</string>
   <string name="ref_documento">%1$s, n. %2$d</string>
   <string name="ref_rotulo">Para conferir: %1$s</string>
+
+  <!-- Latim -->
+  <string name="titulo_latim">Latim</string>
+  <string name="titulo_leitura_latim">Frase a frase</string>
+  <string name="titulo_rezar_latim">Rezar em latim</string>
+  <string name="titulo_exercicios_latim">Exercícios</string>
+  <string name="titulo_flashcards">Flashcards</string>
+  <string name="titulo_pronuncia">Como pronunciar</string>
+  <string name="latim_lema_rotulo">Lema</string>
+  <string name="latim_intro">As orações que a Igreja reza há séculos, na língua da liturgia. Aprenda frase a frase, sem pressa.</string>
+  <string name="latim_guia">Como pronunciar o latim da Igreja</string>
+  <string name="latim_oracoes">Orações</string>
+  <string name="latim_memorizadas">%1$d de %2$d frases memorizadas</string>
+  <string name="latim_flashcards_titulo">Flashcards de hoje</string>
+  <plurals name="latim_flashcards_desc">
+    <item quantity="one">%1$d frase voltou para você relembrar.</item>
+    <item quantity="other">%1$d frases voltaram para você relembrar.</item>
+  </plurals>
+  <string name="latim_acao_ler">Ler frase a frase</string>
+  <string name="latim_acao_ler_desc">Latim, pronúncia e tradução, uma frase por vez.</string>
+  <string name="latim_acao_exercicios">Exercícios</string>
+  <string name="latim_acao_exercicios_desc">Complete, ordene e ligue as frases.</string>
+  <string name="latim_acao_flashcards">Flashcards</string>
+  <string name="latim_acao_flashcards_desc">Memorize as frases com revisão espaçada.</string>
+  <string name="latim_acao_rezar">Rezar em latim</string>
+  <string name="latim_acao_rezar_desc">A oração inteira, para rezar com calma.</string>
+  <string name="latim_frase_de">Frase %1$d de %2$d</string>
+  <string name="latim_pronuncia_rotulo">Pronúncia</string>
+  <string name="latim_traducao_rotulo">Tradução</string>
+  <string name="latim_anterior">Anterior</string>
+  <string name="latim_proxima">Próxima</string>
+  <string name="latim_concluir_leitura">Concluir</string>
+  <string name="latim_mostrar_pronuncia">Mostrar pronúncia</string>
+  <string name="latim_mostrar_traducao">Mostrar tradução</string>
+  <string name="latim_versiculo">℣.</string>
+  <string name="latim_resposta">℟.</string>
+  <string name="latim_exercicio_de">Exercício %1$d de %2$d</string>
+  <string name="latim_lacuna_titulo">Complete a frase</string>
+  <string name="latim_ordenar_titulo">Monte a frase na ordem certa</string>
+  <string name="latim_ordenar_dica">Toque nas palavras. Para tirar uma palavra, toque nela de novo lá em cima.</string>
+  <string name="latim_associar_titulo">Ligue cada frase à sua tradução</string>
+  <string name="latim_associar_dica">Toque numa frase em latim e depois na tradução.</string>
+  <string name="latim_associar_errado">Essas duas não combinam. Tente de novo.</string>
+  <string name="latim_verificar">Verificar</string>
+  <string name="latim_certo">Isso mesmo!</string>
+  <string name="latim_lacuna_errado">Quase! A palavra é: %1$s</string>
+  <string name="latim_ordenar_errado">Quase! A ordem é:</string>
+  <string name="latim_associar_feito">Pronto! Todas ligadas.</string>
+  <string name="latim_fim_titulo">Exercícios concluídos</string>
+  <string name="latim_fim_acertos">Você acertou %1$d de %2$d de primeira.</string>
+  <string name="latim_fim_voltar">Voltar à oração</string>
+  <string name="latim_mostrar_resposta">Mostrar tradução</string>
+  <string name="latim_lembrei">Lembrei</string>
+  <string name="latim_nao_lembrei">Ainda não</string>
+  <string name="latim_flashcards_fim">Pronto por hoje!</string>
+  <string name="latim_flashcards_fim_desc">Você lembrou %1$d de %2$d. As frases voltam nos dias certos para fixar com calma.</string>
+  <string name="latim_flashcards_vazio">Nenhuma frase para revisar agora. Volte amanhã ou faça os exercícios.</string>
 
   <!-- Datas -->
   <string-array name="meses">

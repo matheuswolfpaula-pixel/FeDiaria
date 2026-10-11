@@ -44,6 +44,30 @@ sealed interface Rota {
         val licaoId: String,
     ) : Rota
 
+    /** Latim: menu de uma oração ([id] em latim.json). */
+    @Serializable data class OracaoLatim(
+        val id: String,
+    ) : Rota
+
+    @Serializable data class LeituraLatim(
+        val id: String,
+    ) : Rota
+
+    @Serializable data class RezarLatim(
+        val id: String,
+    ) : Rota
+
+    @Serializable data class ExerciciosLatim(
+        val id: String,
+    ) : Rota
+
+    /** [alvo] = id de uma oração ou "revisao" (vencidas de todas). */
+    @Serializable data class Flashcards(
+        val alvo: String,
+    ) : Rota
+
+    @Serializable data object GuiaPronuncia : Rota
+
     /** Uma novena do usuário (id no banco). */
     @Serializable data class NovenaAtiva(
         val id: Long,

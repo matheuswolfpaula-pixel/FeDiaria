@@ -5,9 +5,9 @@ import androidx.lifecycle.viewModelScope
 import br.app.fediaria.core.quiz.Licao
 import br.app.fediaria.core.quiz.MontadorDeLicoes
 import br.app.fediaria.core.tempo.Relogio
+import br.app.fediaria.data.aprendizado.AprendizadoRepository
 import br.app.fediaria.data.conteudo.ConteudoRepository
 import br.app.fediaria.data.conteudo.Trilha
-import br.app.fediaria.data.quiz.QuizRepository
 import br.app.fediaria.data.tempo.fluxoDoDia
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -40,7 +40,7 @@ data class QuizUiState(
 )
 
 class QuizViewModel(
-    quiz: QuizRepository,
+    quiz: AprendizadoRepository,
     conteudo: ConteudoRepository,
     relogio: Relogio,
 ) : ViewModel() {
@@ -56,7 +56,8 @@ class QuizViewModel(
             QuizUiState(
                 carregando = false,
                 xpTotal = concluidas.sumOf { it.xp },
-                licoesFeitas = feitas.count { it != MontadorDeLicoes.ID_REVISAO },
+                // Só as lições do quiz (a revisão e os exercícios de latim também ficam na mesma tabela).
+                licoesFeitas = licoes.count { it.id in feitas },
                 revisaoPendente =
                     MontadorDeLicoes.revisao(srs, hoje, catalogo.perguntas.map { it.id }.toSet()).size,
                 trilhas =

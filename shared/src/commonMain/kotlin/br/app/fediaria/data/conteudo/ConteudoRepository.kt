@@ -10,6 +10,7 @@ class ConteudoRepository {
     private var terco: ConteudoTerco? = null
     private var novenas: ConteudoNovenas? = null
     private var quiz: ConteudoQuiz? = null
+    private var latim: ConteudoLatim? = null
 
     suspend fun terco(): ConteudoTerco =
         mutex.withLock {
@@ -24,6 +25,11 @@ class ConteudoRepository {
     suspend fun quiz(): ConteudoQuiz =
         mutex.withLock {
             quiz ?: ConteudoQuiz.deJson(ler("quiz.json")).also { quiz = it }
+        }
+
+    suspend fun latim(): ConteudoLatim =
+        mutex.withLock {
+            latim ?: ConteudoLatim.deJson(ler("latim.json")).also { latim = it }
         }
 
     private suspend fun ler(arquivo: String) = Res.readBytes("files/conteudo/$arquivo").decodeToString()

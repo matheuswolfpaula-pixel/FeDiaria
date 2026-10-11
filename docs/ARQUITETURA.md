@@ -99,6 +99,14 @@ Sistema de **Leitner** com caixas de intervalos 1, 3, 7, 14 e 30 dias. Errou, a 
 
 **Quiz (Fase 4):** 3 trilhas (`escrituras`, `catecismo`, `fe_catolica`) × 3 níveis. As lições são fixas e derivadas da ordem do JSON: cada nível é dividido em lições equilibradas de 5 a 10 perguntas (17 → 6 + 6 + 5), com id estável `<trilha>.n<nível>.l<n>`. O nível 1 já começa aberto; os seguintes abrem quando todas as lições do anterior forem feitas (uma lição conta como feita mesmo com erros). XP = 10 por acerto, só no quiz e no latim. A ordem das alternativas é embaralhada por dia (semente = id + data), para a resposta certa não ficar sempre na mesma posição; Verdadeiro/Falso não é embaralhado. A resposta é gravada no SRS assim que é dada, então sair no meio da lição não perde nada. Referências: `biblia`, `cic` (nº do parágrafo), `cdc` (cânon) e `documento` (título + nº), validadas por `ConteudoQuizTest`.
 
+**Latim (Fase 5):** 10 orações em `latim.json`, cada uma dividida em frases (`latim.<oração>.<nn>`) com latim, pronúncia eclesiástica (tônica em MAIÚSCULAS), tradução literal e nota opcional; ℣./℟. no campo `papel`. Quatro modos por oração:
+- **Frase a frase:** leitura com pronúncia e tradução.
+- **Exercícios:** lição de até 6 itens gerada pelo `GeradorDeExercicios` no `core`. Lacuna e ordenar alternados, cada frase uma vez, e um "associar" (4 pares) no meio. A semente é oração + data, então a lição é estável durante o dia. XP = 10 por exercício acertado de primeira, gravado em `licao_concluida` como `latim.<oração>`.
+- **Flashcards:** Leitner, na mesma tabela `srs_item` do quiz. Por oração, as vencidas mais as frases novas, até 10. O cartão "Flashcards de hoje" mostra as vencidas de todas as orações. Uma frase conta como "memorizada" a partir da caixa 3.
+- **Rezar em latim:** a oração inteira, com pronúncia e tradução opcionais, sem pontos.
+
+Os exercícios não mexem no SRS: só os flashcards decidem quando a frase volta. O validador (`ConteudoLatimTest`) confere, entre outras coisas, se cada frase tem na pronúncia o mesmo número de palavras que em latim e se cada palavra polissílaba tem exatamente uma sílaba tônica marcada.
+
 ## 5. UI
 
 Barra inferior: **Terço** (início, com a chama) · **Novenas** · **Quiz** · **Latim**. Configurações ficam no ícone do topo. Tema Material 3 com azul mariano, dourado e fundo creme, modo escuro completo e tipografia serifada nos textos de oração. Acessibilidade: escala de fonte do sistema + ajuste interno, alvos de toque ≥ 48dp, `contentDescription` em tudo, contraste AA verificado.

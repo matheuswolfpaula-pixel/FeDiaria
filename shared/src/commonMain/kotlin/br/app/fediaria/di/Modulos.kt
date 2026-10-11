@@ -1,6 +1,7 @@
 package br.app.fediaria.di
 
 import br.app.fediaria.core.tempo.Relogio
+import br.app.fediaria.data.aprendizado.AprendizadoRepository
 import br.app.fediaria.data.config.ConfiguracoesRepository
 import br.app.fediaria.data.config.ProgressoTercoRepository
 import br.app.fediaria.data.conteudo.ConteudoRepository
@@ -8,8 +9,11 @@ import br.app.fediaria.data.db.FeDiariaDatabase
 import br.app.fediaria.data.db.construirBanco
 import br.app.fediaria.data.novena.NovenasRepository
 import br.app.fediaria.data.oracao.DiasRezadosRepository
-import br.app.fediaria.data.quiz.QuizRepository
 import br.app.fediaria.ui.AppViewModel
+import br.app.fediaria.ui.latim.ExerciciosLatimViewModel
+import br.app.fediaria.ui.latim.FlashcardsViewModel
+import br.app.fediaria.ui.latim.LatimViewModel
+import br.app.fediaria.ui.latim.OracaoLatimViewModel
 import br.app.fediaria.ui.novena.DetalheNovenaViewModel
 import br.app.fediaria.ui.novena.NovenaAtivaViewModel
 import br.app.fediaria.ui.novena.NovenasViewModel
@@ -42,7 +46,7 @@ private val modulosDeDados =
         single { get<FeDiariaDatabase>().novenaDao() }
         single { NovenasRepository(get(), get()) }
         single { get<FeDiariaDatabase>().quizDao() }
-        single { QuizRepository(get(), get()) }
+        single { AprendizadoRepository(get(), get()) }
     }
 
 private val modulosDeTelas =
@@ -57,6 +61,10 @@ private val modulosDeTelas =
         viewModel { parametros -> NovenaAtivaViewModel(parametros.get(), get(), get(), get()) }
         viewModelOf(::QuizViewModel)
         viewModel { parametros -> LicaoViewModel(parametros.get(), get(), get(), get()) }
+        viewModelOf(::LatimViewModel)
+        viewModel { parametros -> OracaoLatimViewModel(parametros.get(), get(), get()) }
+        viewModel { parametros -> ExerciciosLatimViewModel(parametros.get(), get(), get(), get()) }
+        viewModel { parametros -> FlashcardsViewModel(parametros.get(), get(), get(), get()) }
     }
 
 fun modulosFeDiaria(): List<Module> = listOf(modulosDaPlataforma, modulosDeDados, modulosDeTelas)

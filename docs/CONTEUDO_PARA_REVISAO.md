@@ -428,7 +428,172 @@ Pontos para o revisor:
 
 ---
 
-## 4. Textos da interface com conteúdo religioso
+## 4. Latim (`latim.json`): Fase 5
+
+10 orações, 101 frases. O **texto latino** é o tradicional da Igreja (domínio público). A **tradução literal** e a **pronúncia** foram escritas para o app. Na pronúncia, a sílaba tônica está em MAIÚSCULAS, no padrão eclesiástico (italiano).
+
+Pontos para o revisor:
+- **Conferir cada texto latino com um livro litúrgico.** Escrevi de memória os textos tradicionais; um erro de uma letra muda o exercício.
+- **Pronúncia:** conferir as sílabas tônicas e as regras do guia (tela "Como pronunciar"), principalmente "Iesus" (IE-sus), "mihi" (MI-ki), "exsules"/"exsilium" e o "s" entre vogais.
+- **Veni, Sancte Spiritus:** usei a oração curta "Vinde, Espírito Santo" (com o versículo e a oração), a mesma rezada no Brasil. A **Sequência de Pentecostes**, que também começa com "Veni, Sancte Spiritus", é outro texto, mais longo, e não entrou.
+- **Tradução literal, não a oração em português:** no Pai-Nosso, "debita" ficou "dívidas" e "ne nos inducas" ficou "não nos induzais". Uma nota explica a diferença para a forma rezada.
+- **Credo:** "descendit ad inferos" foi traduzido como "desceu à mansão dos mortos", com uma nota explicando que não é o inferno dos condenados.
+- **Lema:** *Ad Maiorem Dei Gloriam*, com a nota "Lema de Santo Inácio de Loyola e da Companhia de Jesus".
+
+### Signum Crucis · Sinal da Cruz (`signum_crucis`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | In nomine Patris, | in NO-mi-ne PA-tris, | Em nome do Pai, |
+| `02` | et Filii, | et FI-li-i, | e do Filho, |
+| `03` | et Spiritus Sancti. | et SPI-ri-tus SANK-ti. | e do Espírito Santo. |
+| `04` | Amen. | A-men. | Amém. |
+
+### Pater Noster · Pai-Nosso (`pater_noster`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Pater noster, qui es in caelis, | PA-ter NOS-ter, kui es in TCHE-lis, | Pai nosso, que estais nos céus, |
+| `02` | sanctificetur nomen tuum. | sank-ti-fi-TCHE-tur NO-men TU-um. | santificado seja o vosso nome. |
+| `03` | Adveniat regnum tuum. | ad-VE-ni-at RE-nhum TU-um. | Venha o vosso reino. |
+| `04` | Fiat voluntas tua, | FI-at vo-LUN-tas TU-a, | Seja feita a vossa vontade, |
+| `05` | sicut in caelo et in terra. | SI-kut in TCHE-lo et in TER-ra. | assim no céu como na terra. |
+| `06` | Panem nostrum quotidianum da nobis hodie, | PA-nem NOS-trum kuo-ti-di-A-num da NO-bis O-di-e, | O pão nosso de cada dia dai-nos hoje, |
+| `07` | et dimitte nobis debita nostra, | et di-MIT-te NO-bis DE-bi-ta NOS-tra, | e perdoai-nos as nossas dívidas, |
+| `08` | sicut et nos dimittimus debitoribus nostris. | SI-kut et nos di-MIT-ti-mus de-bi-TO-ri-bus NOS-tris. | assim como nós perdoamos aos nossos devedores. |
+| `09` | Et ne nos inducas in tentationem, | et ne nos in-DU-kas in ten-ta-tsi-O-nem, | E não nos induzais em tentação, |
+| `10` | sed libera nos a malo. | sed LI-be-ra nos a MA-lo. | mas livrai-nos do mal. |
+| `11` | Amen. | A-men. | Amém. |
+
+### Ave Maria · Ave-Maria (`ave_maria`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Ave Maria, gratia plena, | A-ve ma-RI-a, GRA-tsi-a PLE-na, | Ave, Maria, cheia de graça, |
+| `02` | Dominus tecum. | DO-mi-nus TE-kum. | o Senhor é convosco. |
+| `03` | Benedicta tu in mulieribus, | be-ne-DIK-ta tu in mu-li-E-ri-bus, | Bendita sois vós entre as mulheres, |
+| `04` | et benedictus fructus ventris tui, Iesus. | et be-ne-DIK-tus FRUK-tus VEN-tris TU-i, IE-sus. | e bendito é o fruto do vosso ventre, Jesus. |
+| `05` | Sancta Maria, Mater Dei, | SANK-ta ma-RI-a, MA-ter DE-i, | Santa Maria, Mãe de Deus, |
+| `06` | ora pro nobis peccatoribus, | O-ra pro NO-bis pek-ka-TO-ri-bus, | rogai por nós, pecadores, |
+| `07` | nunc et in hora mortis nostrae. | nunk et in O-ra MOR-tis NOS-tre. | agora e na hora da nossa morte. |
+| `08` | Amen. | A-men. | Amém. |
+
+### Gloria Patri · Glória ao Pai (`gloria_patri`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Gloria Patri, | GLO-ri-a PA-tri, | Glória ao Pai, |
+| `02` | et Filio, et Spiritui Sancto. | et FI-li-o, et spi-RI-tu-i SANK-to. | e ao Filho, e ao Espírito Santo. |
+| `03` | Sicut erat in principio, | SI-kut E-rat in prin-TCHI-pi-o, | Como era no princípio, |
+| `04` | et nunc, et semper, | et nunk, et SEM-per, | agora e sempre, |
+| `05` | et in saecula saeculorum. | et in SE-ku-la se-ku-LO-rum. | e pelos séculos dos séculos. |
+| `06` | Amen. | A-men. | Amém. |
+
+### Symbolum Apostolorum · Credo (Símbolo dos Apóstolos) (`credo`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Credo in Deum Patrem omnipotentem, | KRE-do in DE-um PA-trem om-ni-po-TEN-tem, | Creio em Deus Pai todo-poderoso, |
+| `02` | Creatorem caeli et terrae. | kre-a-TO-rem TCHE-li et TER-re. | Criador do céu e da terra. |
+| `03` | Et in Iesum Christum, Filium eius unicum, | et in IE-sum KRIS-tum, FI-li-um E-ius U-ni-kum, | E em Jesus Cristo, seu único Filho, |
+| `04` | Dominum nostrum, | DO-mi-num NOS-trum, | nosso Senhor, |
+| `05` | qui conceptus est de Spiritu Sancto, | kui kon-TCHEP-tus est de SPI-ri-tu SANK-to, | que foi concebido pelo Espírito Santo, |
+| `06` | natus ex Maria Virgine, | NA-tus eks ma-RI-a VIR-dji-ne, | nasceu da Virgem Maria, |
+| `07` | passus sub Pontio Pilato, | PAS-sus sub PON-tsi-o pi-LA-to, | padeceu sob Pôncio Pilatos, |
+| `08` | crucifixus, mortuus, et sepultus, | kru-tchi-FIK-sus, MOR-tu-us, et se-PUL-tus, | foi crucificado, morto e sepultado, |
+| `09` | descendit ad inferos, | de-CHEN-dit ad IN-fe-ros, | desceu à mansão dos mortos, |
+| `10` | tertia die resurrexit a mortuis, | TER-tsi-a DI-e re-sur-REK-sit a MOR-tu-is, | ao terceiro dia ressuscitou dos mortos, |
+| `11` | ascendit ad caelos, | a-CHEN-dit ad TCHE-los, | subiu aos céus, |
+| `12` | sedet ad dexteram Dei Patris omnipotentis, | SE-det ad DEK-ste-ram DE-i PA-tris om-ni-po-TEN-tis, | está sentado à direita de Deus Pai todo-poderoso, |
+| `13` | inde venturus est iudicare vivos et mortuos. | IN-de ven-TU-rus est iu-di-KA-re VI-vos et MOR-tu-os. | de onde há de vir a julgar os vivos e os mortos. |
+| `14` | Credo in Spiritum Sanctum, | KRE-do in SPI-ri-tum SANK-tum, | Creio no Espírito Santo, |
+| `15` | sanctam Ecclesiam catholicam, | SANK-tam ek-KLE-si-am ka-TO-li-kam, | na santa Igreja católica, |
+| `16` | sanctorum communionem, | sank-TO-rum kom-mu-ni-O-nem, | na comunhão dos santos, |
+| `17` | remissionem peccatorum, | re-mis-si-O-nem pek-ka-TO-rum, | na remissão dos pecados, |
+| `18` | carnis resurrectionem, | KAR-nis re-sur-rek-tsi-O-nem, | na ressurreição da carne, |
+| `19` | vitam aeternam. | VI-tam e-TER-nam. | na vida eterna. |
+| `20` | Amen. | A-men. | Amém. |
+
+### Salve Regina · Salve-Rainha (`salve_regina`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Salve, Regina, mater misericordiae; | SAL-ve, re-DJI-na, MA-ter mi-se-ri-KOR-di-e; | Salve, Rainha, mãe de misericórdia; |
+| `02` | vita, dulcedo et spes nostra, salve. | VI-ta, dul-TCHE-do et spes NOS-tra, SAL-ve. | vida, doçura e esperança nossa, salve. |
+| `03` | Ad te clamamus, exsules filii Hevae. | ad te kla-MA-mus, EK-su-les FI-li-i E-ve. | A vós clamamos, os degredados filhos de Eva. |
+| `04` | Ad te suspiramus, gementes et flentes | ad te sus-pi-RA-mus, dje-MEN-tes et FLEN-tes | A vós suspiramos, gemendo e chorando |
+| `05` | in hac lacrimarum valle. | in ak la-kri-MA-rum VAL-le. | neste vale de lágrimas. |
+| `06` | Eia ergo, advocata nostra, | E-ia ER-go, ad-vo-KA-ta NOS-tra, | Eia, pois, advogada nossa, |
+| `07` | illos tuos misericordes oculos ad nos converte. | IL-los TU-os mi-se-ri-KOR-des O-ku-los ad nos kon-VER-te. | esses vossos olhos misericordiosos a nós volvei. |
+| `08` | Et Iesum, benedictum fructum ventris tui, | et IE-sum, be-ne-DIK-tum FRUK-tum VEN-tris TU-i, | E Jesus, bendito fruto do vosso ventre, |
+| `09` | nobis post hoc exsilium ostende. | NO-bis post ok ek-SI-li-um os-TEN-de. | depois deste desterro mostrai-nos. |
+| `10` | O clemens, o pia, o dulcis Virgo Maria. | o KLE-mens, o PI-a, o DUL-tchis VIR-go ma-RI-a. | Ó clemente, ó piedosa, ó doce Virgem Maria. |
+
+### Angelus · Ângelus (`angelus`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | ℣. Angelus Domini nuntiavit Mariae. | AN-dje-lus DO-mi-ni nun-tsi-A-vit ma-RI-e. | O anjo do Senhor anunciou a Maria. |
+| `02` | ℟. Et concepit de Spiritu Sancto. | et kon-TCHE-pit de SPI-ri-tu SANK-to. | E ela concebeu do Espírito Santo. |
+| `03` | ℣. Ecce ancilla Domini. | ET-tche an-TCHIL-la DO-mi-ni. | Eis a serva do Senhor. |
+| `04` | ℟. Fiat mihi secundum verbum tuum. | FI-at MI-ki se-KUN-dum VER-bum TU-um. | Faça-se em mim segundo a vossa palavra. |
+| `05` | ℣. Et Verbum caro factum est. | et VER-bum KA-ro FAK-tum est. | E o Verbo se fez carne. |
+| `06` | ℟. Et habitavit in nobis. | et a-bi-TA-vit in NO-bis. | E habitou entre nós. |
+| `07` | ℣. Ora pro nobis, sancta Dei Genetrix. | O-ra pro NO-bis, SANK-ta DE-i DJE-ne-triks. | Rogai por nós, santa Mãe de Deus. |
+| `08` | ℟. Ut digni efficiamur promissionibus Christi. | ut DI-nhi ef-fi-tchi-A-mur pro-mis-si-O-ni-bus KRIS-ti. | Para que sejamos dignos das promessas de Cristo. |
+| `09` | Oremus. | o-RE-mus. | Oremos. |
+| `10` | Gratiam tuam, quaesumus, Domine, mentibus nostris infunde; | GRA-tsi-am TU-am, KUE-su-mus, DO-mi-ne, MEN-ti-bus NOS-tris in-FUN-de; | Infundi, Senhor, vos pedimos, a vossa graça em nossas almas, |
+| `11` | ut qui, Angelo nuntiante, Christi Filii tui incarnationem cognovimus, | ut kui, AN-dje-lo nun-tsi-AN-te, KRIS-ti FI-li-i TU-i in-kar-na-tsi-O-nem ko-NHO-vi-mus, | para que nós, que pelo anúncio do anjo conhecemos a encarnação de Cristo, vosso Filho, |
+| `12` | per passionem eius et crucem ad resurrectionis gloriam perducamur. | per pas-si-O-nem E-ius et KRU-tchem ad re-sur-rek-tsi-O-nis GLO-ri-am per-du-KA-mur. | por sua paixão e cruz sejamos conduzidos à glória da ressurreição. |
+| `13` | Per eundem Christum Dominum nostrum. Amen. | per e-UN-dem KRIS-tum DO-mi-num NOS-trum. A-men. | Pelo mesmo Cristo, nosso Senhor. Amém. |
+
+### Anima Christi · Alma de Cristo (`anima_christi`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Anima Christi, sanctifica me. | A-ni-ma KRIS-ti, sank-TI-fi-ka me. | Alma de Cristo, santificai-me. |
+| `02` | Corpus Christi, salva me. | KOR-pus KRIS-ti, SAL-va me. | Corpo de Cristo, salvai-me. |
+| `03` | Sanguis Christi, inebria me. | SAN-gwis KRIS-ti, i-NE-bri-a me. | Sangue de Cristo, inebriai-me. |
+| `04` | Aqua lateris Christi, lava me. | A-kua LA-te-ris KRIS-ti, LA-va me. | Água do lado de Cristo, lavai-me. |
+| `05` | Passio Christi, conforta me. | PAS-si-o KRIS-ti, kon-FOR-ta me. | Paixão de Cristo, confortai-me. |
+| `06` | O bone Iesu, exaudi me. | o BO-ne IE-su, eg-ZAU-di me. | Ó bom Jesus, ouvi-me. |
+| `07` | Intra tua vulnera absconde me. | IN-tra TU-a VUL-ne-ra abs-KON-de me. | Dentro de vossas chagas, escondei-me. |
+| `08` | Ne permittas me separari a te. | ne per-MIT-tas me se-pa-RA-ri a te. | Não permitais que eu me separe de vós. |
+| `09` | Ab hoste maligno defende me. | ab OS-te ma-LI-nho de-FEN-de me. | Do inimigo maligno, defendei-me. |
+| `10` | In hora mortis meae voca me. | in O-ra MOR-tis ME-e VO-ka me. | Na hora da minha morte, chamai-me. |
+| `11` | Et iube me venire ad te, | et IU-be me ve-NI-re ad te, | E mandai-me ir para vós, |
+| `12` | ut cum Sanctis tuis laudem te | ut kum SANK-tis TU-is LAU-dem te | para que, com os vossos santos, vos louve |
+| `13` | in saecula saeculorum. Amen. | in SE-ku-la se-ku-LO-rum. A-men. | pelos séculos dos séculos. Amém. |
+
+### Veni, Sancte Spiritus · Vinde, Espírito Santo (`veni_sancte_spiritus`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Veni, Sancte Spiritus, | VE-ni, SANK-te SPI-ri-tus, | Vinde, Espírito Santo, |
+| `02` | reple tuorum corda fidelium, | RE-ple tu-O-rum KOR-da fi-DE-li-um, | enchei os corações dos vossos fiéis, |
+| `03` | et tui amoris in eis ignem accende. | et TU-i a-MO-ris in E-is I-nhem at-TCHEN-de. | e acendei neles o fogo do vosso amor. |
+| `04` | ℣. Emitte Spiritum tuum et creabuntur. | e-MIT-te SPI-ri-tum TU-um et kre-a-BUN-tur. | Enviai o vosso Espírito, e tudo será criado. |
+| `05` | ℟. Et renovabis faciem terrae. | et re-no-VA-bis FA-tchi-em TER-re. | E renovareis a face da terra. |
+| `06` | Oremus. | o-RE-mus. | Oremos. |
+| `07` | Deus, qui corda fidelium Sancti Spiritus illustratione docuisti, | DE-us, kui KOR-da fi-DE-li-um SANK-ti SPI-ri-tus il-lus-tra-tsi-O-ne do-ku-IS-ti, | Ó Deus, que instruístes os corações dos vossos fiéis com a luz do Espírito Santo, |
+| `08` | da nobis in eodem Spiritu recta sapere, | da NO-bis in e-O-dem SPI-ri-tu REK-ta SA-pe-re, | concedei-nos, no mesmo Espírito, saborear o que é reto |
+| `09` | et de eius semper consolatione gaudere. | et de E-ius SEM-per kon-so-la-tsi-O-ne gau-DE-re. | e gozar sempre da sua consolação. |
+| `10` | Per Christum Dominum nostrum. Amen. | per KRIS-tum DO-mi-num NOS-trum. A-men. | Por Cristo, nosso Senhor. Amém. |
+
+### Sub tuum praesidium · À vossa proteção (`sub_tuum`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Sub tuum praesidium confugimus, | sub TU-um pre-SI-di-um kon-FU-dji-mus, | À vossa proteção recorremos, |
+| `02` | sancta Dei Genetrix. | SANK-ta DE-i DJE-ne-triks. | santa Mãe de Deus. |
+| `03` | Nostras deprecationes ne despicias | NOS-tras de-pre-ka-tsi-O-nes ne de-SPI-tchi-as | Não desprezeis as nossas súplicas |
+| `04` | in necessitatibus, | in ne-tches-si-TA-ti-bus, | em nossas necessidades, |
+| `05` | sed a periculis cunctis libera nos semper, | sed a pe-RI-ku-lis KUNK-tis LI-be-ra nos SEM-per, | mas livrai-nos sempre de todos os perigos, |
+| `06` | Virgo gloriosa et benedicta. Amen. | VIR-go glo-ri-O-sa et be-ne-DIK-ta. A-men. | ó Virgem gloriosa e bendita. Amém. |
+
+---
+
+## 5. Textos da interface com conteúdo religioso
 
 Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm campo `revisado`, mas pedem leitura):
 
@@ -448,3 +613,4 @@ Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm
 | `terco.json` | 30 | 0 |
 | `novenas.json` | 78 (6 novenas × [1 + 3 orações + 9 dias]) | 0 |
 | `quiz.json` | 153 perguntas | 0 |
+| `latim.json` | 10 orações (101 frases) + lema | 0 |

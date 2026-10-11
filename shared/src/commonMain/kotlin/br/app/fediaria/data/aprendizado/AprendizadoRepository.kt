@@ -1,4 +1,4 @@
-package br.app.fediaria.data.quiz
+package br.app.fediaria.data.aprendizado
 
 import br.app.fediaria.core.quiz.EstadoSrs
 import br.app.fediaria.core.quiz.Pontuacao
@@ -10,8 +10,8 @@ import br.app.fediaria.data.db.SrsItemEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-/** Progresso do usuário no quiz: estado de Leitner por pergunta e lições concluídas. */
-class QuizRepository(
+/** Progresso de aprendizado (quiz e latim): estado de Leitner por item e lições concluídas. */
+class AprendizadoRepository(
     private val dao: QuizDao,
     private val relogio: Relogio,
 ) {

@@ -7,7 +7,7 @@ Detalhes: `docs/ARQUITETURA.md` · Fases e critérios de aceite: `docs/ROADMAP.m
 Kotlin Multiplatform + Compose Multiplatform (Material 3) · MVVM · Koin · Room KMP · DataStore · Navigation/ViewModel multiplataforma · kotlinx-datetime/serialization · AlarmManager inexato + WorkManager (Android) · kotlin.test, Turbine, Compose UI tests · detekt, ktlint, Android lint · GitHub Actions.
 
 ## Módulos
-- `core/`: regras puras (ofensiva, dia de graça, mistérios, SRS/lições do quiz, agendamento, Páscoa). Sem Android, sem I/O.
+- `core/`: regras puras (ofensiva, dia de graça, mistérios, SRS/lições do quiz, exercícios de latim, agendamento, Páscoa). Sem Android, sem I/O.
 - `shared/`: dados (Room, DataStore, leitor de conteúdo) + UI Compose + ViewModels. Strings em `composeResources/values/strings.xml`, conteúdo em `composeResources/files/conteudo/`.
 - `androidApp/`: Activity, notificações, alarmes, receivers, WorkManager.
 

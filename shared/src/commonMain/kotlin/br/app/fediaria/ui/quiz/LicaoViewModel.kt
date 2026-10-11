@@ -5,10 +5,10 @@ import androidx.lifecycle.viewModelScope
 import br.app.fediaria.core.quiz.MontadorDeLicoes
 import br.app.fediaria.core.quiz.OrdemDasAlternativas
 import br.app.fediaria.core.tempo.Relogio
+import br.app.fediaria.data.aprendizado.AprendizadoRepository
 import br.app.fediaria.data.conteudo.ConteudoRepository
 import br.app.fediaria.data.conteudo.Pergunta
 import br.app.fediaria.data.conteudo.TipoPergunta
-import br.app.fediaria.data.quiz.QuizRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -40,7 +40,7 @@ data class LicaoUiState(
 
 class LicaoViewModel(
     private val licaoId: String,
-    private val quiz: QuizRepository,
+    private val quiz: AprendizadoRepository,
     private val conteudo: ConteudoRepository,
     private val relogio: Relogio,
 ) : ViewModel() {
