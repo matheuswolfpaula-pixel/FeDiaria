@@ -55,7 +55,7 @@ class LatimViewModel(
             LatimUiState(
                 carregando = false,
                 conteudo = latim,
-                oracoes = latim.oracoes.map { OracaoComProgresso(it, memorizadas(it, srs)) },
+                oracoes = latim.catalogo.map { OracaoComProgresso(it, memorizadas(it, srs)) },
                 flashcardsPendentes = MontadorDeLicoes.revisao(srs, hoje, latim.idsDasFrases).size,
             )
         }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), LatimUiState())

@@ -27,6 +27,8 @@ data class OracaoLatim(
     val descricao: String,
     val fonte: String,
     val revisado: Boolean = false,
+    /** false = usada só no terço em latim, fora da lista da aba Latim. */
+    val catalogo: Boolean = true,
     val frases: List<FraseConteudo>,
 )
 
@@ -56,6 +58,8 @@ data class ConteudoLatim(
     private val porId by lazy { oracoes.associateBy { it.id } }
 
     fun oracao(id: String): OracaoLatim? = porId[id]
+
+    val catalogo: List<OracaoLatim> by lazy { oracoes.filter { it.catalogo } }
 
     val idsDasFrases: Set<String> by lazy { oracoes.flatMap { o -> o.frases.map { it.id } }.toSet() }
 

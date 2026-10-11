@@ -51,6 +51,7 @@ import br.app.fediaria.core.terco.Intencao
 import br.app.fediaria.core.terco.OracaoTerco
 import br.app.fediaria.core.terco.PassoTerco
 import br.app.fediaria.core.terco.SequenciaTerco
+import br.app.fediaria.data.conteudo.OracaoLatim
 import br.app.fediaria.shared.resources.Res
 import br.app.fediaria.shared.resources.acao_anterior
 import br.app.fediaria.shared.resources.acao_concluir
@@ -197,6 +198,11 @@ private fun ConteudoDoPasso(
 
         is PassoTerco.Oracao -> {
             val oracao = conteudo.oracao(passo.oracao.id)
+            val emLatim = oracao.latim?.let { estado.latim?.oracao(it) }
+            if (emLatim != null) {
+                OracaoEmLatim(emLatim, oracao.titulo, estado.pronunciaLatim)
+                return
+            }
             Text(
                 oracao.titulo,
                 style = MaterialTheme.typography.headlineSmall,
@@ -215,6 +221,50 @@ private fun ConteudoDoPasso(
                 textAlign = TextAlign.Start,
                 modifier = Modifier.fillMaxWidth(),
             )
+        }
+    }
+}
+
+/** A oração em latim, frase a frase, com a pronúncia opcional e o nome em português abaixo do título. */
+@Composable
+private fun OracaoEmLatim(
+    oracao: OracaoLatim,
+    tituloEmPortugues: String,
+    pronuncia: Boolean,
+) {
+    Text(
+        oracao.latim,
+        style = MaterialTheme.typography.headlineSmall,
+        fontFamily = FontFamily.Serif,
+        textAlign = TextAlign.Center,
+        modifier = Modifier.semantics { heading() },
+    )
+    Text(
+        tituloEmPortugues,
+        style = MaterialTheme.typography.bodyMedium,
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+    )
+    Spacer(Modifier.height(16.dp))
+    Column(Modifier.fillMaxWidth().testTag("oracao_em_latim"), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        oracao.frases.forEach { frase ->
+            Column {
+                Text(
+                    frase.latim,
+                    style =
+                        MaterialTheme.typography.bodyLarge.copy(
+                            fontFamily = FontFamily.Serif,
+                            fontSize = 20.sp,
+                            lineHeight = 29.sp,
+                        ),
+                )
+                if (pronuncia) {
+                    Text(
+                        frase.pronuncia,
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.primary,
+                    )
+                }
+            }
         }
     }
 }

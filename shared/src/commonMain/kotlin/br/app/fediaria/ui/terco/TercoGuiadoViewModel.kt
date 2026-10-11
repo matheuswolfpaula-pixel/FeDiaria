@@ -9,6 +9,7 @@ import br.app.fediaria.core.terco.SequenciaTerco
 import br.app.fediaria.data.config.ConfiguracoesRepository
 import br.app.fediaria.data.config.ProgressoTerco
 import br.app.fediaria.data.config.ProgressoTercoRepository
+import br.app.fediaria.data.conteudo.ConteudoLatim
 import br.app.fediaria.data.conteudo.ConteudoRepository
 import br.app.fediaria.data.conteudo.ConteudoTerco
 import br.app.fediaria.data.oracao.DiasRezadosRepository
@@ -24,6 +25,9 @@ import kotlin.time.Instant
 data class TercoGuiadoUiState(
     val carregando: Boolean = true,
     val conteudo: ConteudoTerco? = null,
+    /** Presente quando o terço é rezado em latim. */
+    val latim: ConteudoLatim? = null,
+    val pronunciaLatim: Boolean = true,
     val passos: List<PassoTerco> = emptyList(),
     val indice: Int = 0,
     val vibracao: Boolean = true,
@@ -65,6 +69,8 @@ class TercoGuiadoViewModel(
                 TercoGuiadoUiState(
                     carregando = false,
                     conteudo = conteudo.terco(),
+                    latim = if (config.latim) conteudo.latim() else null,
+                    pronunciaLatim = config.pronunciaLatim,
                     passos = passos,
                     indice = salvo?.indicePasso ?: 0,
                     vibracao = config.vibracao,

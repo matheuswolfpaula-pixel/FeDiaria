@@ -27,6 +27,27 @@ class ConteudoTercoTest {
     private val bruto = Json.parseToJsonElement(texto).jsonObject
 
     @Test
+    fun versaoLatinaDeCadaOracaoExisteEmLatimJson() {
+        val latim =
+            ConteudoLatim.deJson(
+                FileSystem.SYSTEM.read(
+                    "src/commonMain/composeResources/files/conteudo/latim.json".toPath(),
+                ) { readUtf8() },
+            )
+        conteudo.oracoes.forEach { oracao ->
+            oracao.latim?.let { assertTrue(latim.oracao(it) != null, "${oracao.id}: '$it' não existe em latim.json") }
+        }
+        // Só as devoções em português (sem texto latino tradicional) ficam sem versão latina.
+        assertEquals(
+            setOf("oferecimento", "agradecimento"),
+            conteudo.oracoes
+                .filter { it.latim == null }
+                .map { it.id }
+                .toSet(),
+        )
+    }
+
+    @Test
     fun todaOracaoUsadaNoTercoExiste() {
         OracaoTerco.entries.forEach { oracao ->
             val item = conteudo.oracoes.firstOrNull { it.id == oracao.id } ?: fail("Falta a oração ${oracao.id}")

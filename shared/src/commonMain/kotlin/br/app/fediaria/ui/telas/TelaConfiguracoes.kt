@@ -44,8 +44,11 @@ import br.app.fediaria.shared.resources.config_ajuda_lembretes
 import br.app.fediaria.shared.resources.config_esquema
 import br.app.fediaria.shared.resources.config_horario
 import br.app.fediaria.shared.resources.config_horario_segundo
+import br.app.fediaria.shared.resources.config_latim
+import br.app.fediaria.shared.resources.config_latim_desc
 import br.app.fediaria.shared.resources.config_lembrete_diario
 import br.app.fediaria.shared.resources.config_oferecimento
+import br.app.fediaria.shared.resources.config_pronuncia_latim
 import br.app.fediaria.shared.resources.config_segundo_lembrete
 import br.app.fediaria.shared.resources.config_segundo_lembrete_desc
 import br.app.fediaria.shared.resources.config_vibracao
@@ -196,54 +199,7 @@ fun TelaConfiguracoes(
         )
 
         HorizontalDivider(Modifier.padding(vertical = 8.dp))
-        TituloDeSecao(stringResource(Res.string.configuracoes_terco))
-        Text(
-            stringResource(Res.string.config_esquema),
-            style = MaterialTheme.typography.labelLarge,
-            modifier = Modifier.padding(horizontal = 16.dp),
-        )
-        Column(Modifier.selectableGroup()) {
-            EsquemaMisterios.entries.forEach { esquema ->
-                OpcaoUnica(
-                    rotulo =
-                        stringResource(
-                            if (esquema ==
-                                EsquemaMisterios.PADRAO
-                            ) {
-                                Res.string.esquema_padrao
-                            } else {
-                                Res.string.esquema_tradicional
-                            },
-                        ),
-                    descricao =
-                        stringResource(
-                            if (esquema == EsquemaMisterios.PADRAO) {
-                                Res.string.esquema_padrao_desc
-                            } else {
-                                Res.string.esquema_tradicional_desc
-                            },
-                        ),
-                    selecionada = estado.terco.esquema == esquema,
-                    aoSelecionar = { viewModel.alterarTerco { it.copy(esquema = esquema) } },
-                )
-            }
-        }
-        LinhaComInterruptor(
-            titulo = stringResource(Res.string.config_oferecimento),
-            marcado = estado.terco.oferecimento,
-            aoMudar = { v -> viewModel.alterarTerco { it.copy(oferecimento = v) } },
-        )
-        LinhaComInterruptor(
-            titulo = stringResource(Res.string.config_agradecimento),
-            marcado = estado.terco.agradecimento,
-            aoMudar = { v -> viewModel.alterarTerco { it.copy(agradecimento = v) } },
-        )
-        LinhaComInterruptor(
-            titulo = stringResource(Res.string.config_vibracao),
-            marcado = estado.terco.vibracao,
-            aoMudar = { v -> viewModel.alterarTerco { it.copy(vibracao = v) } },
-        )
-
+        SecaoTerco(estado.terco, viewModel::alterarTerco)
         HorizontalDivider(Modifier.padding(vertical = 8.dp))
         TituloDeSecao(stringResource(Res.string.configuracoes_tema))
         Column(Modifier.selectableGroup()) {
@@ -284,6 +240,75 @@ fun TelaConfiguracoes(
             // Nenhum diálogo aberto.
         }
     }
+}
+
+/** Opções do terço: esquema de mistérios, orações opcionais, latim e vibração. */
+@Composable
+private fun SecaoTerco(
+    terco: ConfigTerco,
+    alterar: ((ConfigTerco) -> ConfigTerco) -> Unit,
+) {
+    TituloDeSecao(stringResource(Res.string.configuracoes_terco))
+    Text(
+        stringResource(Res.string.config_esquema),
+        style = MaterialTheme.typography.labelLarge,
+        modifier = Modifier.padding(horizontal = 16.dp),
+    )
+    Column(Modifier.selectableGroup()) {
+        EsquemaMisterios.entries.forEach { esquema ->
+            OpcaoUnica(
+                rotulo =
+                    stringResource(
+                        if (esquema ==
+                            EsquemaMisterios.PADRAO
+                        ) {
+                            Res.string.esquema_padrao
+                        } else {
+                            Res.string.esquema_tradicional
+                        },
+                    ),
+                descricao =
+                    stringResource(
+                        if (esquema == EsquemaMisterios.PADRAO) {
+                            Res.string.esquema_padrao_desc
+                        } else {
+                            Res.string.esquema_tradicional_desc
+                        },
+                    ),
+                selecionada = terco.esquema == esquema,
+                aoSelecionar = { alterar { it.copy(esquema = esquema) } },
+            )
+        }
+    }
+    LinhaComInterruptor(
+        titulo = stringResource(Res.string.config_oferecimento),
+        marcado = terco.oferecimento,
+        aoMudar = { v -> alterar { it.copy(oferecimento = v) } },
+    )
+    LinhaComInterruptor(
+        titulo = stringResource(Res.string.config_agradecimento),
+        marcado = terco.agradecimento,
+        aoMudar = { v -> alterar { it.copy(agradecimento = v) } },
+    )
+    LinhaComInterruptor(
+        titulo = stringResource(Res.string.config_latim),
+        descricao = stringResource(Res.string.config_latim_desc),
+        marcado = terco.latim,
+        aoMudar = { v -> alterar { it.copy(latim = v) } },
+        modifier = Modifier.testTag("config_terco_latim"),
+    )
+    if (terco.latim) {
+        LinhaComInterruptor(
+            titulo = stringResource(Res.string.config_pronuncia_latim),
+            marcado = terco.pronunciaLatim,
+            aoMudar = { v -> alterar { it.copy(pronunciaLatim = v) } },
+        )
+    }
+    LinhaComInterruptor(
+        titulo = stringResource(Res.string.config_vibracao),
+        marcado = terco.vibracao,
+        aoMudar = { v -> alterar { it.copy(vibracao = v) } },
+    )
 }
 
 @Composable

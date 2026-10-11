@@ -35,6 +35,10 @@ data class ConfigTerco(
     val oferecimento: Boolean = false,
     val agradecimento: Boolean = false,
     val vibracao: Boolean = true,
+    /** Terço guiado com as orações em latim (as que não têm versão latina ficam em português). */
+    val latim: Boolean = false,
+    /** No terço em latim, mostrar a pronúncia sob cada frase. */
+    val pronunciaLatim: Boolean = true,
 ) {
     val opcoes: OpcoesTerco get() = OpcoesTerco(oferecimento = oferecimento, agradecimento = agradecimento)
 }
@@ -69,6 +73,8 @@ class ConfiguracoesRepository(
                     oferecimento = prefs[CHAVE_OFERECIMENTO] ?: padrao.oferecimento,
                     agradecimento = prefs[CHAVE_AGRADECIMENTO] ?: padrao.agradecimento,
                     vibracao = prefs[CHAVE_VIBRACAO] ?: padrao.vibracao,
+                    latim = prefs[CHAVE_LATIM] ?: padrao.latim,
+                    pronunciaLatim = prefs[CHAVE_PRONUNCIA_LATIM] ?: padrao.pronunciaLatim,
                 )
             }.distinctUntilChanged()
 
@@ -93,6 +99,8 @@ class ConfiguracoesRepository(
             it[CHAVE_OFERECIMENTO] = config.oferecimento
             it[CHAVE_AGRADECIMENTO] = config.agradecimento
             it[CHAVE_VIBRACAO] = config.vibracao
+            it[CHAVE_LATIM] = config.latim
+            it[CHAVE_PRONUNCIA_LATIM] = config.pronunciaLatim
         }
     }
 
@@ -106,6 +114,8 @@ class ConfiguracoesRepository(
         val CHAVE_OFERECIMENTO = booleanPreferencesKey("terco_oferecimento")
         val CHAVE_AGRADECIMENTO = booleanPreferencesKey("terco_agradecimento")
         val CHAVE_VIBRACAO = booleanPreferencesKey("terco_vibracao")
+        val CHAVE_LATIM = booleanPreferencesKey("terco_latim")
+        val CHAVE_PRONUNCIA_LATIM = booleanPreferencesKey("terco_pronuncia_latim")
     }
 }
 

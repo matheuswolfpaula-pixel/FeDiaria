@@ -800,6 +800,77 @@
           "traducao": "ó Virgem gloriosa e bendita. Amém."
         }
       ]
+    },
+    {
+      "catalogo": false,
+      "id": "per_signum_crucis",
+      "latim": "Per signum Crucis",
+      "titulo": "Pelo sinal",
+      "descricao": "A abertura do terço: o sinal da cruz com a antiga invocação contra os inimigos.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.per_signum_crucis.01",
+          "latim": "Per signum Crucis",
+          "pronuncia": "per SI-nhum KRU-tchis",
+          "traducao": "Pelo sinal da Cruz"
+        },
+        {
+          "id": "latim.per_signum_crucis.02",
+          "latim": "de inimicis nostris",
+          "pronuncia": "de i-ni-MI-tchis NOS-tris",
+          "traducao": "dos nossos inimigos"
+        },
+        {
+          "id": "latim.per_signum_crucis.03",
+          "latim": "libera nos, Deus noster.",
+          "pronuncia": "LI-be-ra nos, DE-us NOS-ter.",
+          "traducao": "livrai-nos, Deus nosso."
+        },
+        {
+          "id": "latim.per_signum_crucis.04",
+          "latim": "In nomine Patris, et Filii, et Spiritus Sancti. Amen.",
+          "pronuncia": "in NO-mi-ne PA-tris, et FI-li-i, et SPI-ri-tus SANK-ti. A-men.",
+          "traducao": "Em nome do Pai, e do Filho, e do Espírito Santo. Amém."
+        }
+      ]
+    },
+    {
+      "catalogo": false,
+      "id": "o_mi_iesu",
+      "latim": "O mi Iesu",
+      "titulo": "Ó meu Jesus",
+      "descricao": "A oração ensinada em Fátima (1917), rezada ao fim de cada dezena.",
+      "fonte": "Texto latino tradicional da Igreja (domínio público); tradução literal e pronúncia originais do FéDiária",
+      "revisado": false,
+      "frases": [
+        {
+          "id": "latim.o_mi_iesu.01",
+          "latim": "O mi Iesu, dimitte nobis debita nostra,",
+          "pronuncia": "o mi IE-su, di-MIT-te NO-bis DE-bi-ta NOS-tra,",
+          "traducao": "Ó meu Jesus, perdoai-nos as nossas dívidas,"
+        },
+        {
+          "id": "latim.o_mi_iesu.02",
+          "latim": "libera nos ab igne inferni,",
+          "pronuncia": "LI-be-ra nos ab I-nhe in-FER-ni,",
+          "traducao": "livrai-nos do fogo do inferno,"
+        },
+        {
+          "id": "latim.o_mi_iesu.03",
+          "latim": "conduc in caelum omnes animas,",
+          "pronuncia": "KON-duk in TCHE-lum OM-nes A-ni-mas,",
+          "traducao": "levai ao céu todas as almas,"
+        },
+        {
+          "id": "latim.o_mi_iesu.04",
+          "latim": "praesertim illas quae maxime indigent misericordia tua.",
+          "pronuncia": "pre-SER-tim IL-las kue MAK-si-me IN-di-djent mi-se-ri-KOR-di-a TU-a.",
+          "traducao": "especialmente as que mais precisarem da vossa misericórdia.",
+          "nota": "A oração foi dada em português; esta é a versão latina mais difundida, sem texto oficial."
+        }
+      ]
     }
   ]
 }

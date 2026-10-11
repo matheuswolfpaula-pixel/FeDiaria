@@ -9,6 +9,8 @@ data class OracaoConteudo(
     val id: String,
     val titulo: String,
     val texto: String,
+    /** Id da mesma oração em latim.json, para o terço em latim (sem versão latina: fica em português). */
+    val latim: String? = null,
     val fonte: String,
     val revisado: Boolean = false,
 )

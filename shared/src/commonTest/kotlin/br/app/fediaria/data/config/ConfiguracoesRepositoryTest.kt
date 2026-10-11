@@ -26,6 +26,21 @@ class ConfiguracoesRepositoryTest {
         }
 
     @Test
+    fun tercoEmLatimComecaDesligadoEFicaSalvo() =
+        runTest {
+            val repo = ConfiguracoesRepository(criarDataStore { arquivo.toString() })
+            repo.terco.test {
+                val padrao = awaitItem()
+                assertEquals(false, padrao.latim)
+                assertEquals(true, padrao.pronunciaLatim)
+                repo.definirTerco(padrao.copy(latim = true, pronunciaLatim = false))
+                val salvo = awaitItem()
+                assertEquals(true, salvo.latim)
+                assertEquals(false, salvo.pronunciaLatim)
+            }
+        }
+
+    @Test
     fun temaEscolhidoEhPersistido() =
         runTest {
             val repo = ConfiguracoesRepository(criarDataStore { arquivo.toString() })

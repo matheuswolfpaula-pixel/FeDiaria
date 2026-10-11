@@ -105,6 +105,8 @@ Sistema de **Leitner** com caixas de intervalos 1, 3, 7, 14 e 30 dias. Errou, a 
 - **Flashcards:** Leitner, na mesma tabela `srs_item` do quiz. Por oração, as vencidas mais as frases novas, até 10. O cartão "Flashcards de hoje" mostra as vencidas de todas as orações. Uma frase conta como "memorizada" a partir da caixa 3.
 - **Rezar em latim:** a oração inteira, com pronúncia e tradução opcionais, sem pontos.
 
+**Terço em latim:** a opção `ConfigTerco.latim` faz o terço guiado mostrar a versão latina de cada oração. Cada oração de `terco.json` aponta para `latim.json` pelo campo `latim`. A pronúncia aparece sob cada frase, e é opcional (`pronunciaLatim`). Oferecimento, Agradecimento e os mistérios ficam em português. *Per signum Crucis* e *O mi Iesu* existem só para isso (`catalogo: false`).
+
 Os exercícios não mexem no SRS: só os flashcards decidem quando a frase volta. O validador (`ConteudoLatimTest`) confere, entre outras coisas, se cada frase tem na pronúncia o mesmo número de palavras que em latim e se cada palavra polissílaba tem exatamente uma sílaba tônica marcada.
 
 ## 5. UI

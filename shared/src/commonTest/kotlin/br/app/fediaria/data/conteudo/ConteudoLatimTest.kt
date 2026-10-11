@@ -34,7 +34,15 @@ class ConteudoLatimTest {
                 "veni_sancte_spiritus",
                 "sub_tuum",
             ),
-            conteudo.oracoes.map { it.id }.toSet(),
+            conteudo.catalogo.map { it.id }.toSet(),
+        )
+        // Fora do catálogo: só as usadas no terço em latim.
+        assertEquals(
+            setOf("per_signum_crucis", "o_mi_iesu"),
+            conteudo.oracoes
+                .filterNot { it.catalogo }
+                .map { it.id }
+                .toSet(),
         )
         assertEquals("Ad Maiorem Dei Gloriam", conteudo.lema.latim)
     }

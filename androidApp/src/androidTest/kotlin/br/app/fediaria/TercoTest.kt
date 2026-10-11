@@ -12,10 +12,14 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import br.app.fediaria.data.config.ConfigTerco
+import br.app.fediaria.data.config.ConfiguracoesRepository
+import kotlinx.coroutines.runBlocking
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.koin.core.context.GlobalContext
 
 @OptIn(ExperimentalTestApi::class)
 @RunWith(AndroidJUnit4::class)
@@ -79,6 +83,31 @@ class TercoTest {
         regra.onNodeWithTag("botao_rezar").performClick()
         regra.waitUntilAtLeastOneExists(hasText("Passo 6 de 79"), TEMPO)
         regra.onNodeWithText("Passo 6 de 79").assertExists()
+    }
+
+    @Test
+    fun tercoGuiadoEmLatimMostraAsOracoesEmLatim() {
+        val configuracoes = GlobalContext.get().get<ConfiguracoesRepository>()
+        runBlocking { configuracoes.definirTerco(ConfigTerco(latim = true)) }
+
+        regra.onNodeWithTag("botao_rezar").performClick()
+        regra.waitUntilAtLeastOneExists(hasText("Per signum Crucis"), TEMPO)
+        regra.waitUntilAtLeastOneExists(hasText("per SI-nhum KRU-tchis"), TEMPO)
+        regra.onNodeWithText("Pelo sinal da Santa Cruz", substring = true).assertDoesNotExist()
+
+        // Credo e Pai-Nosso também em latim.
+        regra.onNodeWithTag("botao_proximo").performClick()
+        regra.waitUntilAtLeastOneExists(hasText("Credo in Deum Patrem omnipotentem,"), TEMPO)
+        regra.onNodeWithTag("botao_proximo").performClick()
+        regra.waitUntilAtLeastOneExists(hasText("Pater noster, qui es in caelis,"), TEMPO)
+
+        // Sem pronúncia, a frase em latim continua e a pronúncia some.
+        runBlocking { configuracoes.definirTerco(ConfigTerco(latim = true, pronunciaLatim = false)) }
+        regra.onNodeWithContentDescription("Voltar").performClick()
+        regra.waitUntilAtLeastOneExists(hasTestTag("botao_rezar"), TEMPO)
+        regra.onNodeWithTag("botao_rezar").performClick()
+        regra.waitUntilAtLeastOneExists(hasText("Pater noster, qui es in caelis,"), TEMPO)
+        regra.onNodeWithText("PA-ter NOS-ter, kui es in TCHE-lis,").assertDoesNotExist()
     }
 
     private companion object {

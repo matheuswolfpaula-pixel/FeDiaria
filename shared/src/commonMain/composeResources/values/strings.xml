@@ -247,6 +247,11 @@
   <string name="ref_documento">%1$s, n. %2$d</string>
   <string name="ref_rotulo">Para conferir: %1$s</string>
 
+  <!-- Terço em latim -->
+  <string name="config_latim">Rezar em latim</string>
+  <string name="config_latim_desc">O terço guiado mostra as orações em latim. Os mistérios, o Oferecimento e o Agradecimento continuam em português.</string>
+  <string name="config_pronuncia_latim">Mostrar a pronúncia no terço em latim</string>
+
   <!-- Latim -->
   <string name="titulo_latim">Latim</string>
   <string name="titulo_leitura_latim">Frase a frase</string>

@@ -591,6 +591,31 @@ Pontos para o revisor:
 | `05` | sed a periculis cunctis libera nos semper, | sed a pe-RI-ku-lis KUNK-tis LI-be-ra nos SEM-per, | mas livrai-nos sempre de todos os perigos, |
 | `06` | Virgo gloriosa et benedicta. Amen. | VIR-go glo-ri-O-sa et be-ne-DIK-ta. A-men. | ó Virgem gloriosa e bendita. Amém. |
 
+### Usadas só no terço guiado em latim
+
+A opção **Rezar em latim** (Configurações › Terço) troca as orações do terço guiado pela versão latina. Oferecimento, Agradecimento e os títulos dos mistérios continuam em português, porque não têm texto latino tradicional. As duas orações abaixo não aparecem na aba Latim.
+
+- **Per signum Crucis:** versão latina tradicional do "Pelo sinal". Conferir a forma usada.
+- **O mi Iesu (Ó meu Jesus, Fátima, 1917):** a oração foi dada em português e **não tem texto latino oficial**. Usei a versão latina mais difundida; o revisor pode preferir outra.
+
+#### Per signum Crucis · Pelo sinal (`per_signum_crucis`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | Per signum Crucis | per SI-nhum KRU-tchis | Pelo sinal da Cruz |
+| `02` | de inimicis nostris | de i-ni-MI-tchis NOS-tris | dos nossos inimigos |
+| `03` | libera nos, Deus noster. | LI-be-ra nos, DE-us NOS-ter. | livrai-nos, Deus nosso. |
+| `04` | In nomine Patris, et Filii, et Spiritus Sancti. Amen. | in NO-mi-ne PA-tris, et FI-li-i, et SPI-ri-tus SANK-ti. A-men. | Em nome do Pai, e do Filho, e do Espírito Santo. Amém. |
+
+#### O mi Iesu · Ó meu Jesus (`o_mi_iesu`)
+
+| id | Latim | Pronúncia | Tradução |
+|---|---|---|---|
+| `01` | O mi Iesu, dimitte nobis debita nostra, | o mi IE-su, di-MIT-te NO-bis DE-bi-ta NOS-tra, | Ó meu Jesus, perdoai-nos as nossas dívidas, |
+| `02` | libera nos ab igne inferni, | LI-be-ra nos ab I-nhe in-FER-ni, | livrai-nos do fogo do inferno, |
+| `03` | conduc in caelum omnes animas, | KON-duk in TCHE-lum OM-nes A-ni-mas, | levai ao céu todas as almas, |
+| `04` | praesertim illas quae maxime indigent misericordia tua. | pre-SER-tim IL-las kue MAK-si-me IN-di-djent mi-se-ri-KOR-di-a TU-a. | especialmente as que mais precisarem da vossa misericórdia. |
+
 ---
 
 ## 5. Textos da interface com conteúdo religioso
@@ -613,4 +638,4 @@ Estão em `shared/src/commonMain/composeResources/values/strings.xml` (não têm
 | `terco.json` | 30 | 0 |
 | `novenas.json` | 78 (6 novenas × [1 + 3 orações + 9 dias]) | 0 |
 | `quiz.json` | 153 perguntas | 0 |
-| `latim.json` | 10 orações (101 frases) + lema | 0 |
+| `latim.json` | 12 orações (10 da aba Latim + 2 do terço; 109 frases) + lema | 0 |
