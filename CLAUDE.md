@@ -20,6 +20,7 @@ Kotlin Multiplatform + Compose Multiplatform (Material 3) · MVVM · Koin · Roo
 ./gradlew :androidApp:installDebug    # instala no emulador/aparelho conectado
 ./gradlew :androidApp:connectedDebugAndroidTest   # testes de UI (emulador ligado)
 ./gradlew ktlintFormat                # formata
+./testar.sh [--limpo]                 # emulador do zero (sem Quick Boot) + instala e abre o app
 ```
 SDK em `~/Android/Sdk` (`local.properties`, não versionado) · emulador: `emulator -avd fediaria` (Android 16, Pixel 7).
 Versões só em `gradle/libs.versions.toml`. iOS: alvos `iosArm64`/`iosSimulatorArm64` declarados, só compilam no macOS (código em `iosMain` ainda não verificado).
